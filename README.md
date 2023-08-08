@@ -4,34 +4,33 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 **Professor:** Ederson Schmeing
 
 ### Primeiro bimestre
- - [09 - Ponteiros](https://github.com/edersonschmeing/algoritmos-e-logica-de-programacao-2023-2/tree/main/09-ponteiros)
-
+ - [01 - html]()
+ - [02 - css]()
+ - [03 - javascript]()
 
 ### Segundo bimestre
- - [16 - Notação assintótica](https://github.com/edersonschmeing/algoritmos-e-logica-de-programacao-2023-2/tree/main/16-notacao-assintotica)
-
+ - [04 - http)()
 
 ### Referências 
 
-BACKES, A. Linguagem C - Completa e Descomplicada. 2 Ed. - Rio de Janeiro: Elsevier, 2019.
+SILVA, Mauricio Samy. Fundamentos de HTML5 e CSS3; 1. ed. São Paulo, Novatec, 2015.
 
-Maurício Samy Silva. Maujor o Dinossauro da CSS.
-https://www.maujor.com/
+FLANAGAN, David. JavaScript: The Definitive Guide. 7. ed. O’Reilly, 2020. 
 
-w3schools
-https://www.w3schools.com>
+FLANAGAN, David. JavaScript: O guia definitivo. 6. ed. Porto Alegre: Bookman, 2013.
 
-Bootstrap.
-https://getbootstrap.com/>
+GRINBERG, Miguel. Desenvolvimento web com Flask: Desenvolvendo Aplicações web com Python. 1. ed. Novatec, 2018.
 
-Python Programming Language.
-https://www.python.org/
+Maurício Samy Silva. Maujor o Dinossauro da CSS. https://www.maujor.com/
 
-Framework Flask
-https://flask.palletsprojects.com/en/2.3.x/
+w3schools. https://www.w3schools.com>
 
-SQLite
-https://www.sqlite.org/index.html>
+Bootstrap. https://getbootstrap.com/>
 
-Framework Svelte
-https://svelte.dev/
+Python Programming Language. https://www.python.org/
+
+Framework Flask. https://flask.palletsprojects.com/en/2.3.x/
+
+SQLite. https://www.sqlite.org/index.html>
+
+Framework Svelte. https://svelte.dev/
