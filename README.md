@@ -4,12 +4,16 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 **Professor:** Ederson Schmeing
 
 ### Primeiro bimestre
- - [01 - html]()
- - [02 - css]()
- - [03 - javascript]()
+ - [01 - HTML]()
+ - [02 - CSS]()
+ - [03 - Bootstrap]()
+ - [04 - JavaScript]()
 
 ### Segundo bimestre
- - [04 - http)()
+ - [05 - HTTP]()
+ - [06 - Python]()
+ - [07 - Flask]()
+ - [08 - SPA]()
 
 ### Referências 
 
