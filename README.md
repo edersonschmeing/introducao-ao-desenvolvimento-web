@@ -5,7 +5,7 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 
 ### Primeiro bimestre
  - [01 - HTML]()
- - [02 - CSS]()
+ - [02 - HTML e CSS]()
  - [03 - Bootstrap]()
  - [04 - JavaScript]()
 
