@@ -12,16 +12,17 @@ h1, h2 {
 .titulo-principal {
 	text-align: center;
 	background-color: #195485;
-	color: #F2FFFC;
+	color: #20ec09;
 	padding: 25px;
 	border-bottom: 10px solid black;
+	/*border-top: 10px solid black;*/
 	font-size: 60px;
 	text-transform: uppercase;
 }
 
 p {
 	text-align: justify;
-	margin: 20px 0;
+	margin: 20px;
 }
 
 .navegacao-site {
