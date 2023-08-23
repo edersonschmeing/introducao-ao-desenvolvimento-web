@@ -106,29 +106,44 @@ em {
     background-image: url(../imagens/linkedin.png);
 }
 
-main {
-    width: 85%;
-    float: right;
-    padding-bottom: 4em;
+
+
+@media only screen and (max-width: 800px) {
+
+    main {
+        width: 100%;
+        float: right;
+        padding-bottom: 4em;
+    }
 }
 
-.minha-foto,
-.navegacao-site {
-    border-right: .5em solid black;
-    border-bottom: .5em solid black;
-    box-sizing: border-box;
-}
+@media only screen and (min-width: 800px) {
 
-.navegacao-site {
-    width: 15%;
-    float: left;
-    position: relative;
-    top: 300px;
-}
-
-.minha-foto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 300px;
-}
+    main {
+        width: 85%;
+        float: right;
+        padding-bottom: 4em;
+    }
+    
+    .minha-foto,
+    .navegacao-site {
+        border-right: .5em solid black;
+        border-bottom: .5em solid black;
+        box-sizing: border-box;
+    }
+    
+    .navegacao-site {
+        width: 15%;
+        float: left;
+        position: relative;
+        top: 300px;
+    }
+    
+    .minha-foto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 300px;
+    }
+    
+} 
