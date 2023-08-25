@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>HTML5 e CSS3 | Livro do Maujor</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+	<script src="../html5shiv-master/src/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href='../normalize.css'></link>
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clear { clear: both; }
+body {
+	font: 18px/1.4 arial, sans-serif;
+	color: #333;
+	background: #ccc;
+	}
+#tudo {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 860px;
+	margin: 0 auto;
+	background: #fff;
+	}
+h1, h2, h3, h4, h5, h6 { color: #036; }
+.topo_header  {
+	background: #036;
+	padding: 5px 20px;
+}
+.topo_header h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	}
+.topo_header a  {
+	color: #fff;
+	text-decoration: none;
+	}
+.topo_header h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	color: #fff;
+	}
+.principal {
+	width: 100%;
+	padding: 20px 15px;
+	}
+.rodape {
+	background: #036;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;	
+	}
+pre { font-size: 14px;}
+@media (max-width: 1040px) {
+	pre { font-size: 12px;}
+}
+/* formulários */
+</style>
+</head>
+<body class="home">
+<div id="tudo">
+    <div class="topo">
+        <header class="topo_header">
+            <hgroup>
+                <h1><a href="/">Formulários</a></h1>
+                <h2>Elementos e atributos</h2>
+            </hgroup> 
+        </header>
+	</div> <!-- /.topo -->
+    
+    <div class="principal">
+        <main>
+        	<section>
+            	<h1>Elemento input</h1>
+            
+<form action="" method="">
+    <p><label>Nome: <input type="text" name="nome" required></label></p>
+    <p><label>Hidden: <input type="hidden" name="ip"></label></p>
+    <p><label>Busca: <input type="search" name="q"></label></p>
+    <p><label>Telefone: <input type="tel" name="tel" required></label></p>
+    <p><label>URL: <input type="url" name="url" required></label></p>
+    <p><label>Email: <input type="email" name="email" required></label></p>
+    <p><label>Senha: <input type="password" name="pass" required></label></p>
+    <p><label>Data: <input type="date" name="data" required></label></p>
+    <p><label>Hora: <input type="time" name="hora" required></label></p>
+    <p><label>Número: <input type="number" name="numero" required></label></p>
+    <p><label>Intervalo: <input type="range" name="faixa" required></label></p>
+    <p><label>Cor: <input type="color" name="cor" required></label></p>
+    <p><label><input type="checkbox" name="abc"> Vermelho</label></p>
+    <p><label><input type="radio" name="cde"> Sim</label></p>
+    <p><label>Arquivo: <input type="file" name="arquivo" required></label></p>
+    <p><input type="submit" value="ENVIAR"></p>
+    <p><input type="image" src="botao.png" value="MEU BOTÃO"></p>
+    <p><input type="reset" value="LIMPAR"></p>
+    <p><input type="button" value="OK"></p>
+</form>
+            </section>
+        </main>
+	</div> <!-- /.principal -->
+   
+    <div class="rodape">
+        <footer>
+            <small>Site de apoio ao livro HTML5 e CSS3 do Maujor</small>
+        </footer>
+	</div> <!--  /.rodape -->
+
+</div> <!--  /.tudo -->
+</body>
+</html>

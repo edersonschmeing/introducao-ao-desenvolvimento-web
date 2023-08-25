@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>HTML5 e CSS3 | Livro do Maujor</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+	<script src="../html5shiv-master/src/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href='../normalize.css'></link>
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clear { clear: both; }
+body {
+	font: 18px/1.4 arial, sans-serif;
+	color: #333;
+	background: #ccc;
+	}
+#tudo {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 860px;
+	margin: 0 auto;
+	background: #fff;
+	}
+h1, h2, h3, h4, h5, h6 { color: #036; }
+.topo_header  {
+	background: #036;
+	padding: 5px 20px;
+}
+.topo_header h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	}
+.topo_header a  {
+	color: #fff;
+	text-decoration: none;
+	}
+.topo_header h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	color: #fff;
+	}
+.principal {
+	width: 100%;
+	padding: 0 15px;
+	}
+.rodape {
+	background: #036;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;	
+	}
+main section { overflow:hidden; }
+.box { 
+	overflow:hidden;
+	float: left;
+	width: 33.3%;
+	padding: 15px;
+}
+hr { clear: left; }
+.exemplo {
+	width: 90%;
+	margin: 0 auto;
+	height: 150px;
+	background: #fafafa;
+	border: 1px solid #ccc;
+}
+pre { font-size: 14px;}
+
+@media (max-width: 1040px) {
+	pre { font-size: 12px;}
+}
+/* sombra em textos */
+.exemplo h1 { 
+	font-size: 50px; color: #333; 
+	text-align: center;
+	margin: 0;
+}
+.um { text-shadow: red 5px 0;  }
+.dois { text-shadow: red 0 5px;  }
+.tres { text-shadow: red 5px 5px;  }
+.quatro { text-shadow: red 5px 5px 5px;  }
+.cinco { text-shadow: red 5px 5px 15px;  }
+.seis { text-shadow: red 2px 2px 4px;  }
+.sete { text-shadow: red -5px 5px; }
+.oito { text-shadow: red 5px -5px;  }
+.nove { text-shadow: red -5px -5px;  }
+.dez { 
+	background: #ddd;
+	text-shadow: red 3px 3px 5px,   
+	blue -6px -6px,
+	green -25px 15px 5px;
+}
+.onze { 
+	background: #999;
+	text-shadow: 1px 1px white, 
+	-1px -1px #444;
+ }
+.onze h1 { color: #c8c8c8; } 
+.doze { 
+	background: #999;
+	text-shadow: -1px -1px white, 
+	1px 1px #444;
+ }
+.doze h1 { color: #c8c8c8; } 
+</style>
+</head>
+<body class="home">
+<div id="tudo">
+    <div class="topo">
+        <header class="topo_header">
+            <hgroup>
+                <h1><a href="/">Estilização</a></h1>
+                <h2>Sombras em textos</h2>
+            </hgroup> 
+        </header>
+	</div> <!-- /.topo -->
+    
+    <div class="principal">
+        <main>
+        	<section>
+            	<h1>Exemplos</h1>
+            		
+                    <div class="box">
+<pre><code>h1 {text-shadow: red 5px 0;}</code></pre>
+                        <div class="exemplo um"><h1>HTML5<br>Maujor</h1></div>
+                    </div>
+            
+            		<div class="box">
+<pre><code>h1 {text-shadow: red 0 5px;}</code></pre>
+                        <div class="exemplo dois"><h1>HTML5<br>Maujor</h1></div>
+                    </div>
+            
+            		<div class="box">
+<pre><code>h1 {text-shadow: red 5px 5px;}</code></pre>
+                        <div class="exemplo tres"><h1>HTML5<br>Maujor</h1></div>
+                    </div>
+                    
+<hr>            
+            		
+                    <div class="box">
+<pre><code>h1 {text-shadow: red 5px 5px 5px;}</code></pre>
+                        <div class="exemplo quatro"><h1>HTML5<br>Maujor</h1></div>
+                    </div>
+            		
+            		<div class="box">
+<pre><code>h1 {text-shadow: red 5px 5px 15px;}</code></pre>
+                        <div class="exemplo cinco"><h1>HTML5<br>Maujor</h1></div>
+                    </div>
+            
+                    <div class="box">
+<pre><code>h1 {text-shadow: red 2px 2px 4px;}</code></pre>
+                        <div class="exemplo seis"><h1>HTML5<br>Maujor</h1></div>
+                    </div>
+                    
+<hr>            
+            		
+                    <div class="box">
+<pre><code>h1 {text-shadow: red -5px 5px;}</code></pre>
+                        <div class="exemplo sete"><h1>HTML5<br>Maujor</h1></div>
+                    </div>
+                    
+                    
+            		<div class="box">
+<pre><code>h1 {text-shadow: red 5px -5px;}</code></pre>
+                        <div class="exemplo oito"><h1>HTML5<br>Maujor</h1></div>
+                    </div>
+            		
+                    <div class="box">
+<pre><code>h1 {text-shadow: red -5px -5px;}</code></pre>
+                        <div class="exemplo nove"><h1>HTML5<br>Maujor</h1></div>
+                    </div>                    
+           
+<hr>
+          
+                    <div class="box">
+<pre><code>
+div{ background: #ddd; }
+h1 { 
+  text-shadow: red 3px 3px 5px,   
+  blue -6px -6px,
+  green -25px 15px 5px;
+}</code></pre>
+                        <div class="exemplo dez"><h1>HTML5<br>Maujor</h1></div>
+                    </div>                    
+           
+                    <div class="box">
+<pre><code>
+div { background: #999; }
+h1 { 
+  color: #c8c8c8;
+  text-shadow: 1px 1px white, 
+  -1px -1px #444;
+}
+</code></pre>
+                        <div class="exemplo onze"><h1>HTML5<br>Maujor</h1></div>
+                    </div>                    
+           
+                    <div class="box">
+<pre><code>
+div { background: #999; }
+h1 { 
+  color: #c8c8c8;
+  text-shadow: -1px -1px white, 
+  1px 1px #444;
+}
+</code></pre>
+                        <div class="exemplo doze"><h1>HTML5<br>Maujor</h1></div>
+                    </div>                    
+            </section>
+        </main>
+	</div> <!-- /.principal -->
+   
+    <div class="rodape">
+        <footer>
+            <small>Site de apoio ao livro HTML5 e CSS3 do Maujor</small>
+        </footer>
+	</div> <!--  /.rodape -->
+
+</div> <!--  /.tudo -->
+</body>
+</html>

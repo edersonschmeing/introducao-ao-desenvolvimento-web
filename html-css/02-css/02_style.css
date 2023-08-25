@@ -1,0 +1,29 @@
+body {
+    margin:0;
+    padding:0; 
+    font-size:20px;
+}
+
+p {
+    width: 400px;
+    text-align: justify;
+    line-height:1;
+    background: #f6f6f6;
+    margin: 20px 80px 100px 40px;
+    border: solid #ccc;
+    border-width: 10px 30px 50px 15px;
+    padding: 35px 50px 20px 0;
+}
+
+/* 
+        margin: 25px 50px 75px 100px;
+        top margin is 25px
+        right margin is 50px
+        bottom margin is 75px
+        left margin is 100px
+
+        margin-top: 10px;
+        margin-bottom: 80px ;       
+        margin-left: 200px;
+        margin-right: 40px;
+        */ 
