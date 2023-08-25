@@ -4,7 +4,7 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 **Professor:** Ederson Schmeing
 
 ### Primeiro bimestre
- - [01 - HTML e CSS](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web-2023-2/tree/main/html_css)
+ - [01 - HTML e CSS](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web-2023-2/tree/main/html-css)
  - [02 - Bootstrap]()
  - [03 - JavaScript]()
 
