@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>HTML5 e CSS3 | Livro do Maujor</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+	<script src="../html5shiv-master/src/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href='../normalize.css'></link>
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.menu-select {
+	float: right;
+	margin-top: -60px;
+}
+.clear { clear: both; }
+body {
+	font: 18px/1.4 arial, sans-serif;
+	color: #333;
+	background: #ccc;
+	}
+#tudo {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 860px;
+	margin: 0 auto;
+	background: #fff;
+	}
+h1, h2, h3, h4, h5, h6 { color: #036; }
+main h1 {margin-top:-25px;}
+.topo_header  {
+	background: #036;
+	padding: 5px 20px;
+}
+.topo_header h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	}
+.topo_header a  {
+	color: #fff;
+	text-decoration: none;
+	}
+.topo_header h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	color: #fff;
+	}
+.principal {
+	width: 100%;
+	padding: 20px 15px;
+	}
+.rodape {
+	background: #036;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;	
+	}
+pre { font-size: 14px;}
+@media (max-width: 1040px) {
+	pre { font-size: 12px;}
+}
+/* formulários */
+input[autofocus] {
+  width: 450px;
+}
+input[type="submit"] {
+  border: none;
+  border-radius: 6px;
+  padding:4px 10px;
+  color:rgb(255,255,255);
+  background:rgb(0,102,153);
+}
+input[type="submit"]:hover {
+  background:rgba(0,102,153, 0.7);
+}
+
+</style>
+</head>
+<body class="home">
+<div id="tudo">
+    <div class="topo">
+        <header class="topo_header">
+            <hgroup>
+                <h1><a href="/">Formulários</a></h1>
+                <h2>Atributos</h2>
+            </hgroup> 
+        </header>
+	</div> <!-- /.topo -->
+    
+    <div class="principal">
+        <main>
+        	<section>
+            	<h1>Atributos para campos de formulário</h1>
+            
+<form>
+    <p><label>maxlength="6": <input type="text" maxlength="6" required></label>
+    <input type="submit" value="OK"></p>
+</form>
+<form>
+    <p><label>minlength="3": <input type="text" minlength="3" required></label>
+    <input type="submit" value="OK"></p>
+</form>
+<form>
+    <p><label>size="4": <input type="text" size="4" required></label>
+    <input type="submit" value="OK"></p>
+</form>
+<form>
+    <p><label>value="HTML5 e CSS3": <input type="text" value="HTML5 e CSS3" required></label>
+</form>
+<form>
+    <p><label>readonly: <input type="text" value="Somente leitura" readonly required></label>
+</form>
+<form>
+    <p><label>disabled: <input type="text" value="Campo desabilitado" disabled required></label>
+</form>
+<form>
+    <p><label>autofocus: <input type="text" value=" O foco deve estar aqui quando a página é carregada" autofocus required></label>
+</form>
+<form>
+    <p><label>multiple: <input type="text" multiple required></label>
+    <input type="submit" value="OK"></p>
+</form>
+<form>
+    <p><label>pattern=[A-Z]{5}: <input type="text" pattern="[A-Z]{5}" required></label>
+    <input type="submit" value="OK"></p>
+</form>
+<form>
+    <p><label>min="27" e max="168": <input type="number" min="27" e max="168" required></label>
+    <input type="submit" value="OK"></p>
+</form>
+<form>
+    <p><label>step="10": <input type="number" min="10" e max="100" step="10" required></label>
+    <input type="submit" value="OK"></p>
+</form>
+<form>
+    <p><label>placeholder: <input type="text" placeholder="Entre seu nome" required></label>
+    <input type="submit" value="OK"></p>
+</form>
+            </section>
+        </main>
+	</div> <!-- /.principal -->
+   
+    <div class="rodape">
+        <footer>
+            <small>Site de apoio ao livro HTML5 e CSS3 do Maujor</small>
+        </footer>
+	</div> <!--  /.rodape -->
+
+</div> <!--  /.tudo -->
+</body>
+</html>

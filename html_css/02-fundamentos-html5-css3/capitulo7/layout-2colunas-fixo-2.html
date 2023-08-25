@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Criação de sites com HTML e CSS | Paulo Silva</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+	<script src="../html5shiv-master/src/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href='../normalize.css'></link>
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clear { clear: both; }
+body {
+	font: 18px/1.4 arial, sans-serif;
+	color: #333;
+	}
+#tudo {
+	width: 960px;
+	margin: 0 auto;
+	}
+.topo_header h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	text-align: right;
+	}
+.topo_header a  {
+	color: #900;
+	text-decoration: none;
+	}
+.topo_header h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	text-align: right;
+	}
+.principal {
+	width: 720px;
+	float: right;
+	}
+.auxiliar {
+	width: 220px;
+	float: left;
+	}
+.rodape {
+	clear: both;
+	height: 25px;
+	}
+</style>
+</head>
+<body class="home">
+<div id="tudo">
+    <div class="topo">
+        <header class="topo_header">
+            <hgroup>
+                <h1><a href="/">Site do Paulo</a></h1>
+                <h2>Site destinado a divulgar o trabalho de Paulo Silva</h2>
+            </hgroup> 
+        </header>
+	</div> <!-- /.topo -->
+    
+    <div class="principal">
+        <main>
+            <h1>Título UM</h1>
+            <section class="principal_secaoum">
+            	<h2>Sub-título um</h2>
+            		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi eleifend, purus quis laoreet faucibus, ante augue malesuada mi, id rhoncus augue lorem eget elit. Ut sollicitudin sodales purus. Phasellus libero felis, blandit nec, commodo ut, imperdiet ut, nibh. Suspendisse potenti. Donec ullamcorper cursus dolor. Duis vitae ipsum. Maecenas dapibus hendrerit diam. Morbi varius, massa id pretium accumsan, nunc lorem congue libero, ut euismod metus libero id nulla. Duis posuere odio sed velit vulputate venenatis. Suspendisse et dui ac metus auctor fringilla. Curabitur interdum augue a pede.</p>
+            	<h2>Sub-título dois</h2>
+            		<p>Curabitur hendrerit erat ut augue. Cras gravida. Mauris consequat aliquam leo. Aenean non tortor id metus aliquet consectetuer. Quisque sodales lectus ac orci. Donec eleifend fringilla mi. Vivamus vel massa. Aenean interdum pellentesque sem.</p>
+            </section>
+        </main>
+	</div> <!-- /.principal -->
+    
+    <div class="auxiliar">
+        <nav class="auxiliar_navegacao">
+            <h2>Menu</h2>
+            <ul>
+                <li><a class="corrente" href="../capitulo7/home.html">home</a></li>
+                <li><a href="../capitulo7/portfolio.html">portfólio</a></li> 
+                <li><a href="../capitulo7/artigos-html.html">artigos HTML</a></li>
+                <li><a href="../capitulo7/artigos-css.html">artigos CSS</a></li>
+                <li><a href="../capitulo7/contato.html">contato</a></li>
+            </ul>
+        </nav> 
+    	<aside class="auxiliar_parceiros">
+        	<ul class="auxiliar_parceiros_textos">
+        		<li><a href="#">Parceiro Um</a></li>
+        		<li><a href="#">Parceiro Dois</a></li>
+        		<li><a href="#">Parceiro Três</a></li>
+        		<li><a href="#">Parceiro Quatro</a></li>
+            </ul>
+        
+        	<div class="auxiliar_parceiros_imagens">
+        		<figure><a href="#"><img src="parceiroA.png" alt="Imagem parceiro A"></a></figure>
+        		<figure><a href="#"><img src="parceiroB.png" alt="Imagem parceiro B"></a></figure>
+        		<figure><a href="#"><img src="parceiroC.png" alt="Imagem parceiro C"></a></figure>
+        		<figure><a href="#"><img src="parceiroD.png" alt="Imagem parceiro D"></a></figure>
+        		<figure><a href="#"><img src="parceiroE.png" alt="Imagem parceiro E"></a></figure>
+            </div>
+        
+        </aside>
+    </div> <!-- /.auxiliar -->
+    
+    <div class="rodape">
+        <footer>
+            <small>Site do Paulo - 2015 &copy; Todos os direitos reservados</small>
+        </footer>
+	</div> <!--  /.rodape -->
+
+</div> <!--  /.tudo -->
+</body>
+</html>

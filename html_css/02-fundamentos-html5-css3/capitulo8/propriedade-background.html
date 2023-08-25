@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>HTML5 e CSS3 | Livro do Maujor</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+	<script src="../html5shiv-master/src/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href='../normalize.css'></link>
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clear { clear: both; }
+body {
+	font: 18px/1.4 arial, sans-serif;
+	color: #333;
+	background: #ccc;
+	}
+#tudo {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 860px;
+	margin: 0 auto;
+	background: #fff;
+	}
+h1, h2, h3, h4, h5, h6 { color: #036; }
+.topo_header  {
+	background: #036;
+	padding: 5px 20px;
+}
+.topo_header h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	}
+.topo_header a  {
+	color: #fff;
+	text-decoration: none;
+	}
+.topo_header h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	color: #fff;
+	}
+.principal {
+	padding: 0 15px;
+	}
+.rodape {
+	background: #036;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;	
+	}
+main { overflow:hidden; }
+main h1 { margin: 15px 0 -20px 0; }
+main aside { 
+	float: right;
+	width: 55%;
+	padding: 10px;
+}
+main section { 
+	float: left;
+	width: 45%;
+	padding-bottom: 10px;
+}
+hr { clear: left; }
+.exemplo {
+	width: 100%;
+	height: 300px;
+	border: 8px dashed black;
+	padding: 30px 50px;
+	text-align: justify;
+}
+legend { color: #600; }
+pre { font-size: 16px;margin-top:-40px;}
+.botao {
+	background: #600;
+	border: none;
+	border-radius: 6px;
+	padding: 5px 20px;
+	color: #fff;
+	margin-top: 15px; 
+	transition: background 1s linear;
+}
+.botao:hover {
+	background: rgba(102,0,0,0.7);
+	transition: background 1s linear;
+}
+pre span {color: #c30;font-weight:bold;}
+.regras {visibility:hidden;}
+</style>
+</head>
+<body class="home">
+<div id="tudo">
+    <div class="topo">
+        <header class="topo_header">
+            <hgroup>
+                <h1><a href="/">CSS - interativo</a></h1>
+                <h2>Maujor</h2>
+            </hgroup> 
+        </header>
+	</div> <!-- /.topo -->
+    
+    <div class="principal">
+        <main>
+            	<h1>Propriedade background das CSS</h1>
+            		<p>Observe e estude, em tempo real, os efeitos da aplicação das 8 propriedades para estilização do fundo em um box. Escolha os valores para as propriedades e visualize o resultado no box com bordas tracejadas.</p>
+            		<hr>
+            
+            <section>
+            
+	<form>	
+<fieldset class="todos-fields">
+	<legend class="leg1">Escolha um valor</legend>	
+		
+        <fieldset>
+		<legend>background-color</legend>	
+			<select name="color">
+			<option selected="selected">transparent</option>
+			<option>red</option>
+			<option>#093</option>
+			<option>rgb(0,153,204)</option>
+			<option>hsla(324, 100%, 50%, 0.6)</option>
+			</select>
+		</fieldset>
+		
+		<fieldset>
+		<legend>background-image</legend>	
+			<select name="image">
+			<option selected="selected">none</option>
+			<option>logo-html5.png</option>
+			<option>logo-css3.png</option>
+			</select>
+		</fieldset>		
+		
+		<fieldset>
+		<legend>background-repeat</legend>	
+  		<select name="repeat">
+			<option selected="selected">repeat</option>
+   		    <option>no-repeat</option>
+			<option>repeat-x</option>
+   		    <option>repeat-y</option>
+			<option>space</option>
+   		    <option>round</option>
+		</select> 
+	  </fieldset>	 
+	  
+      <fieldset>
+		<legend>background-attachment <small>(somente valor scroll padrão)</small></legend>	
+	    <select name="attachment">
+			<option selected="selected">scroll</option>
+        </select>
+	  </fieldset>		
+
+		<fieldset>
+		<legend>background-position</legend>	
+			<select name="position">
+			<option selected="selected">0 0</option>
+			<optgroup label="left"> 
+			<option>left top</option>
+			<option>left center</option>
+			<option>left bottom</option>
+			</optgroup>
+			<optgroup label="center"> 
+			<option>center top</option>
+			<option>center center</option>
+			<option>center right</option>
+			</optgroup>
+			<optgroup label="right"> 
+			<option>right top</option>
+			<option>right center</option>
+			<option>right bottom</option>
+			</optgroup>
+			<optgroup label="uma declaração"> 
+			<option>left</option>
+			<option>center</option>
+			<option>right</option>
+			</optgroup>
+			<optgroup label="pixel"> 
+			<option>-10px -20px</option>
+			<option>150px 10px</option>
+			<option>210px 100px</option>
+			</optgroup>
+			<optgroup label="percentagem"> 
+			<option>50% 10%</option>
+			<option>100% 30%</option>
+			<option>45% 100%</option>
+			</optgroup>
+			</select>
+		</fieldset>
+	
+      <fieldset>
+		<legend>background-clip</legend>	
+	    <select name="clip">
+			<option selected="selected">border-box</option>
+			<option>padding-box</option>
+			<option>content-box</option>
+        </select>
+	  </fieldset>		
+    
+      <fieldset>
+		<legend>background-origin</legend>	
+	    <select name="origin">
+			<option selected="selected">border-box</option>
+			<option>padding-box</option>
+			<option>content-box</option>
+        </select>
+	  </fieldset>		
+    
+      <fieldset>
+		<legend>background-size</legend>	
+	    <select name="size">
+			<option selected="selected">auto</option>
+            <option>100px 80px</option>
+			<option>120px</option>
+			<option>60% 50%</option>
+			<option>contain</option>
+			<option>cover</option>
+        </select>
+	  </fieldset>		
+</fieldset>
+            <input type="button" value="OK" class="botao">
+    </form>    
+            
+            </section>
+			<aside>
+                    <div class="box">
+                        <div class="exemplo">
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi eleifend, purus quis laoreet faucibus, ante augue malesuada mi, id rhoncus augue lorem eget elit. Ut sollicitudin sodales purus. Phasellus libero felis, blandit nec, commodo ut, imperdiet ut, nibh. Suspendisse potenti. Donec ullamcorper cursus dolor. Duis vitae ipsum. Maecenas dapibus hendrerit diam. Morbi varius, massa id pretium accumsan, nunc lorem congue libero, ut euismod metus libero id nulla. Duis posuere odio sed velit vulputate venenatis. Suspendisse et dui ac metus auctor fringilla. Curabitur interdum augue a pede.
+                        </div>
+<div class="regras">
+    <h3>Declarações de estilos escolhidas:</h3>
+<pre>    
+div {background-color: <span class="bkc"></span>;}
+div {background-image: url(<span class="bki"></span>);}
+div {background-repeat: <span class="bkr"></span>;}
+div {background-attachment: <span class="bka"></span>;}
+div {background-position: <span class="bkp"></span>;}
+div {background-clip: <span class="bkcp"></span>;}
+div {background-origin: <span class="bko"></span>;}
+div {background-size: <span class="bks"></span>;}
+</pre>
+    <h3>Declaração abreviada</h3>
+<pre>    
+div { 
+background: url(<span class="bki"></span>) <span class="bkp"></span> /
+  <span class="bks"></span> <span class="bkr"></span> <span class="bka"></span> <span class="bko"></span> 
+  <span class="bkcp"></span> <span class="bkc"></span>   
+}
+</pre>
+
+</div>
+                    </div>
+            </aside>        
+        </main>
+	</div> <!-- /.principal -->
+    
+   
+    <div class="rodape">
+        <footer>
+            <small>Site de apoio ao livro HTML5 e CSS3 do Maujor</small>
+        </footer>
+	</div> <!--  /.rodape -->
+
+</div> <!--  /.tudo -->
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$('.botao').on('click', function(event) {
+event.preventDefault;
+	var bc = $('select[name="color"] option:selected').text();
+	var bi = $('select[name="image"] option:selected').text();
+	var br = $('select[name="repeat"] option:selected').text();
+	var ba = $('select[name="attachment"] option:selected').text();
+	var bp = $('select[name="position"] option:selected').text();
+	var bcp = $('select[name="clip"] option:selected').text();
+	var bo = $('select[name="origin"] option:selected').text();
+	var bs = $('select[name="size"] option:selected').text();
+	
+	var estilos = '';
+	estilos += 'background-color:'+ bc+';';
+	
+	estilos += 'background-image:url('+ bi+');';
+	estilos += 'background-repeat:'+ br+';';
+	estilos += 'background-attachment:'+ ba+';';
+	estilos += 'background-position:'+ bp+';';
+	estilos += 'background-clip:'+ bcp+';';
+	estilos += 'background-origin:'+ bo+';';
+	estilos += 'background-size:'+ bs+';';
+
+$('.exemplo').attr('style', estilos);
+
+	$('.bkc').text(bc);
+	$('.bki').text(bi);
+	$('.bkr').text(br);
+	$('.bka').text(ba);
+	$('.bkp').text(bp);
+	$('.bkcp').text(bcp);
+	$('.bko').text(bo);
+	$('.bks').text(bs);
+	
+	
+$('.regras').css('visibility', 'visible');	
+	
+});
+</script>
+</body>
+</html>

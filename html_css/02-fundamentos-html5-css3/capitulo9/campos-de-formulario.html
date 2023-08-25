@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>HTML5 e CSS3 | Livro do Maujor</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+	<script src="../html5shiv-master/src/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href='../normalize.css'>
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.menu-select {
+	float: right;
+	margin-top: -60px;
+}
+.clear { clear: both; }
+body {
+	font: 18px/1.4 arial, sans-serif;
+	color: #333;
+	background: #ccc;
+	}
+#tudo {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 860px;
+	margin: 0 auto;
+	background: #fff;
+	}
+h1, h2, h3, h4, h5, h6 { color: #036; }
+main h1 {margin-top:-25px;}
+.topo_header  {
+	background: #036;
+	padding: 5px 20px;
+}
+.topo_header h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	}
+.topo_header a  {
+	color: #fff;
+	text-decoration: none;
+	}
+.topo_header h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	color: #fff;
+	}
+.principal {
+	width: 100%;
+	padding: 20px 15px;
+	}
+.rodape {
+	background: #036;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;	
+	}
+pre { font-size: 14px;}
+@media (max-width: 1040px) {
+	pre { font-size: 12px;}
+}
+/* campos de formulários */
+button, select, .bck{
+	display: block;
+	margin-bottom: 25px;
+}
+label[for="msg"]{
+	display: block;
+}
+
+</style>
+</head>
+<body class="home">
+<div id="tudo">
+    <div class="topo">
+        <header class="topo_header">
+            <hgroup>
+                <h1><a href="/">Formulários</a></h1>
+                <h2>Campos</h2>
+            </hgroup> 
+        </header>
+	</div> <!-- /.topo -->
+    
+    <div class="principal">
+        <main>
+        	<section>
+            	<h1>Mais elementos para campos de formulário</h1>
+            
+<form>
+	<button type="button">Meu botão</button>
+    <select>
+        <optgroup label="Frutas">		
+            <option>Abacaxi</option>
+            <option>Banana</option>
+            <option>Laranj </option>
+        </optgroup>
+        <optgroup label="Cores">		
+            <option>Vermelha</option>
+            <option>Verde</option>
+            <option>Azul</option>
+        </optgroup>	
+        <optgroup label="Bairros">		
+            <option>Leme</option>
+            <option>Urca</option>
+        </optgroup>	
+    </select>
+
+<label class="bck">Sexo
+	<input name="sexo" list="sexos">
+		<datalist id="sexos">
+			<option value="Feminino">
+			<option value="Masculino">
+		</datalist>
+</label>
+
+<label for="msg">Sua mensagem:</label>
+<textarea id="msg" rows="6" cols="30"></textarea>
+</form>
+            </section>
+        </main>
+	</div> <!-- /.principal -->
+   
+    <div class="rodape">
+        <footer>
+            <small>Site de apoio ao livro HTML5 e CSS3 do Maujor</small>
+        </footer>
+	</div> <!--  /.rodape -->
+
+</div> <!--  /.tudo -->
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Site do Paulo | interativo-1</title>
+	<meta charset="utf-8">	
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {background: white;color: black;}
+style[contenteditable] {
+  display: block;
+  font: 16px/1.2 monospace;
+  background: #272822;
+  color: #f8f8f3;
+  padding: 20px;
+  overflow: auto;
+  margin: 20px 2% 0 2%;
+  border-radius: 5px;
+  white-space: pre;
+}
+.tudo {width: 100%;}
+style[contenteditable] {
+  width: 30%;
+  float:left;
+}
+.quadro {
+  width: 66%;
+  float: left;
+}
+</style>
+</head>
+<body>
+<div class="tudo">
+<style contenteditable>* { margin: 0; padding: 0; }
+body { font: 18px/1.4 arial, sans-serif; }
+hgroup > h1  {
+	font-size: 36px;
+	margin: 12px 0 12px 0;
+}
+hgroup a  { color: #900; text-decoration: none; }
+h1 ~ h2 {
+	font-size: 27px;
+	margin: 14px 0 14px 0;
+	color: #090;
+}
+nav > ul { margin-left: 50px; }
+nav > ul > li:first-child > a {
+	color: #c60;
+	text-decoration: none;
+}
+nav > ul > li:first-child > a:hover {
+	color: #555;
+	text-decoration: underline;
+}
+nav > ul > li:last-child {
+	font-size: 26px;
+	list-style-type: square;
+}
+nav > ul > li:nth-child(3) { background: #ccc; }
+</style>  
+    <div class="quadro">
+	<header class="topo">
+		<hgroup>
+			<h1><a href="/">Site do Paulo</a></h1>
+ 			<h2>Site destinado a divulgar o trabalho de Paulo Silva</h2>
+		</hgroup> 
+	<nav>
+		<ul>
+			<li><a class="corrente" href="home.html">home</a></li>
+			<li><a href="portfolio.html">portfólio</a></li> 
+			<li><a href="artigos-html.html">artigos HTML</a></li>
+			<li><a href="artigos-css.html">artigos CSS</a></li>
+			<li><a href="contato.html">contato</a></li>
+		</ul>
+	</nav> 
+	</header>
+		<!-- mais conteúdo -->
+	<footer class="rodape"">
+		<!-- conteúdo do rodapé do site -->
+	</footer>	
+	</div>    
+</div>
+</body>
+</html>
