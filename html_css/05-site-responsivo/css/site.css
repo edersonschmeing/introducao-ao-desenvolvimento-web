@@ -120,7 +120,7 @@ em {
 @media only screen and (min-width: 800px) {
 
     main {
-        width: 85%;
+        width: 80%;
         float: right;
         padding-bottom: 4em;
     }
@@ -133,7 +133,7 @@ em {
     }
     
     .navegacao-site {
-        width: 15%;
+        width: 20%;
         float: left;
         position: relative;
         top: 300px;
@@ -144,6 +144,6 @@ em {
         top: 0;
         left: 0;
         height: 300px;
-
+        
     } 
 }
