@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>HTML5 e CSS3 | Livro do Maujor</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+	<script src="../html5shiv-master/src/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href='../normalize.css'></link>
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clear { clear: both; }
+body {
+	font: 18px/1.4 arial, sans-serif;
+	color: #333;
+	background: #ccc;
+	}
+#tudo {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 860px;
+	margin: 0 auto;
+	background: #fff;
+	}
+h1, h2, h3, h4, h5, h6 { color: #036; }
+section h1 {margin-bottom: -20px;}
+.topo_header  {
+	background: #036;
+	padding: 5px 20px;
+}
+.topo_header h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	}
+.topo_header a  {
+	color: #fff;
+	text-decoration: none;
+	}
+.topo_header h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	color: #fff;
+	}
+.principal {
+	width: 100%;
+	padding: 0 15px;
+	}
+.rodape {
+	background: #036;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;	
+	}
+main section { overflow:hidden; }
+.box { 
+	overflow:hidden;
+	float: left;
+	width: 33.3%;
+	padding: 15px;
+}
+hr { clear: left; }
+.exemplo {
+	width: 200px;
+	height: 150px;
+	background-color: #fff;
+	border: 3px solid red;
+}
+pre { font-size: 14px;}
+
+@media (max-width: 1040px) {
+	pre { font-size: 12px;}
+}
+/* gradiente repetido */
+.um {background-image: linear-gradient(to right, black, white 10px, black 20px);}
+.dois {background-image: repeating-linear-gradient(to right, black, white 10px, black 20px);}
+.tres {background-image: radial-gradient(50% 50% ellipse, black, white 10px, black 20px);}
+.quatro {background-image: repeating-radial-gradient(50% 50% ellipse, black, white 10px, black 20px);}
+.cinco {background-image: repeating-linear-gradient(-45deg, black, white 2px, black 5px, white 20px);}
+.seis {background-image: repeating-radial-gradient(100% 50% ellipse, black, white 10px, black 20px);}
+</style>
+</head>
+<body class="home">
+<div id="tudo">
+    <div class="topo">
+        <header class="topo_header">
+            <hgroup>
+                <h1><a href="/">Estilização</a></h1>
+                <h2>Gradiente repetido</h2>
+            </hgroup> 
+        </header>
+	</div> <!-- /.topo -->
+    
+    <div class="principal">
+        <main>
+        	<section>
+            	<h1>Exemplos</h1>
+            
+                    <div class="box">
+<pre><code>div { 
+background-image: 
+linear-gradient(
+  to right, black, white 10px, black 20px
+); 
+}
+
+</code></pre>
+                        <div class="exemplo um"></div>
+                    </div>
+            
+            		<div class="box">
+<pre><code>div { 
+background-image: 
+repeating-linear-gradient(
+ to right, black, white 10px, black 20px
+);
+}
+
+</code></pre>
+                        <div class="exemplo dois"></div>
+                    </div>
+            
+            		<div class="box">
+<pre><code>div { 
+  background-image: 
+  radial-gradient(
+  50% 50% ellipse, black, white 10px, 
+  black 20px
+  ); 
+}</code></pre>
+                        <div class="exemplo tres"></div>
+                    </div>
+                    
+<hr>            
+            		
+                    <div class="box">
+<pre><code>div { 
+background-image: 
+repeating-radial-gradient(
+  50% 50% ellipse, black, white 10px, 
+  black 20px
+);
+}</code></pre>
+                        <div class="exemplo quatro"></div>
+                    </div>
+            		
+            		<div class="box">
+<pre><code>div { 
+background-image: 
+repeating-linear-gradient(
+ -45deg, black, white 2px, black 5px, 
+ white 20px
+);
+}</code></pre>
+                        <div class="exemplo cinco"></div>
+                    </div>
+            
+                    <div class="box">
+<pre><code>div { 
+background-image: 
+repeating-radial-gradient(
+  100% 50% ellipse, black, white 10px, 
+  black 20px
+);
+}</code></pre>
+                        <div class="exemplo seis"></div>
+                    </div>
+                    
+
+            </section>
+        </main>
+	</div> <!-- /.principal -->
+   
+    <div class="rodape">
+        <footer>
+            <small>Site de apoio ao livro HTML5 e CSS3 do Maujor</small>
+        </footer>
+	</div> <!--  /.rodape -->
+
+</div> <!--  /.tudo -->
+</body>
+</html>

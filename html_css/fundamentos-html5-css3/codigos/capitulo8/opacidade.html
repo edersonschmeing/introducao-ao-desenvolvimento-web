@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>HTML5 e CSS3 | Livro do Maujor</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+	<script src="../html5shiv-master/src/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href='../normalize.css'></link>
+<style rel="stylesheet">
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clear { clear: both; }
+body {
+	font: 18px/1.4 arial, sans-serif;
+	color: #333;
+	background: #ccc;
+	}
+#tudo {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 860px;
+	margin: 0 auto;
+	background: #fff;
+	}
+h1, h2, h3, h4, h5, h6 { color: #036; }
+.topo_header  {
+	background: #036;
+	padding: 5px 20px;
+}
+.topo_header h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	}
+.topo_header a  {
+	color: #fff;
+	text-decoration: none;
+	}
+.topo_header h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	color: #fff;
+	}
+.principal {
+	width: 100%;
+	padding: 0 15px;
+	}
+.rodape {
+	background: #036;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;	
+	}
+main section { overflow:hidden; }
+.box { 
+	overflow:hidden;
+	float: left;
+	width: 33.3%;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+hr { clear: left; }
+.exemplo {
+	width: 98%;
+	padding: 8px;
+	height: 200px;
+	background: #000; 
+	color: #f00;
+	border: 10px solid lime;
+}
+pre { font-size: 14px;}
+
+@media (max-width: 1040px) {
+	pre { font-size: 12px;}
+}
+/* opacidadde */
+.um {  
+	opacity: 1;  
+	background-image: url(logo.png); 
+	background-size: contain;
+	background-position: center bottom; 
+	background-repeat: no-repeat; 
+	}
+	.dois { 
+  opacity: 0.7;
+  background-image: url(logo.png);  
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.tres { 
+	opacity: 0.4;  
+	background-image: url(logo.png); 
+	background-size: contain;
+	background-position: center bottom; 
+	background-repeat: no-repeat; 
+}
+</style>
+</head>
+<body class="home">
+<div id="tudo">
+    <div class="topo">
+        <header class="topo_header">
+            <hgroup>
+                <h1><a href="/">Estilização</a></h1>
+                <h2>Opacidade</h2>
+            </hgroup> 
+        </header>
+	</div> <!-- /.topo -->
+    
+    <div class="principal">
+        <main>
+        	<section>
+            	<h1>Exemplos</h1>
+            		
+                    <div class="box">
+<pre><code>div { /* opacidade padrão - opaco */
+  opacity:1;
+  background-image: url(logo.png);  
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+</code></pre>
+                        <div class="exemplo um">Conteúdo textual na cor vermelha dentro do container com fundo preto</div>
+                    </div>
+            
+            		<div class="box">
+<pre><code>div {   
+  opacity: 0.7;
+  background-image: url(logo.png);  
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+</code></pre>
+                        <div class="exemplo dois">Conteúdo textual na cor vermelha dentro do container com fundo preto</div>
+                    </div>
+            
+            		<div class="box">
+<pre><code>div {   
+  opacity: 0.4;  
+  background-image: url(logo.png);  
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat; 
+  }</code></pre>
+                        <div class="exemplo tres">Conteúdo textual na cor vermelha dentro do container com fundo preto</div>
+                    </div>
+             
+            </section>
+        </main>
+	</div> <!-- /.principal -->
+   
+    <div class="rodape">
+        <footer>
+            <small>Site de apoio ao livro HTML5 e CSS3 do Maujor</small>
+        </footer>
+	</div> <!--  /.rodape -->
+
+</div> <!--  /.tudo -->
+</body>
+</html>
