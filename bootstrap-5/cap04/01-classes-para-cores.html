@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+   >
+   
+   <style rel="stylesheet">
+    .cores-padrao code {font-size: 1.1rem; color: inherit;}
+    .cores-padrao [class^=col]:not([class^=col]:last-child) {text-align: center; margin: 0 5px 5px 0; padding: 5px 0; border: 1px solid black;}
+    .cores p {min-width: 20%; text-align: center; font-size: 1.2rem; display: inline-block; margin-right: 10px; border: 1px solid; padding: 0.2rem}
+    @media (max-width: 768px) {
+      .cores p {width: 100%;}
+    }
+   </style>
+
+  </head>
+  <body class="bg-light"> 
+    <header class="container-fluid text-center text-bg-success py-2">
+      <h1>Livro Bootstrap do Maujor</h1>
+      <h2>Capítulo 4 &#8212; Classes para cores</h2>
+    </header>
+    <main class="container bg-white border border-top-0 border-bottom-0 border-secondary py-5">      
+      <div class="row">     
+        <div class="col-12">     
+          <h2 class="text-primary">Onze classes padrão para cores</h2>
+        </div>
+      </div> <!-- row -->
+      <div class="row cores-padrao mx-1 text-center justify-content-center">   
+        <div class="col-md-2 text-bg-primary">
+          <code>*-primary</code><br>     
+          #0d6efd
+        </div>
+        <div class="col-md-2 text-bg-secondary">     
+          <code>*-secondary</code><br>     
+          #6c757d
+        </div>
+        <div class="col-md-2 text-bg-success">     
+          <code>*-success</code><br>     
+          #198754
+        </div>
+        <div class="col-md-2 text-bg-danger">     
+          <code>*-danger</code><br>     
+          #dc3545
+        </div>
+        <div class="col-md-2 text-bg-warning">     
+          <code>*-warning</code><br>     
+          #ffc107
+        </div>
+        <div class="col-md-2 text-bg-info">     
+          <code>*-info</code><br>     
+          #0dcaf0
+        </div>
+        <div class="col-md-2 bg-light">     
+          <code>*-light</code><br>     
+          #f8f9fa
+        </div>
+        <div class="col-md-2 text-bg-dark">     
+          <code>*-dark</code><br>     
+          #212529
+        </div>
+        <div class="col-md-2 text-body">     
+          <code>*-body</code><br>     
+          #212529
+        </div>
+        <div class="col-md-2 text-bg-muted">     
+          <code>*-muted</code><br>     
+          #6c757d
+        </div>
+        <div class="col-md-2 text-bg-white">     
+          <code>*-white</code><br>     
+          #ffffff
+        </div>     
+        <hr class="border border-danger border-2 opacity-100 mt-4">
+      </div> <!-- row -->
+      <div class="row">     
+        <div class="col-12">     
+          <h2 class="text-primary">Onze cores para textos</h2>
+        </div> <!-- col -->
+      </div> <!-- row -->      
+      <div class="row">
+        <div class="col cores">
+          <p class="text-primary">Texto class="text-primary"<br> #0d6efd &#8212; azul</p>
+          <p class="text-secondary">Texto class="text-secondary"<br> #6c757d &#8212; secondary</p>
+          <p class="text-success">Texto class="text-success"<br> #198754 &#8212; verde</p>
+          <p class="text-danger">Texto class="text-danger"<br> #dc3545 &#8212; vermelha</p>
+          <p class="text-warning">Texto class="text-warning"<br> #ffc107 &#8212; amarela</p>
+          <p class="text-info">Texto class="text-info"<br> #0dcaf0 &#8212; azul</p>
+          <p class="text-light bg-dark">Texto class="text-light"<br> #f8f9fa &#8212; light</p>
+          <p class="text-dark">Texto class="text-dark"<br> #212529 &#8212; dark</p>
+          <p class="text-body">Texto class="text-body"<br> #212529 &#8212; body</p>
+          <p class="text-muted">Texto class="text-muted"<br> #6c757d &#8212; muted</p>
+          <p class="text-white bg-dark">Texto class="text-white"<br> #ffffff &#8212; white</p>
+        </div>
+        <div class="col-12"><hr class="border border-danger border-2 opacity-100"></div>
+      </div> <!-- row -->       
+      <div class="row">     
+        <div class="col-12">     
+          <h2 class="text-primary">Nove cores de fundo</h2>
+        </div> <!-- col -->
+      </div> <!-- row -->      
+      <div class="row">
+        <div class="col cores">
+          <p class="bg-primary">Fundo class="bg-primary"<br> #0d6efd &#8212; azul</p>
+          <p class="bg-secondary">Fundo class="bg-secondary"<br> #6c757d &#8212; secondary</p>
+          <p class="bg-success">Fundo class="bg-success"<br> #198754 &#8212; verde</p>
+          <p class="bg-danger">Fundo class="bg-danger"<br> #dc3545 &#8212; vermelha</p>
+          <p class="bg-warning">Fundo class="bg-warning"<br> #ffc107 &#8212; amarela</p>
+          <p class="bg-info">Fundo class="bg-info"<br> #0dcaf0 &#8212; azul</p>
+          <p class="bg-light">Fundo class="bg-light"<br> #f8f9fa &#8212; light</p>
+          <p class="bg-dark text-white">Fundo class="bg-dark"<br> #212529 &#8212; dark</p>
+          <p class="bg-white">Fundo class="bg-white"<br> #ffffff &#8212; white</p>
+        </div>
+        <div class="col-12"><hr class="border border-danger border-2 opacity-100"></div>
+      </div> <!-- row -->          
+      <div class="row">     
+        <div class="col-12">     
+          <h2 class="text-primary">Oito cores de texto e fundo com contraste</h2>
+        </div> <!-- col -->
+      </div> <!-- row -->      
+      <div class="row">
+        <div class="col cores">
+          <p class="text-bg-primary">Texto e fundo class="text-bg-primary"<br> #ffffff/#0d6efd &#8212; branca/azul</p>
+          <p class="text-bg-secondary">Texto e fundo class="text-bg-secondary"<br> #ffffff/#6c757d &#8212; branca/secondary</p>
+          <p class="text-bg-success">Texto e fundo class="text-bg-success"<br> #ffffff/#198754 &#8212; branca/verde</p>
+          <p class="text-bg-danger">Texto e fundo class="text-bg-danger"<br> #ffffff/#dc3545 &#8212; branca/vermelha</p>
+          <p class="text-bg-warning">Texto e fundo class="text-bg-warning"<br> #212529/#ffc107 &#8212; dark/amarela</p>
+          <p class="text-bg-info">Texto e fundo class="text-bg-info"<br> #212529/#0dcaf0 &#8212; dark/azul</p>
+          <p class="text-bg-light">Texto e fundo class="text-bg-light"<br> #212529/#f8f9fa &#8212; dark/light</p>
+          <p class="text-bg-dark">Texto e fundo class="text-bg-dark"<br> #ffffff/#212529 &#8212; branca/dark</p>
+        </div>
+        <div class="col-12"><hr class="border border-danger border-2 opacity-100"></div>
+      </div> <!-- row -->
+      <div class="row">     
+        <div class="col-12">     
+          <h2 class="text-primary">Oito gradientes na cor de fundo</h2>
+        </div> <!-- col -->
+      </div> <!-- row -->      
+      <div class="row">
+        <div class="col cores">
+          <p class="bg-primary bg-gradient">Texto"<br> #ffffff/#0d6efd &#8212; branca/azul</p>
+          <p class="bg-secondary bg-gradient">Texto"<br> #ffffff/#6c757d &#8212; branca/secondary</p>
+          <p class="bg-success bg-gradient">Texto"<br> #ffffff/#198754 &#8212; branca/verde</p>
+          <p class="bg-danger bg-gradient">Texto"<br> #ffffff/#dc3545 &#8212; branca/vermelha</p>
+          <p class="bg-warning bg-gradient">Texto"<br> #212529/#ffc107 &#8212; dark/amarela</p>
+          <p class="bg-info bg-gradient">Texto"<br> #212529/#0dcaf0 &#8212; dark/azul</p>
+          <p class="bg-light bg-gradient">Texto"<br> #212529/#f8f9fa &#8212; dark/light</p>
+          <p class="bg-dark bg-gradient">Texto"<br> #ffffff/#212529 &#8212; branca/dark</p>
+        </div>
+        <div class="col-12"><hr class="border border-danger border-2 opacity-100"></div>
+      </div> <!-- row -->    
+      <div class="row">     
+        <div class="col-12">     
+          <h2 class="text-primary">Oito cores para links</h2>
+        </div> <!-- col -->
+      </div> <!-- row -->      
+      <div class="row">
+        <div class="col cores">
+          <a href="#" class="link-primary me-3">Link cor Primary</a>
+          <a href="#" class="link-secondary me-3">Link cor Secondary</a>
+          <a href="#" class="link-success me-3">Link cor Success</a>
+          <a href="#" class="link-danger me-3">Link cor Danger</a>
+          <a href="#" class="link-warning me-3">Link cor Warning</a>
+          <a href="#" class="link-info me-3">Link cor Info</a>
+          <a href="#" class="link-light bg-dark me-3">Link cor Light</a>
+          <a href="#" class="link-dark me-3">Link cor Dark</a>
+          <p class="lead border-0">Nota: Foi definida uma cor de fundo escura no link cor Light</p> 
+        </div>
+        <div class="col-12"><hr class="border border-danger border-2 opacity-100"></div>
+      </div> <!-- row -->      
+    </main> 
+    <footer class="container-fluid text-center text-bg-success py-2">
+      <small>&copy; Todos os direitos reservados</small>
+    </footer>
+    <!--
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    -->
+  </body>
+</html>

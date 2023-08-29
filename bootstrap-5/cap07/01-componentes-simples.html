@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+   >
+   <style rel="stylesheet">
+    code {font-size: 1.1rem; background: #ffb;}
+   </style>
+  </head>
+  <body class="bg-light"> 
+    <header class="container-fluid text-center text-bg-success py-2">
+      <h1>Livro Bootstrap do Maujor</h1>
+      <h2>Capítulo 7 &#8212; Componentes simples</h2>
+    </header>
+    <main class="container-fluid bg-white border border-top-0 border-bottom-0 border-secondary py-5">      
+      <div class="row">
+        <h2 class="text-primary">Botões</h2>
+        <h3>Tamanho normal</h3>
+        <div class="col-12 col-lg-4">
+          <button type="button" class="mb-3 btn btn-primary">Primary</button>
+          <button type="button" class="mb-3 btn btn-link">Botão link</button>
+          <a class="mb-3 btn btn-success" href="#" role="button">Success</a>
+          <input class="mb-3 btn btn-info" type="submit" value="Submit">
+          <input class="mb-3 btn btn-secondary" type="reset" value="Reset">
+        </div> <!-- col -->
+        <div class="col-12 col-lg-4">
+          <button type="button" class="mb-3 btn btn-outline-danger">
+            Botão outline
+          </button>                    
+          <button type="button" class="mb-3 btn btn-outline-warning">
+            Botão outline
+          </button>                    
+          <button type="button" class="mb-3 btn btn-outline-dark">
+            Botão outline
+          </button>                    
+        </div> <!-- col -->
+        <div class="col-12 col-lg-4">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">Botão 1</button>
+            <button type="button" class="btn btn-success">Botão 2</button>
+            <button type="button" class="btn btn-info">Botão 3</button>
+          </div>          
+        </div> <!-- col -->
+        <hr class="my-4">
+        <h3>Tamanho grande <code>.btn-lg</code></h3>
+        <div class="col-12 col-lg-4">
+          <button type="button" class="mb-3 btn-lg btn btn-primary">Primary</button>
+          <button type="button" class="mb-3 btn-lg btn btn-link">Botão link</button>
+          <a class="mb-3 btn-lg btn btn-success" href="#" role="button">Success</a>
+          <input class="mb-3 btn-lg btn btn-info" type="submit" value="Submit">
+          <input class="mb-3 btn-lg btn btn-secondary" type="reset" value="Reset">
+        </div> <!-- col -->
+        <div class="col-12 col-lg-4">
+          <button type="button" class="mb-3 btn-lg btn btn-outline-danger">
+            Botão outline
+          </button>                    
+          <button type="button" class="mb-3 btn-lg btn btn-outline-warning">
+            Botão outline
+          </button>                    
+          <button type="button" class="mb-3 btn-lg btn btn-outline-dark">
+            Botão outline
+          </button>                    
+        </div> <!-- col -->
+        <div class="col-12 col-lg-4">
+          <div class="btn-group">
+            <button type="button" class="btn btn-lg btn-primary">Botão 1</button>
+            <button type="button" class="btn btn-lg btn-success">Botão 2</button>
+            <button type="button" class="btn btn-lg btn-info">Botão 3</button>
+          </div>          
+        </div> <!-- col -->
+        <hr class="my-4">
+        <h3>Tamanho pequeno <code>.btn-sm</code></h3>
+        <div class="col-12 col-lg-4">
+          <button type="button" class="mb-3 btn-sm btn btn-primary">Primary</button>
+          <button type="button" class="mb-3 btn-sm btn btn-link">Botão link</button>
+          <a class="mb-3 btn-sm btn btn-success" href="#" role="button">Success</a>
+          <input class="mb-3 btn-sm btn btn-info" type="submit" value="Submit">
+          <input class="mb-3 btn-sm btn btn-secondary" type="reset" value="Reset">
+        </div> <!-- col -->
+        <div class="col-12 col-lg-4">
+          <button type="button" class="mb-3 btn-sm btn btn-outline-danger">
+            Botão outline
+          </button>                    
+          <button type="button" class="mb-3 btn-sm btn btn-outline-warning">
+            Botão outline
+          </button>                    
+          <button type="button" class="mb-3 btn-sm btn btn-outline-dark">
+            Botão outline
+          </button>                    
+        </div> <!-- col -->
+        <div class="col-12 col-lg-4">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-primary">Botão 1</button>
+            <button type="button" class="btn btn-sm btn-success">Botão 2</button>
+            <button type="button" class="btn btn-sm btn-info">Botão 3</button>
+          </div>          
+        </div> <!-- col -->
+      </div> <!-- row -->          
+      <hr class="border border-danger border-2 opacity-75">      
+      <div class="row">
+        <div class="col-lg-3">
+          <h2 class="text-primary">Dropdown</h2>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Botão dropdown
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Item 1</a></li>
+              <li><a class="dropdown-item" href="#">Item 2</a></li>
+              <li><a class="dropdown-item" href="#">Item 3</a></li>
+            </ul>
+          </div>
+        </div> <!-- .col -->         
+        <div class="col-lg-3">
+          <h2 class="text-primary">Alert</h2>
+          <div class="col">
+            <div class="alert alert-warning" role="alert">
+              Tem certeza que deseja fechar sem salvar?
+            </div>
+          </div>
+        </div> <!-- .col -->         
+        <div class="col-lg-3">
+          <h2 class="text-primary">Badge</h2>
+          <h1 class="h5">Matéria nova <span class="badge bg-secondary">NEW</span></h1>
+          <button type="button" class="btn btn-warning">
+            Mensagens <span class="badge text-bg-light">7</span>
+          </button>
+        </div> <!-- .col -->               
+        <div class="col-lg-3">
+          <h2 class="text-primary">Breadcrumb</h2>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Componentes</a></li>
+            <li class="breadcrumb-item active">Button</li>
+          </ol>          
+        </div> <!-- .col -->      
+      </div> <!-- row -->          
+      <hr class="border border-danger border-2 opacity-75">    
+      <div class="row">
+        <div class="col-lg-3">
+          <h2 class="text-primary">Pagination</h2>
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>          
+        </div> <!-- col -->
+        <div class="col-lg-3">
+          <h2 class="text-primary">Progress</h2>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%"></div>
+          </div>          
+        </div> <!-- col -->
+        <div class="col-lg-3">
+          <h2 class="text-primary">Spinner</h2>
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+          <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+          <div class="spinner-border text-dark" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+          <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+          <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+          <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+          <br>
+          <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>          
+          <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>          
+          <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>          
+          <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>          
+          <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>          
+          <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>          
+        </div> <!-- col -->
+        <div class="col-lg-3">
+          <h2 class="text-primary">Popover</h2>
+          <button type="button" class="btn btn-lg btn-danger" 
+          data-bs-toggle="popover" data-bs-title="Título do popover" 
+          data-bs-content="Conteúdo a exibir no Popover">
+            Botao
+          </button>
+      </div> <!-- row -->          
+    </main> 
+    <footer class="container-fluid text-center text-bg-success py-2">
+      <small>&copy; Todos os direitos reservados</small>
+    </footer>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+  </body>
+</html>
+
+

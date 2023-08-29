@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+   >
+    <style rel="stylesheet"></style>
+  </head>
+  <body class="bg-light">
+    <header class="container-fluid text-center text-bg-success py-2">
+      <h1>Livro Bootstrap do Maujor</h1>
+      <h2>Capítulo 8 &#8212; Componentes complexos</h2>
+    </header>
+    <main class="container bg-white border border-top-0 border-bottom-0 border-secondary py-5"
+    >
+      <div class="row">
+        <h2 class="text-primary">Componente Modal</h2>
+        <div class="col">
+          <button type="button" class="btn btn-primary mb-4 mb-lg-0" data-bs-toggle="modal" data-bs-target="#modalUm">
+            Modal simples
+          </button>
+          <div class="modal fade" id="modalUm" tabindex="-1" aria-labelledby="modalUmLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalUmLabel">Título da Modal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Conteúdo da modal</h5>
+                  <p>Essa modal <b class="text-danger">fecha</b> quando se clica fora dela</p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Gravar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary mb-4 mb-lg-0" data-bs-toggle="modal" data-bs-target="#modalDois">
+            Backdrop static
+          </button>
+          <div class="modal fade" id="modalDois" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalDoisLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalDoisLabel">Título da Modal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Conteúdo da modal</h5>
+                  <p>Essa modal <b class="text-danger">não fecha</b> quando se clica fora dela</p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Gravar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary mb-4 mb-lg-0" data-bs-toggle="modal" data-bs-target="#modalTres">
+            Modal centrada
+          </button>
+          <div class="modal fade" id="modalTres" tabindex="-1" aria-labelledby="modalTresLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalTresLabel">Título da Modal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Conteúdo da modal</h5>
+                  <p>Essa modal é <b class="text-danger">centrada</b> na tela</p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Gravar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary mb-4 mb-lg-0" data-bs-toggle="modal" data-bs-target="#modalXl">
+            Modal XL
+          </button>
+          <div class="modal fade" id="modalXl" tabindex="-1" aria-labelledby="modalXlLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalXlLabel">Título da Modal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Conteúdo da modal</h5>
+                  <p>Essa modal usa a classe <code>.modal-xl</code> no contêiner <code>.modal-dialog</code> e tem largura de 1140px em viewport maior que 1200px</p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Gravar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary mb-4 mb-lg-0" data-bs-toggle="modal" data-bs-target="#modalFullScreen">
+            Modal full screen
+          </button>
+          <div class="modal fade" id="modalFullScreen" tabindex="-1" aria-labelledby="modalfullScreenLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-lg-down">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalfullScreenLabel">Título da Modal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Conteúdo da modal</h5>
+                  <p>Essa modal usa a classe <code>.modal-fullscreen-lg-down</code> no contêiner <code>.modal-dialog</code> e é do tipo "full screen" em viewport menor 992px</p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Gravar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary mb-4 mb-lg-0" data-bs-toggle="modal" data-bs-target="#modalSemFade">
+            Modal sem efeito fade
+          </button>
+          <div class="modal" id="modalSemFade" tabindex="-1" aria-labelledby="modalSemFadeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalSemFadeLabel">Título da Modal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Conteúdo da modal</h5>
+                  <p>Essa modal <b class="text-danger">não usa</b> a classe <code>.fade</code></p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Gravar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- .col -->
+      </div><!-- .row -->
+    </main>
+    <footer class="container-fluid text-center text-bg-success py-2">
+      <small>&copy; Todos os direitos reservados</small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

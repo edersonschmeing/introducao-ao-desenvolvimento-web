@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+   >
+   <link href="../bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style rel="stylesheet">
+    </style>
+  </head>
+  <body class="bg-light">
+    <header class="container-fluid text-center text-bg-success py-2">
+      <h1>Livro Bootstrap do Maujor</h1>
+      <h2>Capítulo 9 &#8212; Tabelas</h2>
+    </header>
+    <main class="container-fluid bg-white border border-top-0 border-bottom-0 border-secondary py-5"
+    >
+      <div class="row">
+        <div class="col">
+          <h2 class="text-primary">Tabelas</h2>
+        </div> 
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <h3>Tabela básica</h3>
+          <table class="table">
+            <!-- <caption>Tabela de cursos, professores e local</caption> -->
+            <!-- <h3>Tabela zebrada</h3> -->          
+            <!-- <table class="table table-striped"> -->
+            <!-- <h3>Tabela colorida</h3> -->          
+            <!-- <table class="table table-{cor padrao}"> -->
+            <!-- <h3>Tabela colunas zebradas</h3> -->          
+            <!-- <table class="table table-striped-columns"> -->
+            <!-- <h3>Tabela com efeito hover</h3> -->          
+            <!-- <table class="table table-hover"> -->
+            <!-- <h3>Tabela com bordas</h3> -->          
+            <!-- <table class="table table-bordered"> -->
+              <!-- <h3>Tabela com bordas coloridas</h3> -->          
+              <!-- <table class="table table-bordered border-{cor padrao}"> -->
+              <!-- <h3>Tabela sem bordas</h3> -->          
+              <!-- <table class="table table-borderless"> -->
+              <!-- <h3>Tabela com linhas compactas</h3> -->          
+              <!-- <table class="table table-sm"> -->
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Curso</th>
+                <th scope="col">Professor</th>
+                <th scope="col">Sala</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Remover</th>
+              </tr>
+            </thead>
+            <!-- <tbody  class="table-group-divider"> -->
+            <tbody>
+              <tr>
+                <th scope="row">345</th>
+                <td>HTML 5</td>
+                <td>Guilherme Fonseca</td>
+                <td>205</td>
+                <td><a href="#"><span class="bi bi-pencil-square"></span></a></td>
+                <td><a href="#"><span class="bi bi-trash3-fill"></span></a></td>
+              </tr>
+              <tr>
+                <th scope="row">122</th>
+                <td>CSS 3</td>
+                <td>Rogério Diniz</td>
+                <td>120</td>
+                <td><a href="#"><span class="bi bi-pencil-square"></span></a></td>
+                <td><a href="#"><span class="bi bi-trash3-fill"></span></a></td>
+              </tr>
+              <tr>
+                <th scope="row">298</th>
+                <td>ES 6</td>
+                <td>Daniela Cysne</td>
+                <td>260</td>
+                <td><a href="#"><span class="bi bi-pencil-square"></span></a></td>
+                <td><a href="#"><span class="bi bi-trash3-fill"></span></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- .col -->
+        <div class="col-lg-4 offset-lg-2">
+          <h3>Tabela responsiva</h3>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Titulo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                  <td>Célula</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- .table-responsive -->
+        </div> <!-- .col -->
+      </div><!-- .row -->
+    </main>
+    <footer class="container-fluid text-center text-bg-success py-2">
+      <small>&copy; Todos os direitos reservados</small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+   >
+   <!-- <link href="../bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> -->
+    <style rel="stylesheet">.active {font-weight: 700; color: black;background: #e5835d;}</style>
+  </head>
+  <body class="bg-light">
+    <header class="container-fluid text-center text-bg-success py-2">
+      <h1>Livro Bootstrap do Maujor</h1>
+      <h2>Capítulo 8 &#8212; Componentes complexos</h2>
+    </header>
+    <main class="container-fluid bg-white border border-top-0 border-bottom-0 border-secondary py-5"
+    >
+      <div class="row">
+        <div class="col">
+          <h2 class="text-primary">Scrollspy &#8212; custom</h2>
+        </div> 
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-2 col-xl-1">    
+          <div id="custom" class="d-flex flex-column gap-2 text-center">
+            <a class="p-1 rounded" href="#secao1">Seção 1</a>
+            <a class="p-1 rounded" href="#secao2">Seção 2</a>
+            <a class="p-1 rounded" href="#secao3">Seção 3</a>
+            <a class="p-1 rounded" href="#secao4">Seção 4</a>
+            <a class="p-1 rounded" href="#secao5">Seção 5</a>
+         </div>
+        </div>
+        <div class="col-md-8 col-xl-4">
+          <div data-bs-spy="scroll" data-bs-target="#custom" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" style="height: 300px; overflow-y: auto;">
+            <h4 id="secao1">Seção 1</h4>
+            <p>Parágrafo - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, odit laboriosam. Maxime, corrupti suscipit nulla laborum, accusantium fuga dolores obcaecati est soluta doloremque, aperiam architecto alias repellendus ad ipsam necessitatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequuntur laboriosam adipisci assumenda obcaecati laudantium quo aspernatur omnis hic sit consectetur delectus voluptate nostrum voluptatum amet, quos non dolorum. Blanditiis?</p>
+            <h4 id="secao2">Seção 2</h4>
+            <p>Parágrafo - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, odit laboriosam. Maxime, corrupti suscipit nulla laborum, accusantium fuga dolores obcaecati est soluta doloremque, aperiam architecto alias repellendus ad ipsam necessitatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequuntur laboriosam adipisci assumenda obcaecati laudantium quo aspernatur omnis hic sit consectetur delectus voluptate nostrum voluptatum amet, quos non dolorum. Blanditiis?</p>
+            <h4 id="secao3">Seção 3</h4>
+            <p>Parágrafo - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, odit laboriosam. Maxime, corrupti suscipit nulla laborum, accusantium fuga dolores obcaecati est soluta doloremque, aperiam architecto alias repellendus ad ipsam necessitatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequuntur laboriosam adipisci assumenda obcaecati laudantium quo aspernatur omnis hic sit consectetur delectus voluptate nostrum voluptatum amet, quos non dolorum. Blanditiis?</p>
+            <h4 id="secao4">Seção 4</h4>
+            <p>Parágrafo - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, odit laboriosam. Maxime, corrupti suscipit nulla laborum, accusantium fuga dolores obcaecati est soluta doloremque, aperiam architecto alias repellendus ad ipsam necessitatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequuntur laboriosam adipisci assumenda obcaecati laudantium quo aspernatur omnis hic sit consectetur delectus voluptate nostrum voluptatum amet, quos non dolorum. Blanditiis?</p>
+            <h4 id="secao5">Seção 5</h4>
+            <p>Parágrafo - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, odit laboriosam. Maxime, corrupti suscipit nulla laborum, accusantium fuga dolores obcaecati est soluta doloremque, aperiam architecto alias repellendus ad ipsam necessitatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequuntur laboriosam adipisci assumenda obcaecati laudantium quo aspernatur omnis hic sit consectetur delectus voluptate nostrum voluptatum amet, quos non dolorum. Blanditiis?</p>
+          </div>
+        </div> <!-- .col -->
+      </div><!-- .row -->
+    </main>
+    <footer class="container-fluid text-center text-bg-success py-2">
+      <small>&copy; Todos os direitos reservados</small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+   >
+    <style rel="stylesheet"></style>
+  </head>
+  <body class="bg-light d-flex flex-column">
+    <header class="container-fluid text-center text-bg-success py-2">
+      <h1>Livro Bootstrap do Maujor</h1>
+      <h2>Capítulo 8 &#8212; Componentes complexos</h2>
+    </header>
+    <main class="container-fluid bg-white border border-top-0 border-bottom-0 border-secondary py-5"
+    >
+      <div class="row">
+        <div class="col">
+          <h2 class="text-primary">Carousel</h2>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-xxl-3 col-xl-4 col-sm-6">
+          <p>Padrão</p>
+          <div id="carouselPadrao" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="g1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="g2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="g3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPadrao" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPadrao" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-sm-6">
+          <p>Indicadores</p>
+          <div id="carouselIndicadores" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselIndicadores" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselIndicadores" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselIndicadores" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="g4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="g5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="g6.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicadores" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>          
+        <div class="col-xxl-3 col-xl-4 col-sm-6">
+          <p>Caption</p>
+          <div id="carouselCaptions" class="carousel carousel-dark  carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="g7.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Curso de Medicina da Dor</h5>
+                  <p>Tem como objetivo capacitar e ensinar médicos a utilizar técnicas de tratamento da dor.<p>                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="g8.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Curso de Cuidados Paliativos</h5>
+                  <p>Para profissionais de saúde que lidem com pacientes portadores de doenças graves.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="g9.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Curso de Monitorização Hemodinâmica</h5>
+              <p>Formação do Médico Anestesiologista em monitorização hemodinâmica.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div> <!-- .col -->
+
+        <div class="col-xxl-3 col-xl-4 col-sm-6">
+          <p>HTML</p>
+          <div id="carouselHtml" class="carousel border rounded py-2 px-5 carousel-dark slide" data-bs-ride="carousel" data-bs-interval="1500" style="height: 19rem; overflow-y: auto;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h5 class="mb-4 text-center text-primary">Capacitação em Pesquisa Clínica UHG</h5>
+                <p>O curso foi realizado com carga horária de 10h teóricas e 10 horas práticas complementando a formação do Médico Anestesiologista e Intensivista em conceitos e aplicações práticas da monitorização hemodinâmica.</p>
+                Lorem ipsum dolor sit amet. Ea facere perferendis aut labore dolorum aut voluptate temporibus sit amet molestiae est harum laborum rem suscipit maiores ut ipsam harum. Aut repellendus quia et nostrum quis sit voluptatem commodi a numquam dolor in velit voluptatem.</p>
+                <p>In ipsa voluptatem a autem sunt et praesentium enim ut libero laboriosam. Est cumque neque eum distinctio similique in laudantium voluptate eum veritatis labore est iusto asperiores non mollitia pariatur. 33 nesciunt velit sed voluptas debitis At rerum rerum rem autem molestiae ut ullam soluta. Hic itaque voluptatem et assumenda itaque in repellat itaque ex nihil voluptas.</p>
+                <p>Qui dolor illo ex illo expedita ea aspernatur voluptas et veniam modi aut soluta aliquam. Sed nihil illo qui labore dolores et veritatis harum rem vitae placeat sed modi aliquam sit porro aperiam!</p>
+              </div>
+              <div class="carousel-item">
+                <h5 class="mb-4 text-center text-success">Simulação Realística em Monitorização Hemodinâmica</h5>
+                <p class="card-text">O curso foi realizado com carga horária de 10h teóricas e 10 horas práticas complementando a formação do Médico Anestesiologista e Intensivista em conceitos e aplicações práticas da monitorização hemodinâmica.</p>
+                <p>In ipsa voluptatem a autem sunt et praesentium enim ut libero laboriosam. Est cumque neque eum distinctio similique in laudantium voluptate eum veritatis labore est iusto asperiores non mollitia pariatur. 33 nesciunt velit sed voluptas debitis At rerum rerum rem autem molestiae ut ullam soluta. Hic itaque voluptatem et assumenda itaque in repellat itaque ex nihil voluptas.</p>
+                <p>Qui dolor illo ex illo expedita ea aspernatur voluptas et veniam modi aut soluta aliquam. Sed nihil illo qui labore dolores et veritatis harum rem vitae placeat sed modi aliquam sit porro aperiam!</p>
+              </div>
+              <div class="carousel-item">
+                <h5 class="mb-4 text-center text-danger">Curso Teórico-Prático em Medicina Intervencionista da Dor</h5>
+              <p>Este treinamento tem como objetivo capacitar e ensinar médicos a utilizar técnicas intervencionistas de tratamento da dor, baseadas em infiltrações e bloqueios guiados por raio-x e ultrassonografia, com treinamento em peças anatômicas e modelos vivos. Este treinamento tem como objetivo capacitar e ensinar médicos a utilizar técnicas intervencionistas de tratamento da dor, baseadas em infiltrações e bloqueios guiados por raio-x e ultrassonografia, com treinamento em peças anatômicas e modelos vivos. Este treinamento tem como objetivo capacitar e ensinar médicos a utilizar técnicas intervencionistas de tratamento da dor, baseadas em infiltrações e bloqueios guiados por raio-x e ultrassonografia, com treinamento em peças anatômicas e modelos vivos.</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHtml" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHtml" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div> <!-- .col -->
+      </div><!-- .row -->
+    </main>
+    <footer class="container-fluid text-center text-bg-success py-2  align-self-end">
+      <small>&copy; Todos os direitos reservados</small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

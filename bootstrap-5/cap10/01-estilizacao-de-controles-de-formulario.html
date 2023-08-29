@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+   >
+   <link href="../bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style rel="stylesheet">
+    </style>
+  </head>
+  <body class="bg-light">
+    <header class="container-fluid text-center text-bg-success py-2">
+      <h1>Livro Bootstrap do Maujor</h1>
+      <h2>Capítulo 10 &#8212; Formulários</h2>
+    </header>
+    <main class="container-fluid bg-white border border-top-0 border-bottom-0 border-secondary py-5"
+    >
+      <div class="row">
+        <div class="col">
+          <h2 class="text-primary">Formulários</h2>
+          <p>Estilização padrão de controles</p>
+        </div> 
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">
+          <h3 class="fs-5">input e textarea</h3>
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+          <label for="msg" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="msg" rows="3"></textarea>
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">
+          <h3 class="fs-5">select</h3>
+          <select class="form-select">
+            <option selected>Escolha um curso</option>
+            <option value="html5">HTML 5</option>
+            <option value="css3">CSS 3</option>
+            <option value="es6">ES 6</option>
+          </select>
+          <h3 class="fs-5 mb-0">select multiple</h3>
+          <label for="cursos" class="form-label">Selecione um curso</label>
+          <select class="form-select" id="cursos" multiple>
+            <option value="html5">HTML 5</option>
+            <option value="css3">CSS 3</option>
+            <option value="es6">ES 6</option>
+          </select>
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-3 py-3 my-1 border border-5">         
+          <h3 class="fs-5">checkbox na vertical</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="default">
+            <label class="form-check-label" for="default">
+              Estado default
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="marcado" checked>
+            <label class="form-check-label" for="marcado">
+              Estado marcado
+            </label>
+          </div>
+          <h3 class="fs-5 mt-5">checkbox na horizontal</h3>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="default">
+            <label class="form-check-label" for="default">
+              Estado default
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="marcado" checked>
+            <label class="form-check-label" for="marcado">
+              Estado marcado
+            </label>
+          </div>      
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-3 py-3 my-1 border border-5">         
+          <h3 class="fs-5">radio na vertical</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="xpto" value="" id="default">
+            <label class="form-check-label" for="default">
+              Estado default
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="xpto" value="" id="marcado" checked>
+            <label class="form-check-label" for="marcado">
+              Estado marcado
+            </label>
+          </div>
+          <h3 class="fs-5 mt-5">radio na horizontal</h3>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="xpto1" value="" id="default">
+            <label class="form-check-label" for="default">
+              Estado default
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="xpto1" value="" id="marcado" checked>
+            <label class="form-check-label" for="marcado">
+              Estado marcado
+            </label>
+          </div>      
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">         
+          <h3 class="fs-5">botão radio toggle</h3>
+          <div class="form-check">
+            <input type="checkbox" class="btn-check" id="xpto2" autocomplete="off">
+            <label class="btn btn-warning" for="xpto2">Botão toggle</label>
+          </div>
+          <div class="form-check mt-4">
+            <input type="checkbox" class="btn-check" id="xpto3" autocomplete="off">
+            <label class="btn btn-outline-dark " for="xpto3">Botão toggle</label>
+          </div>
+          <h3 class="fs-5 mt-4">botão radio switch</h3>
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="xpto31">on/off</label>
+            <input type="checkbox" class="form-check-input" id="xpto31">
+          </div>
+        </div> <!-- .col -->
+      </div><!-- .row -->
+      
+      <div class="row mt-3">
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">
+          <h3 class="fs-5">altura de input</h3>
+          <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+          <input class="form-control my-3" type="text"placeholder="Altura padrão">
+          <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">
+          <h3 class="fs-5">color picker</h3>
+          <label for="xpto5" class="form-label">Escolha uma cor</label>
+          <input type="color" class="form-control form-control-color" id="xpto5" value="#ff00ff" title="Escolha uma cor">
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">
+          <h3 class="fs-5">datalist</h3>
+          <label for="xpto6" class="form-label">Escolha um curso</label>
+          <input class="form-control" list="lista" id="xpto6" placeholder="Digite sua busca...">
+          <datalist id="lista">
+            <option value="HTML 5">
+            <option value="CSS 3">
+            <option value="ES 6">
+            <option value="React">
+            <option value="Vue">
+          </datalist>        
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">
+          <h3 class="fs-5">range</h3>
+          <label for="xpto7" class="form-label">Sua escolha</label>
+          <input type="range" class="form-range" id="xpto7">        
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">
+          <h3 class="fs-5">rótulo flutuante</h3>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="xpto8" placeholder="nome@dominio.com">
+            <label for="xpto8">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="xpto9" placeholder="Senha">
+            <label for="xpto9">Senha</label>
+          </div>        
+        </div> <!-- .col -->
+        <div class="col-md-6 col-lg-4 col-xxl-2 py-3 my-1 border border-5">
+          <h3 class="fs-5">input agrupado</h3>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="xpto10"> &#128515;</span>
+            <input type="text" class="form-control" placeholder="emoji">
+          </div>          
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="combustível">
+            <span class="input-group-text" id="xpto11"><span class="bi bi-fuel-pump-fill"></span></span>
+          </div>        
+        </div> <!-- .col -->
+      </div><!-- .row -->
+    </main>
+    <footer class="container-fluid text-center text-bg-success py-2">
+      <small>&copy; Todos os direitos reservados</small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

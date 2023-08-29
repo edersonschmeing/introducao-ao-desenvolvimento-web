@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+   >
+   <style rel="stylesheet">
+    code {font-size: 1.1rem; background: #ffb;}
+   </style>
+  </head>
+  <body class="bg-light"> 
+    <header class="container-fluid text-center text-bg-success py-2">
+      <h1>Livro Bootstrap do Maujor</h1>
+      <h2>Capítulo 3 &#8212; Classes para textos</h2>
+    </header>
+    <main class="container bg-white border border-top-0 border-bottom-0 border-secondary py-5">
+      <div class="row">     
+        <div class="col">     
+          <h2 class="text-primary">Alinhamento</h2>
+          <p class="text-start"><code>.text-start</code><br>Texto de parágrafo alinhado à esquerda (valor CSS inicial)</p>
+          <p class="text-center"><code>.text-center</code><br>Texto de parágrafo alinhado no centro</p>
+          <p class="text-end"><code>.text-end</code><br>Texto de parágrafo alinhado à direita</p>
+          <p class="text-center text-md-end text-lg-start"><code>text-center text-md-end text-lg-start</code><br>Texto de parágrafo alinhado segundo a viewport</p>    
+          <hr class="border border-danger border-2 opacity-75">
+        </div> <!-- col -->
+      </div> <!-- row -->          
+      <div class="row">     
+      <h2 class="text-primary">Capitalização</h2>
+        <div class="col-4">
+          <code>.text-lowercase</code>
+          <p class="text-lowercase">TeXto Com toDas as Letras MINúsculas</p>
+        </div>
+        <div class="col-4">
+          <code>.text-uppercase</code>
+          <p class="text-uppercase">teXto Com toDas as letras MAiúsculaS</p>
+        </div>
+        <div class="col-4">
+          <code>.text-capitalize</code>            
+          <p class="text-capitalize">texto cOm primeiRA leTRa de cada paLavra em maiúscUla</p>
+        </div> <!-- col -->
+        <div class="col-md-12"> 
+          <p class="lead text-primary">Nota: na marcação HTML dos textos deste exemplo misturamos de propósito as letras, usando aleatoriamnete maiúscula e minúscula. Examine a marcação dos textos, compare com a respectiva renderização e conclua. O efeito é próprio das CSS e não do Bootstrap.</p>  
+          <hr class="border border-danger border-2 opacity-75">
+        </div> <!-- col -->
+      </div> <!-- row -->          
+      <div class="row align-items-center">     
+        <h2 class="text-primary">Tamanho de fonte</h2>
+        <div class="col-md-4">            
+          <code>.fs-1</code> <small>(2.5rem)</small>
+          <p class="fs-1">Texto de parágrafo</p>
+          <code>.fs-2</code> <small>(2rem)</small>
+          <p class="fs-2">Texto de parágrafo</p>
+        </div> <!-- col --> 
+        <div class="col-md-4">            
+          <code>.fs-3</code> <small>(1.75rem)</small>
+          <p class="fs-3">Texto de parágrafo</p>
+          <code>.fs-4</code> <small>(1.5rem)</small>
+          <p class="fs-4">Texto de parágrafo</p>          
+        </div> <!-- col --> 
+        <div class="col-md-4">            
+          <code>.fs-5</code> <small>(1.25rem)</small>
+          <p class="fs-5">Texto de parágrafo</p>
+          <code>.fs-6</code> <small>(1rem)</small>
+          <p class="fs-6">Texto de parágrafo</p>          
+        </div> <!-- col -->     
+        <div class="col-md-12"><hr class="border border-danger border-2 opacity-75"></div>
+      </div> <!-- row -->
+      <div class="row">     
+        <div class="col-md-8">   
+          <h2 class="text-primary">Negrito</h2>
+        </div> <!-- col -->
+        <div class="col-8 col-md-4">   
+          <h2 class="text-primary text-md-center">Itálico</h2>
+        </div> <!-- col -->
+      </div> <!-- row -->      
+      <div class="row">     
+        <div class="col-md-3">     
+          <code>.fw-bold</code>
+          <p class="fw-bold">Texto de parágrafo</p>
+          <code>.fw-bolder</code>
+          <p class="fw-bolder">Texto de parágrafo</p>
+        </div> <!-- col -->
+        <div class="col-md-3">
+          <code>.fw-semi-bold</code>
+          <p class="fw-semi-bold">Texto de parágrafo</p>
+          <code>.fw-normal</code>
+          <p class="fw-normal">Texto de parágrafo</p>          
+        </div> <!-- col -->
+        <div class="col-md-3">
+          <code>.fw-light</code>
+          <p class="fw-light">Texto de parágrafo</p>          
+          <code>.fw-lighter</code>
+          <p class="fw-lighter">Texto de parágrafo</p>          
+        </div> <!-- col -->
+        <div class="col-md-3">
+          <code>.fst-italic</code>
+          <p class="fst-italic">Texto itálico</p>
+          <code>.fst-normal</code>
+          <p class="fst-normal">Texto normal</p>          
+        </div> <!-- col -->
+        <div class="row">     
+          <div class="col-md-9">
+            <p class="lead text-primary">Nota: Os valor <code>bolder</code> e <code>lighter</code> têm seu negrito relativo ao elemento-pai, ou seja, uma gradação a mais que o negrito do elemento-pai.</p>
+          </div> <!-- col -->
+        </div> <!-- row -->
+        <div class="col-md-12"><hr class="border border-danger border-2 opacity-75"></div>
+      </div> <!-- row -->      
+      <div class="row">
+        <h2 class="text-primary">Texto decorado</h2>
+        <div class="col-md-4">   
+          <code>.text-decoration-underline</code>
+          <p class="text-decoration-underline">Texto decorado com sublinhado</p>
+        </div> <!-- col -->
+        <div class="col-md-4">   
+          <code>.text-decoration-line-through</code>
+          <p class="text-decoration-line-through">Texto decorado com linha sobre</p>
+        </div> <!-- col -->
+        <div class="col-md-4" id="rs">   
+          <code>.text-decoration-none</code><br>
+          <a href="#rs" class="text-decoration-none">Link com sublinhado retirado</a> 
+        </div> <!-- col -->
+        <div class="col-md-12"><hr class="clear border border-danger border-2 opacity-75"></div>
+      </div> <!-- row -->          
+
+      <div class="row">
+        <h2 class="text-primary">Quebra de texto e overflow</h2>
+        <div class="col-xl-6">
+          <code>.text-wrap</code>   
+          <p class="text-wrap" style="width:200px; background-color: aquamarine;">Texto de um container com largura fixa e fundo colorido</p> 
+        </div> <!-- col -->
+        <div class="col-xl-6">   
+          <code>.text-nowrap</code>   
+          <p class="text-nowrap" style="width:200px; background-color: aquamarine;">Texto de um container com largura fixa e fundo colorido</p> 
+        </div> <!-- col -->      
+        <div class="col-md-12"><hr class="clear border border-danger border-2 opacity-75"></div>
+      </div> <!-- row -->       
+      <div class="row">
+        <div class="col-md-4">   
+          <h2 class="text-primary">Quebra de palavras</h2>
+          <code>.text-break</code>   
+          <p class="text-break">essaéumapalavramuitograndeloremipsumdolorsitametconsecteturadipisicingelitdiooditlaboriosammaximecorruptisuscipitnullalaborumaccusantiumfugadoloresobcaecatiestsolutadoloremqueaperiamarchitectoaliasrepellendusadipsamnecessitatibus.</p>
+        </div> <!-- col -->
+        <div class="col-md-4">   
+          <h2 class="text-primary">Fonte monoespaçada</h2>
+          <code>.font-monospace</code>   
+          <p class="font-monospace">O texto desse parágrafo é com fonte monoespaçada padrão do framework Bootstrap.</p> 
+        </div> <!-- col -->      
+        <div class="col-md-4"  id="rs1">   
+          <h2 class="text-primary" id="rs2">Reset de cor</h2>
+          <code>.text-reset</code>   
+          <p><a class="text-reset" href="#rs1">Link dentro de um parágrafo herdando a cor do parágrafo</a></p> 
+          <p style="color: orange"><a class="text-reset" href="#rs2">Link dentro de um parágrafo da laraja herdando a cor do parágrafo</a></p> 
+        </div> <!-- col -->      
+        <div class="col-md-12"><hr class="clear border border-danger border-2 opacity-75"></div>
+      </div> <!-- row -->        
+      <div class="row">
+        <div class="col-md-6">   
+          <h2 class="text-primary">Blockquote</h2>
+          <code>.blockquote</code> e <code>.blockquote-footer</code>    
+          <figure>
+            <blockquote class="blockquote">
+              <p>O maior inimigo do conhecimento não é a ignorância, é a ilusão do conhecimento.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Autor: Stephen Hawking em: <cite title="Fonte da citação">Fonte da citação</cite>
+            </figcaption>
+          </figure>          
+        </div> <!-- col -->
+        <div class="col-md-6">   
+          <h2 class="text-primary">Lista inline</h2>
+          <code>.list-inline</code> e <code>.list-inline-item</code>    
+          <ul class="list-inline">
+            <li class="list-inline-item">Item #1.</li>
+            <li class="list-inline-item">Item #2.</li>
+            <li class="list-inline-item">Item #3.</li>
+          </ul>                    
+        </div> <!-- col -->
+        <div class="col"><hr class="clear border border-danger border-2 opacity-75"></div>
+      </div>
+      <div class="row">
+        <h2 class="text-primary">Opacidade em textos</h2>
+        <div class="col-md-3">   
+          <code>sem classe de opacidade</code>    
+          <p class="text-success">Texto com opacidade igual a 75%</p>          
+        </div> <!-- col -->
+        <div class="col-md-3">   
+          <code>.text-opacity-75</code>    
+          <p class="text-opacity-75 text-success">Texto com opacidade igual a 75%</p>          
+        </div> <!-- col -->
+        <div class="col-md-3">   
+          <code>.text-opacity-50</code>    
+          <p class="text-opacity-50 text-success">Texto com opacidade igual a 50%</p>          
+        </div> <!-- col -->
+        <div class="col-md-3">   
+          <code>.text-opacity-25</code>    
+          <p class="text-opacity-25 text-success">Texto com opacidade igual a 25%</p>          
+        </div> <!-- col -->
+        <div class="col"><hr class="clear border border-danger border-2 opacity-75"></div>
+      </div> <!-- row -->
+    </main> 
+    <footer class="container-fluid text-center text-bg-success py-2">
+      <small>&copy; Todos os direitos reservados</small>
+    </footer>
+    <!--
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    -->
+  </body>
+</html>
