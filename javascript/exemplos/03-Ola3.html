@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                
+                document.querySelector('form').onsubmit = function() {
+                    alert('hello, ' + document.querySelector('#name').value);
+                    return false;
+                };
+
+            });
+
+        </script>
+        <title>hello</title>
+    </head>
+    
+    <body>
+        <form>
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <button type="submit">enviar</button>
+        </form>
+    </body>
+
+</html>

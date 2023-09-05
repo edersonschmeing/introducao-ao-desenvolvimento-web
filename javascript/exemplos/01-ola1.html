@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <script>
+
+    function saudar()
+    {
+        alert('Olá, ' + document.querySelector('#name').value);
+    }
+
+    </script>
+
+    <title>Olá</title>
+</head>
+
+<body>
+        
+    <form onsubmit="saudar(); return false;">
+        
+        <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+        
+        <button type="submit">enviar</button>
+
+    </form>
+
+</body>
+</html>

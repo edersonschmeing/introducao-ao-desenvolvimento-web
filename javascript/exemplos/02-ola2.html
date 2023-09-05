@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+        <title>Olá</title>
+</head>
+<body>
+    
+    <form>
+    
+       <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+    
+       <button type="submit">enviar</button>
+    
+    </form>
+
+    <script>
+
+            document.querySelector('form').addEventListener('submit', function(event) {
+                alert('hello, ' + document.querySelector('#name').value);
+                event.preventDefault(); //acao padrao não será executada
+            });
+
+    </script>
+
+</body>
+</html>

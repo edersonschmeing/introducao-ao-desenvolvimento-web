@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+
+            function piscar()
+            {
+                let body = document.querySelector('body');
+                if (body.style.visibility == 'hidden')
+                {
+                    body.style.visibility = 'visible';
+                }
+                else
+                {
+                    body.style.visibility = 'hidden';
+                }
+            }
+
+            // Blink every 500ms
+            window.setInterval(piscar, 500);
+
+        </script>
+        <title>Pisca</title>
+    </head>
+    <body>
+        Olá, mundo.
+    </body>
+</html>
