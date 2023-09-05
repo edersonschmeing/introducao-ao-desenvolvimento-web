@@ -18,9 +18,11 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 
 SILVA, Mauricio Samy. Fundamentos de HTML5 e CSS3; 1. ed. São Paulo, Novatec, 2015.
 
-FLANAGAN, David. JavaScript: The Definitive Guide. 7. ed. O’Reilly, 2020. 
+FLANAGAN, David. JavaScript: The Definitive Guide. 7. ed. O’Reilly, 2020.
+https://github.com/davidflanagan/jstdg7
 
 FLANAGAN, David. JavaScript: O guia definitivo. 6. ed. Porto Alegre: Bookman, 2013.
+https://github.com/davidflanagan/javascript6_examples
 
 GRINBERG, Miguel. Desenvolvimento web com Flask: Desenvolvendo Aplicações web com Python. 1. ed. Novatec, 2018.
 
@@ -37,3 +39,5 @@ Framework Flask. https://flask.palletsprojects.com/en/2.3.x/
 SQLite. https://www.sqlite.org/index.html>
 
 Framework Svelte. https://svelte.dev/
+
+
