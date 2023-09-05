@@ -5,8 +5,8 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 
 ### Primeiro bimestre
  - [01 - HTML e CSS](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web-2023-2/tree/main/html-css)
- - [02 - Bootstrap]()
- - [03 - JavaScript]()
+ - [02 - Bootstrap](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web-2023-2/tree/main/bootstrap-5)
+ - [03 - JavaScript](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web-2023-2/tree/main/javascript)
 
 ### Segundo bimestre
  - [05 - HTTP]()
@@ -17,6 +17,7 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 ### Referências 
 
 SILVA, Mauricio Samy. Fundamentos de HTML5 e CSS3; 1. ed. São Paulo, Novatec, 2015.
+https://livrosdomaujor.com.br/html5css3/index.html
 
 FLANAGAN, David. JavaScript: The Definitive Guide. 7. ed. O’Reilly, 2020.
 https://github.com/davidflanagan/jstdg7
