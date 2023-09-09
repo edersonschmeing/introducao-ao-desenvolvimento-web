@@ -8,7 +8,6 @@ const closeModal = () => {
     document.getElementById('modal').classList.remove('active')
 }
 
-
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_client')) ?? []
 const setLocalStorage = (dbClient) => localStorage.setItem("db_client", JSON.stringify(dbClient))
 
@@ -44,15 +43,24 @@ const clearFields = () => {
     fields.forEach(field => field.value = "")
     document.getElementById('nome').dataset.index = 'new'
     document.querySelector(".modal-header>h2").textContent  = 'Novo Cliente'
+    document.getElementById('portador-de-necessidades-especiais').checked = false;
+
 }
 
 const saveClient = () => {
     if (isValidFields()) {
+        
+        //let portador_especial = document.getElementById('portador-de-necessidades-especiais').checked;
+        //console.log(portador_especial);
+       
         const client = {
             nome: document.getElementById('nome').value,
             email: document.getElementById('email').value,
             celular: document.getElementById('celular').value,
-            cidade: document.getElementById('cidade').value
+            cidade: document.getElementById('cidade').value,
+            estado_civil: document.getElementById('estado-civil').value, 
+            portador_de_necessidades_especiais: document.getElementById('portador-de-necessidades-especiais').checked
+
         }
         const index = document.getElementById('nome').dataset.index
         if (index == 'new') {
@@ -69,11 +77,23 @@ const saveClient = () => {
 
 const createRow = (client, index) => {
     const newRow = document.createElement('tr')
+    
+    let estado_civil = "Separado";
+    if (client.estado_civil === "S")
+       estado_civil = "Solteiro";
+    else if (client.estado_civil === "C")
+       estado_civil = "Casado";
+    
+    let portador_de_necessidades_especiais = client.portador_de_necessidades_especiais ? "Sim" : "Não";   
+        
     newRow.innerHTML = `
         <td>${client.nome}</td>
         <td>${client.email}</td>
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
+        <td>${estado_civil}</td>  
+        <td>${portador_de_necessidades_especiais}</td>  
+              
         <td>
             <button type="button" class="button green" id="edit-${index}">Editar</button>
             <button type="button" class="button red" id="delete-${index}" >Excluir</button>
@@ -98,6 +118,8 @@ const fillFields = (client) => {
     document.getElementById('email').value = client.email
     document.getElementById('celular').value = client.celular
     document.getElementById('cidade').value = client.cidade
+    document.getElementById('estado-civil').value = client.estado_civil 
+    document.getElementById('portador-de-necessidades-especiais').checked = client.portador_de_necessidades_especiais   
     document.getElementById('nome').dataset.index = client.index
 }
 
