@@ -16,11 +16,13 @@ https://www.youtube.com/watch?v=_HEIqE_qqbQ
    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
   
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/records.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="main.js" defer></script>
+
     <title>CRUD</title>
 </head>
 
@@ -30,32 +32,7 @@ https://www.youtube.com/watch?v=_HEIqE_qqbQ
     </header>
     <main>
         <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
-       
-
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                
-                <header class="modal-header">
-                    <h2>Novo Cliente</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-
-                <form id="form" class="modal-form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente"
-                        required>
-                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
-                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
-                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
-                </form>
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
-                </footer>
-            </div>
-        </div>
-
-
-              
+                    
         <table id="tableClient" class="records">
             <thead>
                 <tr>
@@ -70,11 +47,49 @@ https://www.youtube.com/watch?v=_HEIqE_qqbQ
 
             </tbody>
         </table>
-     
-               
+
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente"
+                        required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
+                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>   
+                     
+
+                    <div class="modal-div-checkbox">
+                         <input type="checkbox" id="portador-de-necessidades-especiais" class="modal-checkbox">  
+                         <label for="portador-de-necessidades-especiais">Portador de Necessidades Especiais</label>
+                    </div>
+
+                    <div class="modal-div-select">
+                        <label for="estado-civil">Estado Civil</label>
+                        <select id="estado-civil"> 
+                            <option value="solteiro" selected>Solteiro</option>
+                            <option value="casado">Casado</option>
+                            <option value="separado">Separado</option>
+                        </select>
+                    </div>
+
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
     </main>
     <footer>
-        Copyright &copy; Prof. Fernando Leonid
+     <!--   Copyright &copy; Prof. Fernando Leonid -->
     </footer>
 </body>
 

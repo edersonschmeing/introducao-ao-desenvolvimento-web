@@ -74,6 +74,63 @@
     box-shadow: 0 0 3px var(--primary-color);
 }
 
+.modal-div-select{
+    width: calc(50% - 10px);
+}
+
+.modal-div-select label{
+    width: 120px;
+    float: left;
+    margin-left: 0;
+    font-weight: bold;
+    line-height: 40px;  
+    font-size:1rem;
+} 
+.modal-div-select label:after {
+     content: ": "
+ }
+
+.modal-div-select select{
+    width: calc(100% - 120px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    font-size:1rem;
+    background-color: #fff;
+}
+
+.modal-div-select select:hover {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+}
+
+.modal-div-checkbox{
+    width: calc(50% - 10px);
+}
+
+.modal-div-checkbox label{
+    width: calc(100% - 20px);
+    font-weight: bold;
+    line-height: 40px;  
+    font-size:1rem;
+    position: relative;
+} 
+
+.modal-div-checkbox .modal-checkbox{
+    width: 20px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.modal-div-checkbox .modal-checkbox:hover {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+}
+
 .modal-footer{
     background-color: inherit;
     text-align: right;
