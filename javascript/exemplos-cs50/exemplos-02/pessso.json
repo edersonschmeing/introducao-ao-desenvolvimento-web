@@ -1,0 +1,21 @@
+{
+    "nome": "Ederson",
+    "sobrenome": "Schmeing",
+    "idade": 39,
+    "endereco":  {  
+                           "endereco": "Apalais, 1413", 
+                           "cidade": "Cascavel", 
+                           "estado": "PR",
+                           "cep": 85806060
+                       },
+    "telefone": [
+                            {
+                                "tipo": "fixo",
+                                "numero": "45 3223-4722"
+                            },
+                            {
+                                "tipo": "celular",
+                                "numero": "45 99970-3031"
+                            }
+                     ]
+}
