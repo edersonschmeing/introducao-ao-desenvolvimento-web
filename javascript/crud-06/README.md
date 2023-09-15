@@ -2,6 +2,9 @@
 
 ### [View the todo app here 🚀🚀🚀](https://crud-application-delta.vercel.app/)
 
+
+### https://www.freecodecamp.org/news/learn-crud-operations-in-javascript-by-building-todo-app/
+
 ## Font-Awesome CDN 
 ```
 <link
