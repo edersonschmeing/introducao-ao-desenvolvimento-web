@@ -1,7 +1,8 @@
 Autor Joy Shaheb 
-https://github.com/JoyShaheb/CRUD-Application
-https://www.freecodecamp.org/news/learn-crud-operations-in-javascript-by-building-todo-app/
 
+https://github.com/JoyShaheb/CRUD-Application
+
+https://www.freecodecamp.org/news/learn-crud-operations-in-javascript-by-building-todo-app/
       
 # CRUD-Application
 
