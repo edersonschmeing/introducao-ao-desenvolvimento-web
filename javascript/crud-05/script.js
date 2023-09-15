@@ -1,5 +1,16 @@
 
-var selectedRow = null;
+let selectedRow = null;
+
+document.addEventListener('DOMContentLoaded', () => { 
+
+    document.querySelector('form').onsubmit = () => {
+        
+        onFormSubmit();
+
+        return false;
+    }
+
+});    
 
 function onFormSubmit() {
     if (validate()) {
@@ -13,7 +24,7 @@ function onFormSubmit() {
 }
 
 function readFormData() {
-    var formData = {};
+    let formData = {};
     formData["fullName"] = document.getElementById("fullName").value;
     formData["email"] = document.getElementById("email").value;
     formData["salary"] = document.getElementById("salary").value;
@@ -22,8 +33,8 @@ function readFormData() {
 }
 
 function insertNewRecord(data) {
-    var table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
-    var newRow = table.insertRow(table.length);
+    let table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
+    let newRow = table.insertRow(table.length);
     cell1 = newRow.insertCell(0);
     cell1.innerHTML = data.fullName;
     cell2 = newRow.insertCell(1);
