@@ -2,14 +2,10 @@
 let selectedRow = null;
 
 document.addEventListener('DOMContentLoaded', () => { 
-
-    document.querySelector('form').onsubmit = () => {
-        
+    document.querySelector('form').onsubmit = () => {       
         onFormSubmit();
-
         return false;
     }
-
 });    
 
 function onFormSubmit() {
