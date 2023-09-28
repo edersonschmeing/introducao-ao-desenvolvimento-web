@@ -1,0 +1,32 @@
+<html>
+
+   <head>
+        <script>   
+            /*O evento DOMContentLoaded é acionado quando o 
+            documento HTML foi completamente analisado e 
+            todos os scripts adiados (<script defer src="…"> e 
+            <script type="module">) foram baixados e 
+            executados. Ele não espera que outras coisas, como imagens, 
+            subquadros e scripts assíncronos, terminem de carregar.*/
+            
+            document.addEventListener('DOMContentLoaded', function() {
+
+                document.querySelector("#btn").onclick =  function() {
+            
+                    document.querySelector('h1').innerHTML = 'JAVA';
+            
+                };     
+            });
+
+        </script>
+   </head>
+
+   <body>
+    
+        <h1 id="texto">  Programação WEB  </h1>
+        
+        <button id="btn">Trocar texto</button>
+        
+   </body>
+
+</html>
