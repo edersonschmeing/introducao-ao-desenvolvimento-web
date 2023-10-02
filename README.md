@@ -10,8 +10,8 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 
 ### Segundo bimestre
  - [05 - HTTP]()
- - [06 - Python]()
- - [07 - Flask]()
+ - [06 - Node.js]()
+ - [07 - Express]()
  - [08 - SPA]()
 
 ### Referências 
