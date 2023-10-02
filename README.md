@@ -22,7 +22,7 @@ FLANAGAN, David. JavaScript: The Definitive Guide. 7. ed. O’Reilly, 2020. http
 
 FLANAGAN, David. JavaScript: O guia definitivo. 6. ed. Porto Alegre: Bookman, 2013. https://github.com/davidflanagan/javascript6_examples
 
-GRINBERG, Miguel. Desenvolvimento web com Flask: Desenvolvendo Aplicações web com Python. 1. ed. Novatec, 2018.
+<!-- GRINBERG, Miguel. Desenvolvimento web com Flask: Desenvolvendo Aplicações web com Python. 1. ed. Novatec, 2018. -->
 
 SILVA, Mauricio Samy. Bootstrap: Um guia completo para construir aplicativos responsivos, modernos e eficientes 1. ed. São Paulo, Novatec, 2023. https://livrosdomaujor.com.br/bs/index.php
 
@@ -32,12 +32,16 @@ w3schools. https://www.w3schools.com>
 
 Bootstrap. https://getbootstrap.com/>
 
-Python Programming Language. https://www.python.org/
+Node.js.https://nodejs.org
 
-Framework Flask. https://flask.palletsprojects.com/en/2.3.x/
+Express. https://expressjs.com/
 
-SQLite. https://www.sqlite.org/index.html>
+<!--Python Programming Language. https://www.python.org/ -->
 
-Framework Svelte. https://svelte.dev/
+<!--Framework Flask. https://flask.palletsprojects.com/en/2.3.x/ -->
+
+<!-- SQLite. https://www.sqlite.org/index.html>
+
+Framework Svelte. https://svelte.dev/ -->
 
 
