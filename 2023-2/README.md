@@ -19,7 +19,7 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 
 SILVA, Mauricio Samy. Fundamentos de HTML5 e CSS3; 1. ed. São Paulo, Novatec, 2015. https://livrosdomaujor.com.br/html5css3/index.html
 
-Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript. 2. Ed. Novatec, 2022. 
+IEPSEN, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript. 2. Ed. Novatec, 2022. 
 
 GRONER, Loine. Estrutura de Dados e Algoritmos em JavaScript. 2. Ed. Novatec, 2018.
 
