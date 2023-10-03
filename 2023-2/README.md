@@ -9,7 +9,7 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
  - [03 - JavaScript](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web/tree/main/2023-2/javascript)
 
 ### Segundo bimestre
- - [03 - JavaScript](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web/tree/main/2023-2/javascript_novo) 
+ - [04 - JavaScript](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web/tree/main/2023-2/javascript_novo) 
  - [05 - HTTP]()
  - [06 - Node.js]()
  - [07 - Express]()
