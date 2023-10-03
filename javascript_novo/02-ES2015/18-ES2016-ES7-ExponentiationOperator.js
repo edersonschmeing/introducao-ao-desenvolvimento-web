@@ -1,6 +1,3 @@
-// @ts-check
-/* eslint-disable */
-
 //* ****** EcmaScript 2016 (ES7): Exponentiation operator (https://goo.gl/Z6dCFB)
 let r = 2;
 const area = 3.14 * r * r;
