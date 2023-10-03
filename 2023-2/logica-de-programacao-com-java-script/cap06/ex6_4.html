@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/livrojs.png">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Exemplo 6.4</title>
+</head>
+
+<body>
+  <!-- doctype, html, head e body (conf. exemplo 4.2) -->
+  <img src="img/ex6_4.jpg" alt="Brinquedoteca" class="alta">
+  <h1>Programa Brinquedoteca</h1>
+  <form>
+    <p>Nome da Criança:
+      <input type="text" id="inNome" required autofocus>
+    </p>
+    <p>Idade:
+      <input type="number" id="inIdade" min="0" required>
+      <input type="submit" value="Adicionar">
+    </p>
+    <input type="button" value="Listar Todos" id="btListar">
+    <input type="button" value="Resumir por Idade" id="btResumir">
+  </form>
+  <pre></pre>
+  <script src="js/ex6_4.js"></script>
+  <!-- /body e /html -->
+</body>
+
+</html>

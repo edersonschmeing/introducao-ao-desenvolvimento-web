@@ -1,0 +1,2 @@
+* Conforme a documentação do Knex, para utilizar o SQLite3 instale o pacote better-sqlite3 *
+* npm i better-sqlite3 *

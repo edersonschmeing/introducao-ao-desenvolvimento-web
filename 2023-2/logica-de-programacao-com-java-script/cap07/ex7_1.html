@@ -1,0 +1,22 @@
+<script>
+  const anuncio = prompt("Anúncio: ")  // lê o anúncio
+  let numPalavras = 0                  // inicializa contador
+  const tam = anuncio.length           // obtém o tamanho 
+  for (let i = 0; i < tam; i++) {      // percorre os caracteres do anúncio
+    if (anuncio.charAt(i) == " ") {    // se encontrou um espaço
+      numPalavras++                    // incrementa contador
+    }
+  }
+  // exibe anúncio e número de palavras (que é o nº de espaços + 1)
+  alert(`Anúncio: ${anuncio}\nNº Palavras: ${(numPalavras + 1)}`)
+
+  // const anuncio = prompt("Anúncio: ")   // lê o anúncio
+  // let numPalavras = 0                   // inicializa contador
+  // for (const letra of anuncio) {        // percorre os caracteres do anúncio
+  //   if (letra == " ") {                 // se encontrou um espaço...
+  //     numPalavras++                     // incrementa contador
+  //   }
+  // }
+  // // exibe anúncio e número de palavras (que é o nº de espaços + 1)
+  // console.log(`Anúncio: ${anuncio}\nNº Palavras: ${(numPalavras + 1)}`)
+</script>

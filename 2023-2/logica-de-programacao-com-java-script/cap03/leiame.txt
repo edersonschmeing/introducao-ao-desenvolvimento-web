@@ -1,0 +1,2 @@
+* Após instalar o Node.js, você deve reinicializar o computador *
+* (ou executá-lo a partir do diretório em que ele foi instalado) *
