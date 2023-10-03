@@ -69,15 +69,15 @@ O exemplo a seguir mostra a diferença entre o for...of e o for...in. Enquanto o
 interage com o nome das propriedades, o for...of interage com o valor das propriedades.
 */
 
-let vetor = [3, 5, 7];
+var vetor = [3, 5, 7];
 vetor.foo = "hello";
 
 console.log('\n**** exemplo for..in  ****');
-for (let i in vetor) {
+for (var i in vetor) {
   console.log(i); // logs "0", "1", "2", "foo"
 }
 
 console.log('\n**** exemplo for..of  ****');
-for (let i of vetor) {
+for (var i of vetor) {
   console.log(i); // logs "3", "5", "7"
 }
