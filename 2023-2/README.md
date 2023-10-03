@@ -4,11 +4,12 @@ Este material apresenta exemplos de códigos fontes da disciplina de Introduçã
 **Professor:** Ederson Schmeing
 
 ### Primeiro bimestre
- - [01 - HTML e CSS](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web-2023-2/tree/main/html-css)
- - [02 - Bootstrap](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web-2023-2/tree/main/bootstrap-5)
- - [03 - JavaScript](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web-2023-2/tree/main/javascript)
+ - [01 - HTML e CSS](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web/tree/main/2023-2/html-css)
+ - [02 - Bootstrap](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web/tree/main/2023-2/bootstrap-5)
+ - [03 - JavaScript](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web/tree/main/2023-2/javascript)
 
 ### Segundo bimestre
+ - [03 - JavaScript](https://github.com/edersonschmeing/introducao-ao-desenvolvimento-web/tree/main/2023-2/javascript_novo) 
  - [05 - HTTP]()
  - [06 - Node.js]()
  - [07 - Express]()
