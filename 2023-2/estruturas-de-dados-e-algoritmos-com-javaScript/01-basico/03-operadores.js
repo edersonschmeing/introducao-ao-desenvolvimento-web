@@ -14,11 +14,12 @@ O JavaScript possui os tipos de operadores a seguir:
 - Operadores relacionais   
 - Operadores de string
 - Operador condicional (ternário)
-- Operadores atribuição bit a bit
-- Operadores de comparação bit a bit
 - Operadores unário - delete
 - Operador typeof
-- Operador vírgula   
+
+- Operadores atribuição bit a bit
+- Operadores de comparação bit a bit
+- Operador vírgula  
 */
 
 
@@ -99,6 +100,24 @@ var situacao = idade >= 18 ? "adulto" : "menor de idade";
 console.log('situacao');
 
 
+/* O operador typeof é utilizado em qualquer uma das seguintes formas:*/
+console.log('typeof numero:', typeof numero);
+console.log('typeof String:', typeof 'String');
+console.log('typeof true:', typeof true);
+console.log('typeof [1,2,3]:', typeof [1, 2, 3]);
+console.log('typeof {nome:Ederson Schmeing}:', typeof { nome: 'Ederson Schmeing' });
+
+/* 
+O operador delete apaga um objeto, uma propriedade de um objeto ou 
+um elemento no índice especificado de uma matriz. A sintaxe é:
+/* - Operadores unário delete  */
+console.log('\nOperador unário - delete');
+var meu_objeto = { nome: 'Ederson Schmeing', idade: 39 };
+delete meu_objeto.idade;
+console.log(meu_objeto); // Object {nome: "Ederson Schmeing"}
+
+//====
+
 //Operadores de atribuição bit a bit
 console.log('\nOperadores de atribuição bit a bit - conhecimento');
 console.log('numero <<= 1:', numero <<= 1);  //  Atribuição bit-a-bit por deslocamento á esquerda
@@ -119,31 +138,15 @@ console.log('5 << 1:', 5 << 1); // igual a 0101 << 1 (esultado 1010 / 10)  // bi
 console.log('5 >> 1:', 5 >> 1); // igual a 0101 >> 1 (esultado 0010 / 2)   // bit-a-bit por deslocamento á direita
 console.log('5 >>> 1:', 5 >> 1); // Deslocamento à direita com preenchimento zero
 
-
-/* O operador typeof é utilizado em qualquer uma das seguintes formas:*/
-console.log('typeof numero:', typeof numero);
-console.log('typeof String:', typeof 'String');
-console.log('typeof true:', typeof true);
-console.log('typeof [1,2,3]:', typeof [1, 2, 3]);
-console.log('typeof {nome:Ederson Schmeing}:', typeof { nome: 'Ederson Schmeing' });
-
-/* 
-O operador delete apaga um objeto, uma propriedade de um objeto ou 
-um elemento no índice especificado de uma matriz. A sintaxe é:
-/* - Operadores unário delte  */
-console.log('\nOperador unário - delete');
-var meu_objeto = { nome: 'Ederson Schmeing', idade: 39 };
-delete meu_objeto.idade;
-console.log(meu_objeto); // Object {nome: "Ederson Schmeing"}
-
-
-/* O operador vírgula (,) simplesmente avalia ambos de seus operandos e retorna o valor do segundo. 
-Este operador é utilizado primariamente dentro de um laço for para permitir que multiplas variáveis 
+/* O operador vírgula (,) simplesmente avalia ambos de seus operandos e retorna o 
+valor do segundo.  Este operador é utilizado primariamente dentro de um laço 
+for para permitir que multiplas variáveis 
 sejam atualizadas cada vez através do laço.
-Por exemplo, se a é uma matriz bidimensional com 5 elementos em um lado, o código a seguir utiliza o 
-operador vírgula para incrementar duas variáveis de uma só vez. O código imprime os valores dos 
+Por exemplo, se a é uma matriz bidimensional com 5 elementos 
+em um lado, o código a seguir utiliza o 
+operador vírgula para incrementar duas variáveis de uma só vez. 
+O código imprime os valores dos 
 elementos diagonais da matriz:
-
 
 console.log('\nOperador vírgula');
 for (var i = 0, j = 9; i <= 9; i++, j--)
