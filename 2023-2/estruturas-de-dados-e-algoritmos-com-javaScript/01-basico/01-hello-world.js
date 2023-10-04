@@ -25,4 +25,4 @@ function saida(t) {
 
 //alert('Hello, World!');
 console.log('Hello, World!');
-saida('Hello, World!');
+//saida('Hello, World!');
