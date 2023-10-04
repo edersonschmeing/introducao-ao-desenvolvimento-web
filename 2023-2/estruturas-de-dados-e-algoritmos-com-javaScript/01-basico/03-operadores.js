@@ -1,5 +1,4 @@
 /*
-
 Loiane Groner - Estrutura de Dados e Algoritmos com JavaScript
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators
@@ -21,7 +20,6 @@ O JavaScript possui os tipos de operadores a seguir:
 - Operadores de comparação bit a bit
 - Operador vírgula  
 */
-
 
 /* Operadores de atribuição*/
 console.log('\nOperadores de atribuição');
