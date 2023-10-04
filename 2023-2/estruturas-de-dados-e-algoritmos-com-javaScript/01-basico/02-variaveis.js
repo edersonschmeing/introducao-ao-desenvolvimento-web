@@ -16,13 +16,12 @@ Devido JavaScript ser case-sensitive, letras incluem caracteres
 de "A" a "Z" (maiúsculos)  e caracteres de "a" a "z" (minúsculos). 
 Nomes válidos: Idade, tempo01, _nome e $valor 
 
-Embora esses tipos de dados sejam uma quantidade relativamente pequena, eles permitem 
-realizar funções úteis em suas aplicações. 
+Embora esses tipos de dados sejam uma quantidade relativamente pequena, 
+eles permitem realizar funções úteis em suas aplicações. 
 
 Objetos e funções são outros elementos fundamentais na linguagem.
-Você pode pensar em objetos como 
-recipientes para os valores, e funções como métodos que 
-suas aplicações podem executar.
+Você pode pensar em objetos como recipientes para os valores, 
+e funções como métodos que suas aplicações podem executar.
 */
 
 /* Váriaveis e Tipos de dados */ 
@@ -38,7 +37,7 @@ var falso_valor = false; // tipo Boolean
 var null_variavel = null;  
 var undefined_valor;  // quando não faz a atribuição, o conteúdo fica undefined
 
-//var vetor = [];
+//var vetor = []; // vertor/matriz
 //var objeto = {};
 
 console.log('numero: ' + numero);
@@ -49,17 +48,18 @@ console.log('falso_valor: ' + falso_valor);
 console.log('null_variavel: ' + null_variavel);
 console.log('undefined: ' + undefined);
 
+console.log(' \n');
+
 
 /* Escopo de váriavel 
 var não respeita o escopo, vamos ver o let e o const mais para frente
-
-
+*/
 //blocos 
+
 {
-
-
+   console.log("blocos");
 }
-*/ 
+ 
 
 var minha_variavel = 'global';
 minha_outra_variavel = 'global';
@@ -71,12 +71,12 @@ function minha_funcao() {
 }
 
 function minha_outra_funcao() {
-  minha_outra_variavel = 'local';
+  var minha_outra_variavel = 'local';
   return minha_outra_variavel;
 }
 
 console.log(minha_variavel); 
-console.log(minha_outra_funcao());
+console.log(minha_funcao());
 console.log(minha_variavel); 
 
 console.log(minha_outra_variavel);

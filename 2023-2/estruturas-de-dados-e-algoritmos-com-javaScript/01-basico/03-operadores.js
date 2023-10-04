@@ -11,8 +11,8 @@ O JavaScript possui os tipos de operadores a seguir:
 - Operadores pré e pós de incremento e decremento pré e pós
 - Operadores lógicos
 - Operadores relacionais   
-- Operadores de string
-- Operador condicional (ternário)
+- Operadore de string
+- Operador condicional (ternário ?)
 - Operadores unário - delete
 - Operador typeof
 
@@ -23,28 +23,29 @@ O JavaScript possui os tipos de operadores a seguir:
 
 /* Operadores de atribuição*/
 console.log('\nOperadores de atribuição');
-var numero = 0;
+var numero = 2;
+numero -= 1;
 console.log('O valor do número é: ' + numero);
 
-numero += 1; // numero = numero + 1;   // adição 
-numero -= 2; // numero = numero - 2;   // subtração
-numero *= 3; // numero = numero * 3;   // multiplicação
-numero /= 2; // numero = numero / 2;   // divisão
-numero %= 3; // numero = numero % 3;   // resto da divisão. 
+numero += 1; // igual numero = numero + 1;   // adição 
+numero -= 2; // igual numero = numero - 2;   // subtração
+numero *= 3; // igual numero = numero * 3;   // multiplicação
+numero /= 2; // igual numero = numero / 2;   // divisão
+numero %= 3; // igual numero = numero % 3;   // resto da divisão. 
 numero **= 2; // numero = numero ** 2; // exponencial. 
 console.log('O novo valor do número é: ' + numero);
 
-
+numero = 2;
 /* Operadores de comparação */
 console.log('\nOperadores de comparação');
-console.log('numero == 1 : ' + (numero == 1));   // verdadeiro caso os operandos sejam iguais.
+console.log('numero == 1 : '  + (numero == 1));  // verdadeiro caso os operandos sejam iguais.
 console.log('numero === 1 : ' + (numero === 1)); // Retorna verdadeiro caso os operandos sejam iguais e do mesmo tipo.
-console.log('numero != 1 : ' + (numero != 1));   // verdadeiro caso os operandos não sejam iguais.
-console.log('numero != 1 : ' + (numero !== 1));  //verdadeiro caso os operandos não sejam iguais e/ou não sejam do mesmo tipo.
-console.log('numero > 1 : ' + (numero > 1));     //verdadeiro caso o operando da esquerda seja maior que o da direita.
-console.log('numero < 1 : ' + (numero < 1));     // Retorna verdadeiro caso o operando da esquerda seja menor que o da direita.
-console.log('numero >= 1 : ' + (numero >= 1));   //Retorna verdadeiro caso o operando da esquerda seja maior ou igual ao da direita.
-console.log('numero <= 1 : ' + (numero <= 1));   //Retorna verdadeiro caso o operando da esquerda seja menor ou igual ao da direita.
+console.log('numero != 1 : '  + (numero != 1));  // verdadeiro caso os operandos não sejam iguais.
+console.log('numero !== 1 : '  + (numero !== 1)); //verdadeiro caso os operandos não sejam iguais e/ou não sejam do mesmo tipo.
+console.log('numero > 1 : '   + (numero > 1));   //verdadeiro caso o operando da esquerda seja maior que o da direita.
+console.log('numero < 1 : '   + (numero < 1));   // Retorna verdadeiro caso o operando da esquerda seja menor que o da direita.
+console.log('numero >= 1 : '  + (numero >= 1));  //Retorna verdadeiro caso o operando da esquerda seja maior ou igual ao da direita.
+console.log('numero <= 1 : '  + (numero <= 1));  //Retorna verdadeiro caso o operando da esquerda seja menor ou igual ao da direita.
 
 
 /* Operadores aritiméticos */
@@ -64,13 +65,15 @@ console.log('o valor do número é ' + numero);
 numero = numero % 2; // resto da divisão. 
 console.log('o valor do número é ' + numero);
 
-numero = numero ** 2; // divisão
+numero = numero ** 2; // exponencial
 console.log('o valor do número é ' + numero);
 
 
 //Operadores pré e pós de incremento e decremento pré e pós
 console.log('\nOperadores pré e pós de incremento e decremento');
-numero++; //pós usa a variável depois incrementa
+var numero = 10;
+//var multi_por_3 = 3 * ++numero; //pós usa a variável depois incrementa
+numero++;
 numero--;
 console.log('o valor do número é ' + numero);
 
@@ -83,11 +86,11 @@ console.log('o valor do número é ' + numero);
 console.log('\n- Operadores lógicos');
 console.log('true && false : ' + (true && false)); // && operador ( e ) 
 console.log('true || false : ' + (true || false)); // || operador ( ou )
-console.log('!true : ' + !true); // ! operador de negação
+console.log('!true : ' + !true);                   // ! operador de negação
 
 
 //Operadores de string (concatenação +)
-console.log('\n- Operadores (ternário)');
+console.log("\n- Operadores string (concatenação +)");
 console.log("minha " + "string"); // exibe a string "minha string".
 
 
@@ -95,7 +98,7 @@ console.log("minha " + "string"); // exibe a string "minha string".
 console.log('\n- Operadores (ternário)');
 var idade = 17;
 var situacao = idade >= 18 ? "adulto" : "menor de idade";
-console.log('situacao');
+console.log(situacao);
 
 
 /* O operador typeof é utilizado em qualquer uma das seguintes formas:*/
