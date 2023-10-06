@@ -37,8 +37,8 @@ var falso_valor = false; // tipo Boolean
 var null_variavel = null;  
 var undefined_valor;  // quando não faz a atribuição, o conteúdo fica undefined
 
-//var vetor = []; // vertor/matriz
-//var objeto = {};
+var array_valor = []; // vertor/matriz
+var objeto_valor = {}; // objeto
 
 console.log('numero: ' + numero);
 console.log('preço: ' + preco);
@@ -47,6 +47,9 @@ console.log('verdadeiro_valor: ' + verdadeiro_valor);
 console.log('falso_valor: ' + falso_valor);
 console.log('null_variavel: ' + null_variavel);
 console.log('undefined: ' + undefined);
+console.log('vetor: ' + array_valor);
+console.log('obejeto: ' + objeto_valor);
+
 
 console.log(' \n');
 

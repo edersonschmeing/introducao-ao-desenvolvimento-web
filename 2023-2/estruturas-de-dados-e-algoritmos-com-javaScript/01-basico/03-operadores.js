@@ -105,8 +105,8 @@ console.log(situacao);
 console.log('typeof numero:', typeof numero);
 console.log('typeof String:', typeof 'String');
 console.log('typeof true:', typeof true);
-console.log('typeof [1,2,3]:', typeof [1, 2, 3]);
-console.log('typeof {nome:Ederson Schmeing}:', typeof { nome: 'Ederson Schmeing' });
+console.log('typeof [1,2,3]:', typeof [1, 2, 3]); // array
+console.log('typeof {nome:Ederson Schmeing}:', typeof { nome: 'Ederson Schmeing' }); //object
 
 /* 
 O operador delete apaga um objeto, uma propriedade de um objeto ou 
