@@ -10,8 +10,8 @@ app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
 
-app.get('/app-express', (req, res) => {
-    res.send('<h2>App: Back-end com Express</h2>');
+app.get('/app-editora', (req, res) => {
+    res.send('<h2>App-Editora : Back-end com Express</h2>');
 });
 
 // para reconhecer os dados recebidos como sendo um objeto no formato JSON
