@@ -1,3 +1,0 @@
-https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction
-
-http://devfuria.com.br/javascript/dom/
