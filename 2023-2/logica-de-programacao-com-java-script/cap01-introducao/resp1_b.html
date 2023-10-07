@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<script>
+  // lê os dados de entrada
+  const conta = Number(prompt("Valor da Conta R$: "))
+  const num = Number(prompt("Número de Clientes: "))
+  // calcula o valor individual por cliente
+  const individual = conta / num
+  // exibe a resposta (com 2 casas decimais no valor)
+  alert(`Valor por Cliente R$: ${individual.toFixed(2)}`)
+</script>

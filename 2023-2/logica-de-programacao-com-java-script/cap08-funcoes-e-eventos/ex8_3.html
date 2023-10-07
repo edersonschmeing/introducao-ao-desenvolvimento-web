@@ -1,0 +1,21 @@
+<script>
+  const calcularMedia = (...notas) => {
+    const num = notas.length;     // notas é um array
+    if (num == 0) {
+      console.log("Informe, no mínimo, uma nota");
+      return;
+    }
+    let soma = 0;                 // vai acumular a soma das notas 
+    for (nota of notas) {
+      soma += nota;               // soma o valor dos argumentos
+    }
+    const media = soma / num;     // calcula a media
+    console.log(`Média: ${media.toFixed(1)}`);
+  }
+  // exemplos de chamada de calcularMedia() com nº de argumentos diferentes
+  calcularMedia(6, 7, 8);          // Média: 7.0
+  calcularMedia(2, 10);            // Média: 6.0
+  calcularMedia(7.5, 10, 8, 9.5);  // Média: 8.8
+  calcularMedia();                 // Informe, no mínimo, uma nota
+  alert("Pressione F12 para ver no console as saídas do programa")
+</script>
