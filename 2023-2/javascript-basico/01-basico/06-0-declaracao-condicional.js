@@ -55,7 +55,7 @@ switch (expressao) {
 // declaração de bloco
 {
   var bloco = "bloco";
-  console.log("dentro de um bloco");
+  console.log("dentro de um bloco "+ bloco);
   /*declaracao_2;
   .
   .

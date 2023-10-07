@@ -1,8 +1,12 @@
+/*
+Loiane Groner - Estrutura de Dados e Algoritmos com JavaScript
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects
+
+*/
 
 
-
-
-/* Object example 1 */
+/* Object exemplo 1 */
 var obj = new Object();
 
 /* Object example 2 */

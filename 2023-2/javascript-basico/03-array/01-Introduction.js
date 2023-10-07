@@ -1,4 +1,11 @@
-// @ts-check
+/*
+
+Loiane Groner - Estrutura de Dados e Algoritmos com JavaScript
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_collections
+
+
+*/
 
 const averageTempJan = 31.9;
 const averageTempFeb = 35.3;

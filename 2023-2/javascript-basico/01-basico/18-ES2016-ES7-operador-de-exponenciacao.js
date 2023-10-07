@@ -1,4 +1,7 @@
-//* ****** EcmaScript 2016 (ES7): Exponentiation operator (https://goo.gl/Z6dCFB)
+
+
+// EcmaScript 2016 (ES7): Operador de exponenciação 
+
 let r = 2;
 const area = 3.14 * r * r;
 const area2 = 3.14 * Math.pow(r, 2);

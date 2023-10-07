@@ -1,6 +1,13 @@
+/*
+Loiane Groner - Estrutura de Dados e Algoritmos com JavaScript
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes
+
+//* EcmaScript 2015 (ES6): classes 
+
+*/
 
 
-//* ****** EcmaScript 2015 (ES6): classes 
 class Book {
   constructor(title, pages, isbn) {
     this.title = title;
