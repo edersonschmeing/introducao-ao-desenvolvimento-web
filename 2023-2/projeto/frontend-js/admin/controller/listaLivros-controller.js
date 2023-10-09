@@ -1,21 +1,22 @@
+import { livroModel } from '../model/livro-model.js'
 import { livroService } from '../service/livro-service.js'
 
-const criaNovaLinha = (id, titulo, autor, ano, preco) =>  { //passar o objeto 
+const criaNovaLinha = (livro) =>  { //passar o objeto 
   const linhaNovoLivro = document.createElement('tr')
   const conteudo = `
-      <td class="td" data-td> ${titulo}</td>
-                  <td>${autor}</td>
-                  <td>${ano}</td>
-                  <td>${preco}</td>
+      <td class="td" data-td> ${livro.titulo}</td>
+                  <td>${livro.autor}</td>
+                  <td>${livro.ano}</td>
+                  <td>${livro.preco}</td>
                   <td>
                       <ul class="tabela__botoes-controle">
-                          <li><a href="../view/edita_livro.html?id=${id}" class="botao-simples botao-simples--editar">Editar</a></li>
+                          <li><a href="../view/edita_livro.html?id=${livro.id}" class="botao-simples botao-simples--editar">Editar</a></li>
                           <li><button class="botao-simples botao-simples--excluir" type="button">Excluir</button></li>
                       </ul>
                   </td> 
                   `
   linhaNovoLivro.innerHTML = conteudo
-  linhaNovoLivro.dataset.id = id
+  linhaNovoLivro.dataset.id = livro.id
   return linhaNovoLivro
 }
 
@@ -40,12 +41,15 @@ tabela.addEventListener('click', async (evento)=> {
 const render = async () =>  {
     try {
         const listaLivros = await livroService.listaLivros()
-        listaLivros.forEach(elemento => {
-            tabela.appendChild(criaNovaLinha(elemento.id, 
+        //console.log(listaLivros[0])
+        listaLivros.forEach(livro => {
+            //console.log(livro)            
+            /*let livro = new livroModel.Livro(elemento.id, 
                                              elemento.titulo, 
                                              elemento.autor,
                                              elemento.ano,
-                                             elemento.preco)) // passar o objeto
+                                             elemento.preco)*/  
+            tabela.appendChild(criaNovaLinha(livro)) // passar o objeto
     })
     }
     catch(erro){

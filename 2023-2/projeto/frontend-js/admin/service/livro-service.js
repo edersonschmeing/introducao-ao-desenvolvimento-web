@@ -3,10 +3,13 @@ const listaLivros = () =>  {
     return fetch(`http://localhost:3001/livros`)
     .then(resposta => {
         if(resposta.ok){
-            return resposta.json()
+            return resposta.json() //retorna o objeto data 
         }
         throw new Error('Não foi possível listar os clientes')
     })
+    /*.then((data) => {
+        processamento que esta sendo feito no listaLivros controller.
+    })   */
 }
 
 const criaLivro = (livro) => { 

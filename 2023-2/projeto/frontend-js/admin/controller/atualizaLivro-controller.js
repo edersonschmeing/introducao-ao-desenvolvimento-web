@@ -16,7 +16,7 @@ import { livroModel } from '../model/livro-model.js'
     try {  
 
       const dados = await livroService.detalhaLivro(id) 
-      let livro = dados[0];
+      let livro = dados[0]; //retorna um array de objeto, com um objeto. 
       //console.log(livro.titulo)
        
       inputTitulo.value = livro.titulo

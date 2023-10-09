@@ -18,7 +18,6 @@ const criaNovaLinha = (id, titulo, autor) => {
     return linhaNovoLivro
 }
 
-
 const tabela = document.querySelector('[data-tabela]')
 
 

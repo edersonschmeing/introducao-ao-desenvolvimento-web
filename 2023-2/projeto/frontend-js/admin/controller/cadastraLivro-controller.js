@@ -15,10 +15,10 @@ formulario.addEventListener('submit', async (evento) => {
     const ano = evento.target.querySelector('[data-ano]').value
     const preco = evento.target.querySelector('[data-preco]').value
 
-    let livro = new livroModel.Livro(0, titulo, autor, foto, ano, preco );
+    let livroNovo = new livroModel.Livro(0, titulo, autor, foto, ano, preco );
     //console.log(livro)
 
-    await livroService.criaLivro(livro)
+    await livroService.criaLivro(livroNovo)
     window.location.href = '../view/cadastro_concluido.html'
   }
   catch (erro) {
