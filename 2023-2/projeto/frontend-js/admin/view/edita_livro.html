@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <title>Editora | Atualizar livros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/cadastra_cliente.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="../assets/img/admin.svg" alt="Logotipo Admin" class="cabecalho__logo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="#">Clientes</a></li>
+                <li class="cabecalho__link"><a href="lista_livros.html">Livros </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Edição</h1>
+            <form action="#" class="flex flex--coluna" data-form>
+                
+                <div class="input-container">
+                    <input name="titulo" id="titulo" class="input" type="text" placeholder="Título" required data-titulo>
+                    <label class="input-label" for="titulo">Título</label>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div>
+                
+                <div class="input-container">
+                    <input name="autor" id="autor" class="input" type="text" placeholder="Autor" required data-autor>
+                    <label class="input-label" for="autor" >Autor</label>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div>
+
+                <div class="input-container">
+                    <input name="foto" id="foto" class="input" type="text" placeholder="URL da Foto" required data-foto>
+                    <label class="input-label" for="foto" >URL da Foto</label>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div> 
+
+                <div class="input-container">
+                    <input name="ano" id="ano" class="input" type="number" placeholder="Ano" required data-ano>
+                    <label class="input-label" for="ano" >Ano</label>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div> 
+
+                <div class="input-container">
+                    <input name="preco" id="preco" class="input" type="number" placeholder="Preço" required data-preco>
+                    <label class="input-label" for="preco" >Preço</label>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div> 
+
+
+                <button type="submit"class="botao">
+                    Editar cliente
+                </button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+
+<script type="module" src="../controller/atualizaLivro-controller.js"></script>
+
+</html>
