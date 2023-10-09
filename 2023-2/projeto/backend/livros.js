@@ -30,8 +30,10 @@ router.get("/:id", async (req, res) => {
 
 // Método post é usado para inclusão
 router.post("/", async (req, res) => {
-    // faz a desestruturação dos dados recebidos no corpo da requisição
-    const { titulo, autor, ano, preco, foto } = req.body;
+ 
+     // faz a desestruturação dos dados recebidos no corpo da requisição
+     // criar o Model. 
+    const { titulo, autor, foto, ano, preco } = req.body;
 
     // se algum dos campos não foi passado, irá enviar uma mensagem de erro e retornar
     if (!titulo || !autor || !ano || !preco || !foto) {
@@ -52,11 +54,13 @@ router.post("/", async (req, res) => {
 // Método put é usado para alteração. id indica o registro a ser alterado
 router.put("/:id", async (req, res) => {
     const id = req.params.id; // ou const { id } = req.params
-    const { preco } = req.body; // campo a ser alterado
+    console.log()
+    const { titulo, autor, foto, ano, preco } = req.body; // campos a serem alterado   
     try {
         // altera o campo preco, no registro cujo id coincidir com o parâmetro passado
-        await dbKnex("livros").update({ preco }).where("id", id); // ou .where({ id })
-        res.status(200).json(); // statusCode indica Ok
+        //verificar forma de fazer update somente no que foi alterado 
+        await dbKnex("livros").update({titulo, autor, foto, ano, preco }).where("id", id); // ou .where({ id })
+        res.status(200).json({msg: "registro alterado com sucesso"}); // statusCode indica Ok
     } catch (error) {
         res.status(400).json({ msg: error.message }); // retorna status de erro e msg
     }
@@ -67,7 +71,7 @@ router.delete("/:id", async (req, res) => {
     const { id } = req.params; // id do registro a ser excluído
     try {
         await dbKnex("livros").del().where({ id });
-        res.status(200).json(); // statusCode indica Ok
+        res.status(200).json({msg: "registro excluido com sucesso"}); // statusCode indica Ok
     } catch (error) {
         res.status(400).json({ msg: error.message }); // retorna status de erro e msg
     }
