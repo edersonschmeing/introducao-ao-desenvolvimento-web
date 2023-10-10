@@ -1,3 +1,0 @@
-Escreva um programa que recebe 3 notas digitadas em três campos de input HTML,
-calcula a média simples e exibe em um campo de texto HTML: "Aprovado" se a média for igual ou maior que 7; 
-"Recuperação" se a média for maior ou igual a 4 e menor que 7; e "Reprovado" se a média for menor que 4.
