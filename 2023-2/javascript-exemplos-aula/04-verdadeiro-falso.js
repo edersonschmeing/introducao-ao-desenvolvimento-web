@@ -1,5 +1,4 @@
 /*
-Loiane Groner - Estrutura de Dados e Algoritmos com JavaScript
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 

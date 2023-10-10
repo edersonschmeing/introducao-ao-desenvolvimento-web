@@ -1,5 +1,4 @@
 /*
-Loiane Groner - Estrutura de Dados e Algoritmos com JavaScript
 
 Laços oferecem um jeito fácil e rápido de executar uma ação repetidas vezes.
 

@@ -1,13 +1,14 @@
 
 /*
-Loiane Groner - Estrutura de Dados e Algoritmos com JavaScript
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 
-O JavaScript suporta um conjunto compacto de declarações, especificamente de fluxo de controle, 
-que você pode utilizar para atribuir uma grande interatividade a páginas web.
+O JavaScript suporta um conjunto compacto de declarações, especificamente de 
+fluxo de controle, que você pode utilizar para atribuir uma grande 
+interatividade a páginas web.
 
-Uma declaração em bloco é utilizada para agrupar declarações. O bloco é delimitado por um par de chaves: {}. 
+Uma declaração em bloco é utilizada para agrupar declarações. 
+O bloco é delimitado por um par de chaves: {}. 
 
 {
    declaracao_1;
@@ -18,7 +19,8 @@ Uma declaração em bloco é utilizada para agrupar declarações. O bloco é de
    declaracao_n;
 }
 
-Uma declaração condicional é um conjunto de comandos que são executados caso uma condição especificada seja verdadeira. 
+Uma declaração condicional é um conjunto de comandos que são executados 
+caso uma condição especificada seja verdadeira. 
 O Javascript suporta duas declarações condicionais: if...else e switch
 
 if (condicao) {
@@ -48,7 +50,6 @@ switch (expressao) {
       declaracoes_padrao
       [break;]
 }
-
 
 */
 
