@@ -22,7 +22,15 @@ eles permitem realizar funções úteis em suas aplicações.
 Objetos e funções são outros elementos fundamentais na linguagem.
 Você pode pensar em objetos como recipientes para os valores, 
 e funções como métodos que suas aplicações podem executar.
-*/
+
+
+Temos três modos de declarar variáveis. 
+
+var: Declara uma variável de escopo global, opcionalmente, inicializando-a com um valor.
+
+const: Declara uma constante de escopo de bloco, apenas de leitura.
+
+let: Declara uma variável local de escopo do bloco, opcionalmente, inicializando-a com um valor.
 
 /* Váriaveis e Tipos de dados */ 
 
@@ -31,14 +39,14 @@ numero = 3;
 
 var preco = 1.5; // tipo Number decimal 
 var idade = 39;  // tipo Number inteiro
-var meu_nome = 'Ederson Schmeing'; // tipo String
-var verdadeiro_valor = true; // tipo Boolean
-var falso_valor = false; // tipo Boolean
+let meu_nome = 'Ederson Schmeing'; // tipo String
+let verdadeiro_valor = true; // tipo Boolean
+let falso_valor = false; // tipo Boolean
 var null_variavel = null;  
 var undefined_valor;  // quando não faz a atribuição, o conteúdo fica undefined
 
-var array_valor = []; // vertor/matriz
-var objeto_valor = {}; // objeto
+const array_valor = [1, 3]; // vertor/matriz
+const objeto_valor = {nome: "Ederson Schmeing"}; // objeto
 
 console.log('numero: ' + numero);
 console.log('preço: ' + preco);
@@ -54,15 +62,15 @@ console.log('obejeto: ' + objeto_valor);
 console.log(' \n');
 
 
-/* Escopo de váriavel 
-var não respeita o escopo, vamos ver o let e o const mais para frente
+
+/* Escopo de váriavel veremos mais para frente
+var não respeita o escopo, o let e o const respeita escopo
 */
 //blocos 
 
 {
    console.log("blocos");
 }
- 
 
 var minha_variavel = 'global';
 minha_outra_variavel = 'global';
