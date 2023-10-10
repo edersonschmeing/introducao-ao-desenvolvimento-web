@@ -13,9 +13,9 @@ Os possíveis laços de repetição em JavaScript:
 - declaração for
 - declaração do...while
 - declaração while
-- declaração label
 - declaração break
 - declaração continue
+- declaração label
 - declaração for...in
 - declaração for...of
 
@@ -62,6 +62,20 @@ while (i < 10) {
     continue;
   console.log(i);
 }
+
+console.log('\n**** exemplo declaração label  ****');
+loop1: for (i = 0; i < 3; i++) {
+  //O primeiro 'for' é etiquetado com "loop1"
+  loop2: for (j = 0; j < 3; j++) {
+    //O segundo é etiquetado com "loop2"
+    if (i == 1 && j == 1) {
+      continue loop1;
+    } else {
+      console.log("i = " + i + ", j = " + j);
+    }
+  }
+}
+
 
 /*
 /*for in e of - exemplo 
