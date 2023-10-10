@@ -66,7 +66,7 @@ switch (expressao) {
 
 /* Exemplo 01 - if */
 var numero = 1;
-if (num === 1) {
+if (numero === 1) {
   console.log('número é igual a 1');
 }
 
@@ -76,7 +76,7 @@ var numero = 0;
 if (numero === 1) {
   console.log('número é igual a 1');
 } else {
-  console.log('número não é igual a 1, o valor do número é ' + num);
+  console.log('número não é igual a 1, o valor do número é ' + numero);
 }
 
 

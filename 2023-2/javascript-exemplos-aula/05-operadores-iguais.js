@@ -42,4 +42,4 @@ console.log('Ederson Schmeing' === 'Ederson Schmeing'); // true (verdadeido)
 
 var pessoa1 = { nome: 'Ederson Schmeing' };
 var pessoa2 = { nome: 'Ederson Schmeing' };
-console.log(person1 === person2); // false, objetos diferentes.
+console.log(pessoa1 === pessoa2); // false, objetos diferentes.
