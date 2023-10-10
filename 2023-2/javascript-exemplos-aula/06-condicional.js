@@ -168,6 +168,9 @@ try  {
    console.log("sempre executa o finally");    
 } 
 
+
+
+//quando falarmos de funções valtaremos nesse assunto. 
 console.log("\nCria um objeto do tipo UsuarioException"); 
 // Cria um objeto do tipo UsuarioException
 function UsuarioException(mensagem) {
