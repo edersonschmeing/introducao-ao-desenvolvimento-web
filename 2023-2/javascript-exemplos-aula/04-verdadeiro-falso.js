@@ -12,7 +12,6 @@ Os seguintes valores são avaliados como falsos:
 - 0
 - NaN
 - string vazia ("")
-
 */
 
 

@@ -4,7 +4,6 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_op
 
 */
 
-
 //* ****************************** ==
 console.log('Ederson Schmeing' ? true : false);
 // outputs true (saída verdadeira)

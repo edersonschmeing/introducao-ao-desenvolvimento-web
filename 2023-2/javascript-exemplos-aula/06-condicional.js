@@ -120,7 +120,6 @@ if (numero === 1) {
 // é o mesmo que 
 numero === 1 ? numero-- : numero++;
 
-
 /*
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
@@ -170,8 +169,7 @@ try  {
 } 
 
 
-
-//quando falarmos de funções valtaremos nesse assunto. 
+//quando falamos de funções valtaremos nesse assunto. 
 console.log("\nCria um objeto do tipo UsuarioException"); 
 // Cria um objeto do tipo UsuarioException
 function UsuarioException(mensagem) {
