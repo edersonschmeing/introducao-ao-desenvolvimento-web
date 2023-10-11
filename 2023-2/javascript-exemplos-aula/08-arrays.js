@@ -1,25 +1,11 @@
 /*
-Um array é um conjunto de valores ordenados que você o referencia com um nome e 
-um índice. Por exemplo, você pode ter um array chamado empregrados que contém 
-nomes de funcionários indexados por seus números de funcionários. 
-Então empregados[1] poderia ser o funcionário número 1, empregados[2]
-o funcionário número 2 e assim por diante. 
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_collections
 
-JavaScript não possui um tipo de dados array específico. No entanto, 
-você pode usar o objeto predefinido Array e seus métodos para trabalhar 
-com arrays em suas aplicações. O objeto Array tem métodos para manipular 
-arrays de várias maneiras como join, reverse e sort. 
-Ele tem uma propriedade para determinar o tamanho do array e outras 
-propriedades para usar com expressões regulares.
+declarando um array
 
-
-//declarando um array
-
-var arr1 = new Array(elemento0, elemento1, ..., elementoN);
-var arr2 = Array(elemento0, elemento1, ..., elementoN);
-var arr3 = [elemento0, elemento1, ..., elementoN];
-v
-
+const arr1 = new Array(elemento0, elemento1, ..., elementoN);
+const arr2 = Array(elemento0, elemento1, ..., elementoN);
+const arr3 = [elemento0, elemento1, ..., elementoN];
 
 */
 
@@ -29,7 +15,7 @@ const array03 = new Array()
 //var arr = new Array(12); // 12 é o tamanho do array
 //var arr = Array(15); // 15 é o tamanho do array
 //var arr = [];
-//arr.length = comprimentoDoArray;
+//arr.length = 12; // 12 tamanho do vetor
 
 
 console.log("\ntypeof da variável")
@@ -42,10 +28,10 @@ const array04 = [1, 2, 3]
 const array05 = Array.of(1, 2, 3)
 
 const array2d = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9]
-]
+                  [1, 2, 3],
+                  [4, 5, 6],
+                  [7, 8, 9]
+                ]
 
 console.log("\nmatriz")
 console.log(array2d[0][0]) //1 matriz
@@ -62,5 +48,45 @@ array06 = Array(12).fill(0)
 console.log(array06)
 
 //tamanho do array
+const array07 = [1, 2, 3, 4]
 console.log("\ntamanho do array")
-console.log(array06.length) //12
+console.log(array07.length) //4
+console.log("novo tamanho do array")
+array07.length = 3
+console.log(array07.length) //3
+
+//adicionar um item a um array
+console.log("\nadicionar um item a um array")
+array07.push(4)
+console.log(array07)
+
+//adicionar um item a um array
+console.log("\nadicionar um item no começo de um array")
+array07.unshift(0)
+console.log(array07)
+console.log("\nadicionar dois itens no começo de um array")
+array07.unshift(-2, -1)
+console.log(array07)
+
+
+//remover um item a um array
+console.log("\nremover um item a um array")
+array07.pop(array07)
+console.log(array07)
+console.log("\nremover um item no começo de um array")
+array07.shift()
+console.log(array07)
+
+//Como unir dois ou mais arraysarray07
+console.log("\nconcatena dois arrays")
+const array08 = [10,11]
+const array09 = array07.concat(array08) //[1,2,3,4
+console.log(array07)
+console.log(array08)
+console.log(array09)
+
+console.log("\nconcatena dois arrays usando spread (...)")
+const array10 = [15,16]
+const array11 = [...array10, ...array09]
+console.log(array11)
+
