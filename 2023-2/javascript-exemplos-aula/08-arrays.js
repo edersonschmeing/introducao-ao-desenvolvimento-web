@@ -1,29 +1,8 @@
 /*
+
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_collections
 
-
-const arr1 = new Array(elemento0, elemento1, ..., elementoN);
-const arr2 = Array(elemento0, elemento1, ..., elementoN);
-const arr3 = [elemento0, elemento1, ..., elementoN];
-
 */
-const array01 = [] //usar essa forma
-const array02 = Array()
-const array03 = new Array()
-
-//var arr = new Array(12); // 12 é o tamanho do array
-//var arr = Array(15); // 15 é o tamanho do array
-//var arr = [];
-//arr.length = 12; // 12 tamanho do vetor
-
-console.log("\ntypeof da variável")
-console.log('typeof array01:', typeof array01); // array
-console.log('typeof array02:', typeof array02); // array
-console.log('typeof array03:', typeof array03); // array
-
-//declarando e prechendo um array
-const array04 = [1, 2, 3]
-const array05 = Array.of(1, 2, 3)
 
 //declarando e prechendo uma matriz
 const array2d = [
@@ -127,232 +106,113 @@ array11.find((15, indice, array) => {
 */
 
 
-//CREAÇÃO DE ARRAYS
+//refatorando apartir daqui 
 
-let daysOfWeek = new Array(); // {1}
+//criação de arrays
 
-daysOfWeek = new Array(7); // {2}
+let dias_da_semana = new Array();
+//dias_da_semana = Array(7).fill("")//inicializa com valor padrão
+dias_da_semana = new Array(7);
+dias_da_semana = Array.of('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado')
 
-daysOfWeek = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'); // {3}
+dias_da_semana = new Array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'); 
 
-// preferred
-daysOfWeek = [];
+// criar dessa forma de preferência
+dias_da_semana = [];
+dias_da_semana.length = 7
+dias_da_semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; // {3}
 
-daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; // {3}
+console.log('dias_da_semana.length', dias_da_semana.length);
 
-console.log('daysOfWeek.length', daysOfWeek.length);
-
-for (let i = 0; i < daysOfWeek.length; i++) {
-  console.log(`daysOfWeek[${i}]`, daysOfWeek[i]);
+for (let i = 0; i < dias_da_semana.length; i++) {
+  console.log(`dias_da_semana[${i}]`, dias_da_semana[i]);
 }
 
-// fibonacci numbers
-// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
-const fibonacci = []; // {1}
-fibonacci[1] = 1; // {2}
-fibonacci[2] = 1; // {3}
+//Adiciona e remove elementos 
 
-for (let i = 3; i < 20; i++) {
-  fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2]; // //{4}
+let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log('tamanho do array', numeros.length)
+console.log('Array original', numeros);
+
+//imprime elemente a elemento
+for (let i = 0; i < numeros.length; i++) {
+  console.log(numeros[i]);
 }
 
-for (let i = 1; i < fibonacci.length; i++) { // {5}
-  console.log(`fibonacci[${i}]`, fibonacci[i]); // {6}
+//ADICIONA
+
+console.log('ADICIONANDO')
+// adicona um novo elemento no final do array
+numeros[numeros.length] = 10;
+console.log('Adicionado 10 no final', numeros);
+
+numeros.push(11);
+console.log('Adicionado 11 no final com método push', numeros);
+
+numeros.push(12, 13);
+console.log('Adicionado 12 e 13 no final com método push', numeros);
+
+//adiciona um novo elemento no início do array de forma manual
+for (let i = numeros.length; i >= 0; i--) {
+  numeros[i] = numeros[i - 1];
 }
+numeros[0] = -1;
+console.log('Adicionado -1 de forma manual', numeros);
 
-// instead of {5} and {6} we can simply use
-console.log('fibonacci', fibonacci);
+//adicona um novo elemento no início do array usando unshift
+numeros.unshift(-2);
+console.log('Adicionado -2 no início com método unshift', numeros);
 
+numeros.unshift(-4, -3);
+console.log('Adicionado -4 e -3 no início com método unshift', numeros);
 
+//REMOVE
+console.log('REMOVENDO')
 
-//ADD E REMOVE ELEMENTOS
+numeros.pop();
+console.log('Removido o último elemento com método pop', numeros);
 
-let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+numeros.length = numeros.length - 1;
+console.log('Removido o último elemento manual', numeros);
 
-console.log('Original array', numbers);
+delete numeros[numeros.length-1] 
+numeros.length = numeros.length -1;
+console.log('Removido o último elemento delete', numeros);
 
-function printArray(myArray) {
-  for (let i = 0; i < myArray.length; i++) {
-    console.log(myArray[i]);
-  }
+numeros.shift();
+console.log('Removido o primeiro elemento com método shift', numeros);
+
+//Remove o primeiro elemento do array de forma manual
+for (let i = 0; i < numeros.length; i++) {
+  numeros[i] = numeros[i + 1];
 }
+numeros.length = numeros.length -1;
 
-/****************************** Inserting an element in the end of the Array */
+console.log('Removido o primeiro elemento de forma manual', numeros);
+console.log('Tamanho do array', numeros.length);
 
-// add a new element to the numbers array
-numbers[numbers.length] = 10;
-console.log('Add 10 to the end', numbers);
-
-numbers.push(11);
-console.log('Add 11 with push', numbers);
-
-numbers.push(12, 13);
-console.log('Add 12 and 13 with push', numbers);
+//reinicializa array
+numeros = [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+console.log('Array reinicializado', numeros);
 
 
-// insert first position manually
-Array.prototype.insertFirstPosition = function(value) {
-  for (let i = this.length; i >= 0; i--) {
-    this[i] = this[i - 1];
-  }
-  this[0] = value;
-};
+//Removendo e adicionando elementos do meio ou uma posicição específica
 
-numbers.insertFirstPosition(-1);
-console.log('Add -1 with insertFirstPosition', numbers);
-// printArray(numbers);
+//médodo splice - parâmetros (index, quantas posições devem ser removidas, item1...itemN)
+numeros.splice(5, 3);
+console.log('Removendo 3 elementos (3, 4, 5) começando no index 5', numeros);
 
-// using method unshift
-numbers.unshift(-2);
-console.log('Add -2 with unshift', numbers);
-//printArray(numbers);
+numeros.splice(5, 0, 2, 3, 4);
+console.log('Adicionando 3 elementos (2, 3, 4) começando no index 5', numeros);
 
-numbers.unshift(-4, -3);
-console.log('Add -4 and -3 with unshift', numbers);
-// printArray(numbers);
-
-// ************** Removing elements
-
-numbers.pop();
-console.log('Removed last value with pop', numbers);
-
-for (let i = 0; i < numbers.length; i++) {
-  numbers[i] = numbers[i + 1];
-}
-
-console.log('Removed first value manually', numbers);
-console.log('Lenght after value removed manually', numbers.length);
-
-//reset array
-numbers = [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
-Array.prototype.reIndex = function(myArray) {
-  const newArray = [];
-  for(let i = 0; i < myArray.length; i++ ) {
-    if (myArray[i] !== undefined) {
-      // console.log(myArray[i]);
-      newArray.push(myArray[i]);
-    }
-  }
-  return newArray;
-}
-
-// remove first position manually and reIndex
-Array.prototype.removeFirstPosition = function() {
-  for (let i = 0; i < this.length; i++) {
-    this[i] = this[i + 1];
-  }
-  return this.reIndex(this);
-};
-
-numbers = numbers.removeFirstPosition();
-console.log('Removed first with removeFirstPosition + reIndex', numbers);
-
-// using method shift
-numbers.shift();
-console.log('Removed first with shift', numbers);
-console.log('Lenght after removed first with shift', numbers.length);
-
-//* *** Removing and Adding elements from the middle of the array or specific position
-// splice method - parameter (index, howManyPositionsToBeRemoved, item1...itemX)
-numbers.splice(5, 3);
-console.log('Removing 3 elements (3, 4, 5) starting index 5', numbers);
-
-numbers.splice(5, 0, 2, 3, 4);
-console.log('Adding 3 elements (2, 3, 4) starting index 5', numbers);
-
-numbers.splice(5, 3, 2, 3, 4);
-console.log('Removing 3 elements starting index 5 and adding (2, 3, 4)', numbers);
-
-
-
-
-
-//arrays dois D e multi D
-
-let averageTempDay1 = [72, 75, 79, 79, 81, 81];
-let averageTempDay2 = [81, 79, 75, 75, 73, 72];
-
-let averageTemp = [];
-
-// same as
-averageTemp[0] = [72, 75, 79, 79, 81, 81];
-averageTemp[1] = [81, 79, 75, 75, 73, 73];
-
-function printMatrix(myMatrix) {
-  for (let i = 0; i < myMatrix.length; i++) {
-    for (let j = 0; j < myMatrix[i].length; j++) {
-      console.log(myMatrix[i][j]);
-    }
-  }
-}
-
-// printMatrix(averageTemp);
-console.log('averageTemp two-dimensional array:');
-
-// same as
-
-// day 1
-averageTemp[0] = [];
-averageTemp[0][0] = 72;
-averageTemp[0][1] = 75;
-averageTemp[0][2] = 79;
-averageTemp[0][3] = 79;
-averageTemp[0][4] = 81;
-averageTemp[0][5] = 81;
-// day 2
-averageTemp[1] = [];
-averageTemp[1][0] = 81;
-averageTemp[1][1] = 79;
-averageTemp[1][2] = 75;
-averageTemp[1][3] = 75;
-averageTemp[1][4] = 73;
-averageTemp[1][5] = 73;
-
-// printMatrix(averageTemp);
-console.table(averageTemp);
-
-//* * Multidimensional Matrix
-
-// Matrix 3x3x3 - Cube
-
-const matrix3x3x3 = [];
-for (let i = 0; i < 3; i++) {
-  matrix3x3x3[i] = [];
-  for (let j = 0; j < 3; j++) {
-    matrix3x3x3[i][j] = [];
-    for (let z = 0; z < 3; z++) {
-      matrix3x3x3[i][j][z] = i + j + z;
-    }
-  }
-}
-
-for (let i = 0; i < matrix3x3x3.length; i++) {
-  for (let j = 0; j < matrix3x3x3[i].length; j++) {
-    for (let z = 0; z < matrix3x3x3[i][j].length; z++) {
-      console.log(matrix3x3x3[i][j][z]);
-    }
-  }
-}
-
-// user-friendly-output
-const matrix3x3x3Output = [];
-for (let i = 0; i < 3; i++) {
-  matrix3x3x3Output[i] = [];
-  for (let j = 0; j < 3; j++) {
-    matrix3x3x3Output[i][j] = `[${matrix3x3x3[i][j].join(', ')}]`;
-  }
-}
-console.log('matrix3x3x3 three-dimensional array:');
-console.table(matrix3x3x3Output);
-
-
-
+numeros.splice(5, 3, 2, 3, 4);
+console.log('Removendo 3 elementos começando do index 5 e adicionando (2, 3, 4)', numeros);
 
 //methods
 
+/*
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 //* ********* using for..of loop
 for (const n of numbers) {
@@ -488,6 +348,7 @@ console.log('numbers.sort()', numbers.sort());
   })
 ); */ // ES5 syntax
 
+/*
 console.log('numbers.sort((a, b) => a - b)', numbers.sort((a, b) => a - b));
 
 function compare(a, b) {
@@ -544,10 +405,6 @@ console.log('names2', names);
 console.log('names2.sort((a, b) => a.localeCompare(b))', names2.sort((a, b) => a.localeCompare(b)));
 
 
-
-
-
-
 //searching
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
@@ -564,4 +421,90 @@ console.log('push 10: numbers.lastIndexOf(10)', numbers.lastIndexOf(10));
 console.log('push 10: numbers.lastIndexOf(100)', numbers.lastIndexOf(100));
 
 const numbersString = numbers.join('-');
-console.log('numbers.join("-")', numbersString);
+console.log('numbers.join("-")', numbersString); 
+
+
+//arrays dois D e multi D
+
+let averageTempDay1 = [72, 75, 79, 79, 81, 81];
+let averageTempDay2 = [81, 79, 75, 75, 73, 72];
+
+let averageTemp = [];
+
+// same as
+averageTemp[0] = [72, 75, 79, 79, 81, 81];
+averageTemp[1] = [81, 79, 75, 75, 73, 73];
+
+function printMatrix(myMatrix) {
+  for (let i = 0; i < myMatrix.length; i++) {
+    for (let j = 0; j < myMatrix[i].length; j++) {
+      console.log(myMatrix[i][j]);
+    }
+  }
+}
+
+// printMatrix(averageTemp);
+console.log('averageTemp two-dimensional array:');
+
+// same as
+
+// day 1
+averageTemp[0] = [];
+averageTemp[0][0] = 72;
+averageTemp[0][1] = 75;
+averageTemp[0][2] = 79;
+averageTemp[0][3] = 79;
+averageTemp[0][4] = 81;
+averageTemp[0][5] = 81;
+// day 2
+averageTemp[1] = [];
+averageTemp[1][0] = 81;
+averageTemp[1][1] = 79;
+averageTemp[1][2] = 75;
+averageTemp[1][3] = 75;
+averageTemp[1][4] = 73;
+averageTemp[1][5] = 73;
+
+// printMatrix(averageTemp);
+console.table(averageTemp);
+
+//* * Multidimensional Matrix
+
+// Matrix 3x3x3 - Cube
+
+const matrix3x3x3 = [];
+for (let i = 0; i < 3; i++) {
+  matrix3x3x3[i] = [];
+  for (let j = 0; j < 3; j++) {
+    matrix3x3x3[i][j] = [];
+    for (let z = 0; z < 3; z++) {
+      matrix3x3x3[i][j][z] = i + j + z;
+    }
+  }
+}
+
+for (let i = 0; i < matrix3x3x3.length; i++) {
+  for (let j = 0; j < matrix3x3x3[i].length; j++) {
+    for (let z = 0; z < matrix3x3x3[i][j].length; z++) {
+      console.log(matrix3x3x3[i][j][z]);
+    }
+  }
+}
+
+// user-friendly-output
+const matrix3x3x3Output = [];
+for (let i = 0; i < 3; i++) {
+  matrix3x3x3Output[i] = [];
+  for (let j = 0; j < 3; j++) {
+    matrix3x3x3Output[i][j] = `[${matrix3x3x3[i][j].join(', ')}]`;
+  }
+}
+console.log('matrix3x3x3 three-dimensional array:');
+console.table(matrix3x3x3Output);
+
+
+
+
+*/
+
+
