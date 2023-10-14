@@ -1,13 +1,102 @@
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects
+
+//usando variáveis
+let titulo_livro = "Lógica de Programação com JavaScript";
+let autor_livro = "Edécio Fernando Iepsen";
+
+
+//usando arrays
+let livro_array = ["Lógica de Programação com JavaScript", "Edécio Fernando Iepsen"];
+
+//usando objetos com propriedade se funções
+//Um objeto é declarado usando chaves {}, e cada item entre chaves é escrito no formato chave:valor.
+
 /*
-Loiane Groner - Estrutura de Dados e Algoritmos com JavaScript
+let livro_objeto = {}
 
-https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects
-
+let livro_objeto = {
+  titulo: "Lógica de Programação com JavaScript",
+  autor: "Edécio Fernando Iepsen",
+  descricao: function () {
+    console.log(`Título do livro: ${this.titulo}`);
+    console.log(`Autoro do livro: ${this.autor}`);
+  },
+  publicacao: {
+                ano: 2023,
+                editora: "Novatec"
+              } 
+}; 
 */
 
+//Usando uma função construtora
+function Livro_Objeto(titulo, autor) {
+  this.titulo = titulo; 
+  this.autor = autor;
+  this.descricao = function () {
+    console.log(`Título do livro: ${this.titulo}`);
+    console.log(`Autoro do livro: ${this.autor}`);
+  };
+};
+let livro_objeto = new Livro_Objeto("Lógica de Programação com JavaScript", "Edécio Fernando Iepsen" )
+
+console.log("Objeto");
+console.log(livro_objeto)
+
+console.log("\nExecuta funcao descricao ");
+livro_objeto.descricao();
+
+
+//notação .
+console.log("\nnotação . ");
+console.log(livro_objeto.titulo);
+console.log(livro_objeto.autor);
+
+//notação []
+console.log("\nnotação [] ");
+console.log(livro_objeto["titulo"]);
+console.log(livro_objeto["autor"]);
+
+//adicionar propriedade ano
+console.log("\nadicionar propriedade ano");
+livro_objeto.ano = 2023;
+console.log(livro_objeto);
+
+//adicionar propriedade editora
+console.log("\nadicionar propriedade editora");
+livro_objeto["editora"] = "Novatec";
+console.log(livro_objeto);
+
+//cria função imprime_publicacao e executa
+console.log("\ncria função imprime_publicacao e executa");
+Livro_Objeto.prototype.imprime_publicacao = function() {
+  console.log(this.ano);
+  console.log(this.editora); 
+};
+livro_objeto.imprime_publicacao();
+
+
+//altera propriedade autor
+console.log("\naltera propriedade autor");
+livro_objeto.autor = "Iepsen, Edécio Fernando";
+console.log(livro_objeto);
+
+//remove propriedade editora
+console.log("\nremove propriedade editora");
+delete livro_objeto.editora;
+console.log(livro_objeto);
+
+//verifica se propriedade existe no objeto
+console.log("\nverifica se propriedade existe no objeto");
+console.log('editora' in livro_objeto); // false
+console.log('ano' in livro_objeto); // true
+
+console.log("\n")
+
+
+// exemplos 
 
 /* Object exemplo 1 */
-var obj = new Object();
+//var obj = new Object();
 
 /* Object example 2 */
 var obj = {};
@@ -46,15 +135,14 @@ book.printTitle();
 
 book.printIsbn();
 
-
 //propriedades de objetos
 
 //* ****** EcmaScript 2015 (ES6): Destructuring Assignment + Property Shorthand
 let [x, y] = ['a', 'b'];
-let obj = { x, y };
-console.log(obj); // { x: "a", y: "b" }
+let obj1 = { x, y };
+console.log(obj1); // { x: "a", y: "b" }
 
-// swap (https://goo.gl/EyFAII)
+// swap
 [x, y] = [y, x];
 var temp = x;
 x = y;
@@ -66,7 +154,7 @@ var y2 = 'b';
 var obj2 = { x2: x2, y2: y2 };
 console.log(obj2); // { x: "a", y: "b" }
 
-// Method Properties (https://goo.gl/DKU2PN)
+// Method Properties
 const hello = {
   name: 'abcdef',
   printHello() {
@@ -83,95 +171,3 @@ var hello2 = {
   }
 };
 console.log(hello2.printHello());
-
-
-
-//classes
-
-
-class Livro {
-  constructor(titulo, ano, autor) {
-    this.titulo = titulo;
-    this.ano = autor;
-    this.autor = autor;
-  }
-  printIsbn() {
-    console.log(this.isbn);
-  }
-}
-
-let book = new Book('title', 'pag', 'isbn');
-
-console.log(book.title); // outputs the book title
-
-book.title = 'new title'; // update the value of the book title
-
-console.log(book.title); // outputs the book title
-
-
-//Herança
-class ITBook extends Book { // {1}
-  constructor(title, pages, isbn, technology) {
-    super(title, pages, isbn); // {2}
-    this.technology = technology;
-  }
-
-  printTechnology() {
-    console.log(this.technology);
-  }
-}
-
-let jsBook = new ITBook(
-  'Learning JS Algorithms',
-  '200',
-  '1234567890',
-  'JavaScript'
-);
-
-console.log(jsBook.title);
-console.log(jsBook.printTechnology());
-
-// getter and setters (https://goo.gl/SMRYsv)
-class Person {
-  constructor(name) {
-    this._name = name; // {1}
-  }
-
-  get name() { // {2}
-    return this._name;
-  }
-
-  set name(value) { // {3}
-    this._name = value;
-  }
-}
-
-let lotrChar = new Person('Frodo');
-console.log(lotrChar.name); // {4}
-lotrChar.name = 'Gandalf'; // {5}
-console.log(lotrChar.name);
-lotrChar._name = 'Sam'; // {6}
-console.log(lotrChar.name);
-
-// using symbols for private atributes
-var _name = Symbol();
-class Person2 {
-  constructor(name) {
-    this[_name] = name;
-  }
-
-  get name() {
-    return this[_name];
-  }
-
-  set name(value) {
-    this[_name] = value;
-  }
-}
-
-let lotrChar2 = new Person2('Frodo');
-console.log(lotrChar2.name);
-lotrChar2.name = 'Gandalf';
-console.log(lotrChar2.name);
-
-console.log(Object.getOwnPropertySymbols(lotrChar2));

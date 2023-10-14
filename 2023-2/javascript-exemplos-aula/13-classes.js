@@ -1,93 +1,99 @@
 /*
-
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes
-
 */
 
-
+console.log("\nClasses");
 class Livro {
-  constructor(titulo, ano, autor) {
+  constructor(titulo, autor, ano, editora) {
     this.titulo = titulo;
-    this.ano = autor;
+    this.ano = ano;
     this.autor = autor;
+    this.editora = editora;
   }
-  printIsbn() {
-    console.log(this.isbn);
+  imprime_editora() {
+    console.log(this.editora);
   }
 }
 
-let book = new Book('title', 'pag', 'isbn');
+let livro = new Livro("Lógica de Programação com JavaScript", "Edécio Fernando Iepsen" )
 
-console.log(book.title); // outputs the book title
+console.log(livro); 
 
-book.title = 'new title'; // update the value of the book title
+console.log("\nsetando valores");
+livro.ano = 2023; 
+livro["editora"] = "Novatec"; 
 
-console.log(book.title); // outputs the book title
+console.log(livro); 
 
 
 //Herança
-class ITBook extends Book { // {1}
-  constructor(title, pages, isbn, technology) {
-    super(title, pages, isbn); // {2}
-    this.technology = technology;
+console.log("\nHerança");
+class Livro_TI extends Livro {
+  constructor(titulo, autor, ano, editora, tecnologia) {
+    super(titulo, autor, ano, editora); 
+    this.tecnologia = tecnologia;
   }
-
-  printTechnology() {
-    console.log(this.technology);
+  imprime_tecnologia() {
+    console.log(this.tecnologia);
   }
 }
 
-let jsBook = new ITBook(
-  'Learning JS Algorithms',
-  '200',
-  '1234567890',
+let livro_TI = new Livro_TI(
+  'Programação Web com Node e Express',
+  'Ethan Brown',
+  '2020',
+  'Novatec',
   'JavaScript'
 );
 
-console.log(jsBook.title);
-console.log(jsBook.printTechnology());
+console.log(livro_TI.titulo);
+livro_TI.imprime_tecnologia();
 
-// getter and setters (https://goo.gl/SMRYsv)
-class Person {
-  constructor(name) {
-    this._name = name; // {1}
+
+// getter e setters 
+console.log("\ngetter e setters de acesso"); // {4}
+class Pessoa {
+  constructor(nome) {
+    this._nome = nome;
+  }
+  get nome() {
+    return this._nome;
+  }
+  set nome(value) {
+    this._nome = value;
+  }
+}
+let pessoa = new Pessoa('Frodo');
+console.log(pessoa.nome); 
+pessoa.nome = 'Gandalf'; 
+console.log(pessoa.nome);
+pessoa._nome = 'Sam'; 
+console.log(pessoa.nome);
+
+
+
+// usando symbols para atributos private
+console.log("\nusando symbols para atributos private"); // {4}
+let _nome = Symbol();
+class Pessoa2 {
+  constructor(nome) {
+    this[_nome] = nome;
   }
 
-  get name() { // {2}
-    return this._name;
+  get nome() {
+    return this[_nome];
   }
 
-  set name(value) { // {3}
-    this._name = value;
+  set nome(value) {
+    this[_nome] = value;
   }
 }
 
-let lotrChar = new Person('Frodo');
-console.log(lotrChar.name); // {4}
-lotrChar.name = 'Gandalf'; // {5}
-console.log(lotrChar.name);
-lotrChar._name = 'Sam'; // {6}
-console.log(lotrChar.name);
+let pessoa2 = new Pessoa2('Frodo');
+console.log(pessoa2.nome);
+pessoa2.nome = 'Gandalf';
+console.log(pessoa2.nome);
+pessoa2._nome = 'Sam';
+console.log(pessoa2.nome);
 
-// using symbols for private atributes
-var _name = Symbol();
-class Person2 {
-  constructor(name) {
-    this[_name] = name;
-  }
-
-  get name() {
-    return this[_name];
-  }
-
-  set name(value) {
-    this[_name] = value;
-  }
-}
-
-let lotrChar2 = new Person2('Frodo');
-console.log(lotrChar2.name);
-lotrChar2.name = 'Gandalf';
-console.log(lotrChar2.name);
-
-console.log(Object.getOwnPropertySymbols(lotrChar2));
+console.log(Object.getOwnPropertySymbols(pessoa2));
