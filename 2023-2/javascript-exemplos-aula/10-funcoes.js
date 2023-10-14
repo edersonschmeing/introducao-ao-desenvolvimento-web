@@ -1,19 +1,23 @@
+/*Uma função é simplesmente uma seção (ou bloco) de código 
+escrita para executar uma tarefa específica.*/
 
-
-function diga_ola() {
+// função
+function cumprimento() {
   console.log('Olá!');
 }
-diga_ola();
+cumprimento();
 
-
-/* função com parâmetro/argumento */
-function diga_ola(nome) {
-  console.log("Ola " +  nome);
+// função com parâmetro/argumento 
+function cumprimento(nome) {
+  console.log("Olá " +  nome);
+  console.log(`Hello, ${nome}!`);
 }
+cumprimento('olá!');
+cumprimento('olá!', 'Outro texto'); //ignora segundo parâmetro
+cumprimento(); //undefined
 
-diga_ola('olá!');
-diga_ola('olá!', 'Outro texto'); //ignora segundo parâmetro
-diga_ola(); //undefined
+
+
 
 
 /* função usando declaração de retorno return */
