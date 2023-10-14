@@ -3,6 +3,24 @@ Uma string JavaScript contém zero ou mais caracteres escritos entre aspas.
 
 https://www.w3schools.com/js/js_string_methods.asp
 
+length
+slice()
+substring()
+substr()
+replace()
+replaceAll()
+toUpperCase()
+toLowerCase()
+concat()
+trim()
+trimStart()
+trimEnd()
+padStart()
+padEnd()
+charAt()
+charCodeAt()
+split()
+
 */
 
 let uma_string = "Uma String";
@@ -53,27 +71,20 @@ let ecma = js.replace("java", "ecma");
 console.log("\nreplace - "+js + " por "+ ecma); 
 
 
+//Métodos de pesquisa em strings
 /*
-https://www.w3schools.com/js/js_string_methods.asp
-String length
-String slice()
-String substring()
-String substr()
-String replace()
-String replaceAll()
-String toUpperCase()
-String toLowerCase()
-String concat()
-String trim()
-String trimStart()
-String trimEnd()
-String padStart()
-String padEnd()
-String charAt()
-String charCodeAt()
-String split()
+indexOf()
+lastIndexOf()
+search()
+match()
+matchAll()
+includes()
+startsWith()
+endsWith()
 
 */
+
+
 
 //template String
 
@@ -89,3 +100,5 @@ let preco = 10;
 let juros = 0.25;
 let total = `Total: ${(preco * (1 + juros)).toFixed(2)}`;
 console.log("\ntemplate - "+ total)
+
+
