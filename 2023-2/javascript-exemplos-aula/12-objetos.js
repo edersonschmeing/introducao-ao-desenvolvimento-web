@@ -90,7 +90,24 @@ console.log("\nverifica se propriedade existe no objeto");
 console.log('editora' in livro_objeto); // false
 console.log('ano' in livro_objeto); // true
 
+console.log("\narray de objetos")
+let livro_objeto01 = new Livro_Objeto("Programação Web com Node e Express", "Ethan Brown)")
+livro_objeto01.ano = 2020;
+let livro_objeto02 = new Livro_Objeto("Desconstruindo a Web", "Willian Molinari)")
+livro_objeto02.ano = 2015;
+
+livros = [livro_objeto]
+livros.push(livro_objeto01) 
+livros.push(livro_objeto02) 
+
+console.log(livros)
+for (const livro of livros) { 
+   console.log(`Título: ${livro.titulo} - ${livro.ano}`)  
+} 
+
+
 console.log("\n")
+
 
 
 // exemplos 
