@@ -1,9 +1,8 @@
 /*
 O que é JSON?
 JSON significa notação de objeto JavaScript
-JSON é um formato leve de troca de dados
+JSON é um formato de texto para armazenar e transportar dados
 JSON é texto simples escrito em notação de objeto JavaScript
-JSON é usado para enviar dados entre computadores
 JSON é independente de linguagem de progração
 */
 
@@ -30,3 +29,18 @@ let json02 = JSON.stringify(obj)
 console.log("JSON: ", json02);
 
 
+json_array = 
+`[{"nome":"Ederson Schmeing", "idade":39, "tipo_sanguineo":null},
+   {"nome":"Isabela do Anjos", "idade":38, "tipo_sanguineo":"O+"},
+   {"nome":"João Henrique Schmeing", "idade":18, "tipo_sanguineo":"O-"}, 
+   {"nome":"Matheus Vicente Schmeing", "idade":12, "tipo_sanguineo":"B"}]`;
+
+console.log("\nJSON array: ", json_array);
+array_objeto = JSON.parse(json_array);
+console.log("\narray objeto: ", array_objeto);
+         
+console.log("\n");
+console.log(array_objeto[0]);
+console.log(array_objeto[1]);
+console.log(array_objeto[2]);
+console.log(array_objeto[3]);
