@@ -57,6 +57,8 @@ let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log('tamanho do array', numeros.length)
 console.log('Array original', numeros);
 
+//ITERAÇÃO
+
 //iteração em array
 for (let i = 0; i < numeros.length; i++) {
   console.log(numeros[i]);
@@ -68,7 +70,7 @@ numeros.forEach(function (numero) {
 });
 
 //função seta 
-numeros.forEach((numero) => console.log(numero));
+numeros.forEach( (numero) => console.log(numero) );
 
 //ADICIONA
 
@@ -139,7 +141,7 @@ console.log('Adicionando 3 elementos (2, 3, 4) começando no index 5', numeros);
 numeros.splice(5, 3, 2, 3, 4);
 console.log('Removendo 3 elementos começando do index 5 e adicionando (2, 3, 4)', numeros);
 
-//Métodos de arrays
+//MÉTODOS
 
 //reset números
 numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
@@ -252,7 +254,7 @@ console.log('numbers.includes(20)', numeros.includes(20));
 const numeros5 = [7, 6, 5, 4, 3, 2, 1];
 console.log('numeros5.includes(4, 5)', numeros5.includes(4, 5));
 
-//sort
+//ORDENAÇÃO
 
 //reset numeros
 numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];

@@ -1,18 +1,20 @@
 
+
 function diga_ola() {
   console.log('Olá!');
 }
-
 diga_ola();
 
+
 /* função com parâmetro/argumento */
-function saida(texto) {
-  console.log(texto);
+function diga_ola(nome) {
+  console.log("Ola " +  nome);
 }
 
-saida('olá!');
-saida('olá!', 'Outro texto'); //ignora segundo parâmetro
-saida(); //undefined
+diga_ola('olá!');
+diga_ola('olá!', 'Outro texto'); //ignora segundo parâmetro
+diga_ola(); //undefined
+
 
 /* função usando declaração de retorno return */
 function soma(numero1, numero2) {
