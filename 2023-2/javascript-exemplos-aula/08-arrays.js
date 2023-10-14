@@ -41,8 +41,8 @@ dias_da_semana = new Array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', '
 
 // criar dessa forma de preferência
 dias_da_semana = [];
-dias_da_semana.length = 7
-dias_da_semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+//dias_da_semana.length = 7 pode definir o tamanho
+dias_da_semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; // pode inicializar
 
 console.log('dias_da_semana.length', dias_da_semana.length);
 
