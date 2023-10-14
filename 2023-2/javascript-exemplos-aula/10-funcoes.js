@@ -24,7 +24,7 @@ function cumprimento03(nome, tempo) {
 cumprimento03("Ederson", "chuvoso")
 
 
-//parâmetros default
+//funções com parâmetros default
 
 function cumprimento04(nome = "Ederson") {
   console.log(`\nOlá, ${nome}!`);
