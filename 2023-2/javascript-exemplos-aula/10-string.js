@@ -20,6 +20,7 @@ padEnd()
 charAt()
 charCodeAt()
 split()
+repeat()
 
 */
 
@@ -70,21 +71,49 @@ let js = "java script";
 let ecma = js.replace("java", "ecma");
 console.log("\nreplace - "+js + " por "+ ecma); 
 
+console.log(" repita 3 vezes ".repeat(3))
 
-//Métodos de pesquisa em strings
+
 /*
+Métodos de pesquisa em strings
+https://www.w3schools.com/js/js_string_search.asp
+
 indexOf()
 lastIndexOf()
 search()
 match()
 matchAll()
-includes()
+includes() 
 startsWith()
 endsWith()
 
 */
 
+let texto = "Por favor, localize onde ocorre 'localize'!";
+let index = texto.indexOf("localize");
+console.log("\nlocale - index primeira letra da primeira ocorrência", index); 
 
+index = texto.lastIndexOf("localize");
+console.log("\nlocale - index primeira letra da última ocorrência", index); 
+
+index = texto.indexOf("localize", 15); //a partir do segundo parâmetro
+console.log("\nlocale - index primeira letra da primeira ocorrência começando no 15", index); 
+
+index = texto.lastIndexOf("localize", 15); //volta para o começo a partir do segundo parâmetro
+console.log("\nlocale - index primeira letra da última ocorrência", index); 
+
+//aceita expressão regular e não tem um segundo parâmetro
+index = texto.search("localize");
+console.log("\nsearch - index primeira letra da primeira ocorrência", index); 
+index = texto.search(/localize/); //regexp
+console.log("\nsearch regexp - index primeira letra da primeira ocorrência", index); 
+
+let resultado = texto.match("lize"); 
+console.log("\nmatch array - ",  resultado.length)
+
+//https://www.w3schools.com/js/js_regexp.asp
+resultado_regexp = texto.match(/loca/g); 
+console.log("\nmatch array - ", resultado_regexp.length, resultado)
 
 //template String
 
