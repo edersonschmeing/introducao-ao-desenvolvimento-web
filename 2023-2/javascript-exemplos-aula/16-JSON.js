@@ -4,7 +4,7 @@ JSON significa notação de objeto JavaScript
 JSON é um formato de texto para armazenar e transportar dados
 JSON é texto simples escrito em notação de objeto JavaScript
 JSON é independente de linguagem de progração
-*/
+
 
 //JavaScript possui uma função integrada para converter strings JSON em objetos JavaScript:
 //JSON.parse()
@@ -12,6 +12,16 @@ JSON é independente de linguagem de progração
 //JavaScript também possui uma função integrada para converter um objeto em uma string JSON:
 //JSON.stringify()
 
+Tipo de Dados Validos
+
+string
+number
+object (JSON object)
+array
+boolean
+null
+
+*/
 
 let json = '{"nome":"Ederson Schmeing", "idade":39, "tipo_sanguineo":null}';
 console.log("\nJSON: ", json);
