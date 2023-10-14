@@ -1,63 +1,3 @@
-/*
-
-https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_collections
-
-*/
-
-//declarando e prechendo uma matriz
-const array2d = [
-                  [1, 2, 3],
-                  [4, 5, 6],
-                  [7, 8, 9]
-                ]
-
-console.log("\nmatriz")
-console.log(array2d[0][0]) //1 matriz
-console.log(array2d[2][0]) //7 matriz
-
-console.log("\nmatriz linha")
-console.log(array2d[0]) //1
-console.log(array2d[1]) //2
-console.log(array2d[2]) //3
-
-//inicializar um array 
-console.log("\ninicializa array com tamanho e valor padrão")
-let array06 = Array(12).fill(0)
-console.log(array06)
-
-
-//tamanho do array
-const array07 = [1, 2, 3, 4]
-console.log("\ntamanho do array")
-console.log(array07.length) //4
-console.log("novo tamanho do array")
-array07.length = 3
-console.log(array07.length) //3
-
-
-//adicionar um item no final de um array
-console.log("\nadicionar um item a um array")
-array07.push(4)
-console.log(array07)
-
-
-//adicionar um item a um array no início
-console.log("\nadicionar um item no começo de um array")
-array07.unshift(0)
-console.log(array07)
-console.log("\nadicionar dois itens no começo de um array")
-array07.unshift(-2, -1)
-console.log(array07)
-
-
-//remover um item no final de um array 
-console.log("\nremover um item no final de um array")
-array07.pop(array07)
-console.log(array07)
-
-console.log("\nremover um item no início de um array")
-array07.shift()
-console.log(array07)
 
 
 //Como unir dois ou mais arraysarray07
@@ -77,22 +17,6 @@ const array11 = [...array10, ...array09]
 console.log(array11)
 
 
-console.log("\ninteração em arrays")
-var cores = ["vermelho", "verde", "azul"];
-for (var i = 0; i < cores.length; i++) {
-  console.log(cores[i]);
-}
-
-cores.forEach(function (cor) {
-  console.log(cor);
-});
-
-//ES6 Arrow Functions(funções seta)
-cores.forEach((cor) => console.log(cor));
-
-console.log("\nordenção de arrays")
-console.log(cores.sort)
-
 // inicia no índice 1 e extrai todos os elementos
 var meu_array = new Array("a", "b", "c", "d", "e");
 meu_array = meu_array.slice(1, 4); 
@@ -106,25 +30,24 @@ array11.find((15, indice, array) => {
 */
 
 
-//refatorando apartir daqui 
+//REFATORANDO ...  
+
 
 //criação de arrays
 
 let dias_da_semana = new Array();
-//dias_da_semana = Array(7).fill("")//inicializa com valor padrão
 dias_da_semana = new Array(7);
-dias_da_semana = Array.of('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado')
-
 dias_da_semana = new Array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'); 
 
 // criar dessa forma de preferência
 dias_da_semana = [];
 dias_da_semana.length = 7
-dias_da_semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; // {3}
+dias_da_semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 
 console.log('dias_da_semana.length', dias_da_semana.length);
 
-for (let i = 0; i < dias_da_semana.length; i++) {
+//iteração em array
+for (let i = 0; i < dias_da_semana.length; i++) { 
   console.log(`dias_da_semana[${i}]`, dias_da_semana[i]);
 }
 
@@ -134,10 +57,18 @@ let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log('tamanho do array', numeros.length)
 console.log('Array original', numeros);
 
-//imprime elemente a elemento
+//iteração em array
 for (let i = 0; i < numeros.length; i++) {
   console.log(numeros[i]);
 }
+
+//iteração em array com método forEach
+numeros.forEach(function (numero) {
+  console.log(numero);
+});
+
+//função seta 
+numeros.forEach((numero) => console.log(numero));
 
 //ADICIONA
 
@@ -208,139 +139,130 @@ console.log('Adicionando 3 elementos (2, 3, 4) começando no index 5', numeros);
 numeros.splice(5, 3, 2, 3, 4);
 console.log('Removendo 3 elementos começando do index 5 e adicionando (2, 3, 4)', numeros);
 
-//methods
+//Métodos de arrays
 
-/*
+//reset números
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-
-//* ********* using for..of loop
-for (const n of numbers) {
-  console.log(`for..of loop: ${n} % 2 === 0`, n % 2 === 0 ? 'even' : 'odd');
+//usando for..of loop
+for (const n of numeros) {
+  console.log(`for..of loop: ${n} % 2 === 0`, n % 2 === 0 ? 'par' : 'impar');
 }
 
-//* ********* Using the new ES6 iterator (@@iterator)
-console.log('Using the new ES6 iterator (@@iterator)');
+//Usando o novo iterator (@@iterator) ES6 
+console.log('Usando o novo iterator (@@iterator) ES6');
 
-let iterator = numbers[Symbol.iterator]();
+let iterator = numeros[Symbol.iterator]();
 console.log('iterator.next().value', iterator.next().value); // 1
 console.log('iterator.next().value', iterator.next().value); // 2
 console.log('iterator.next().value', iterator.next().value); // 3
 console.log('iterator.next().value', iterator.next().value); // 4
 console.log('iterator.next().value', iterator.next().value); // 5
 
-// or use code below
-iterator = numbers[Symbol.iterator]();
+// ou pode usar o código abaixo
+iterator = numeros[Symbol.iterator]();
 for (const n of iterator) {
   console.log(`${n} of iterator`, n);
 }
 
-//* ********* Array entries, keys and values
+//Array entries, keys and values  
 console.log('Array entries, keys and values');
+console.log('Array.entries'); //array entradas
+let array_entries = numeros.entries(); // recuperar iterador de chave/valor (key/value)
+console.log('array_entries.next().value', array_entries.next().value); // [0, 1] - position 0, value 1
+console.log('array_entries.next().value', array_entries.next().value); // [1, 2] - position 1, value 2
+console.log('array_entries.next().value', array_entries.next().value); // [2, 3] - position 2, value 3
 
-console.log('Array.entries');
-let aEntries = numbers.entries(); // retrieve iterator of key/value
-console.log('aEntries.next().value', aEntries.next().value); // [0, 1] - position 0, value 1
-console.log('aEntries.next().value', aEntries.next().value); // [1, 2] - position 1, value 2
-console.log('aEntries.next().value', aEntries.next().value); // [2, 3] - position 2, value 3
-
-// or use code below
-aEntries = numbers.entries();
-for (const n of aEntries) {
+//ou pode usar o código abaixo
+array_entries = numeros.entries();
+for (const n of array_entries) {
   console.log(`entry of ${n}`, n);
 }
 
 console.log('Array.keys');
-const aKeys = numbers.keys(); // retrieve iterator of keys
-console.log('aKeys.next()', aKeys.next()); // {value: 0, done: false } done false means iterator has more values
-console.log('aKeys.next()', aKeys.next()); // {value: 1, done: false }
-console.log('aKeys.next()', aKeys.next()); // {value: 2, done: false }
+const array_keys = numeros.keys(); // recuperar iterator of keys (chaves)
+console.log('aKeys.next()', array_keys.next()); // {value: 0, done: false } done false significa que o iterador tem mais valores
+console.log('aKeys.next()', array_keys.next()); // {value: 1, done: false }
+console.log('aKeys.next()', array_keys.next()); // {value: 2, done: false }
 
-console.log('Array.values - Only Edge and Safari - Oct 2017');
-// const aValues = numbers.values();
-// console.log(aValues.next()); // {value: 1, done: false } done false means iterator has more values
-// console.log(aValues.next()); // {value: 2, done: false }
-// console.log(aValues.next()); // {value: 3, done: false }
+//console.log('Array.values - Only Edge and Safari - Oct 2017');
+//const array_values = numeros.values();
+//console.log(array_values.next()); // {value: 1, done: false } done false significa que o iterador tem mais valores
+//console.log(array_values.next()); // {value: 2, done: false }
+//console.log(array_values.next()); // {value: 3, done: false }
 
-//* ********* Using the from method
-console.log('Using the from method');
 
-const evens = Array.from(numbers, x => x % 2 === 0);
-console.log('Array.from(numbers, x => x % 2 === 0)', evens);
+//Usando o método from 
+console.log('Usando o método from');
+const numeros_pares = Array.from(numeros, x => x % 2 === 0);
+console.log('Array.from(numeros, x => x % 2 === 0)', numeros_pares);
 
-const numbers2 = Array.from(numbers);
-console.log('Array.from(numbers)', numbers2);
+const numeros2 = Array.from(numeros);
+console.log('Array.from(numeros)', numeros2);
 
-//* ********* Using Array.of
-console.log('Using Array.of');
+//usando o Array.of
+console.log('Usando o Array.of');
+const numeros3 = Array.of(1);
+const numeros4 = Array.of(1, 2, 3, 4, 5, 6);
+const numerosCopy = Array.of(...numeros4);
+console.log('Array.of(1)', numeros3);
+console.log('Array.of(1, 2, 3, 4, 5, 6)', numeros4);
+console.log('Array.of(...numeros4)', numerosCopy);
 
-const numbers3 = Array.of(1);
-const numbers4 = Array.of(1, 2, 3, 4, 5, 6);
-const numbersCopy = Array.of(...numbers4);
-console.log('Array.of(1)', numbers3);
-console.log('Array.of(1, 2, 3, 4, 5, 6)', numbers4);
-console.log('Array.of(...numbers4)', numbersCopy);
+//Usando o método fill
+console.log('Usando o método fill');
+numerosCopy.fill(0);
+console.log('numerosCopy.fill(0)', numerosCopy);
 
-//* ********* Using the fill method
-console.log('Using the fill method');
+numerosCopy.fill(2, 1);
+console.log('numerosCopy.fill(2, 1)', numerosCopy);
 
-numbersCopy.fill(0);
-console.log('numbersCopy.fill(0)', numbersCopy);
+numerosCopy.fill(1, 3, 5);
+console.log('numbersCopy.fill(1, 3, 5)', numerosCopy);
 
-numbersCopy.fill(2, 1);
-console.log('numbersCopy.fill(2, 1)', numbersCopy);
+const numeros_uns = Array(6).fill(1);
+console.log('Array(6).fill(1)',numeros_uns);
 
-numbersCopy.fill(1, 3, 5);
-console.log('numbersCopy.fill(1, 3, 5)', numbersCopy);
+//Usando o método copyWithin
+console.log('Usando o método copyWithin');
+let copia_array = [1, 2, 3, 4, 5, 6];
+console.log('copia_array', copia_array);
 
-const ones = Array(6).fill(1);
-console.log('Array(6).fill(1)', ones);
-
-//* ********* Using the copyWithin method
-console.log('Using the copyWithin method');
-
-let copyArray = [1, 2, 3, 4, 5, 6];
-console.log('copyArray', copyArray);
-
-copyArray = copyArray.copyWithin(0, 3); // pos 3 value is copied to pos 0
-console.log('copyArray.copyWithin(0, 3)', copyArray);
+copia_array = copia_array.copyWithin(0, 3); // o valor da posição 3 é copiado para a posição 0
+console.log('copia_array.copyWithin(0, 3)', copia_array);
 
 copyArray = [1, 2, 3, 4, 5, 6];
-copyArray = copyArray.copyWithin(1, 3, 5); // pos 3-4 values are copied to pos 1-2
-console.log('copyArray.copyWithin(1, 3, 5)', copyArray);
+copyArray = copia_array.copyWithin(1, 3, 5); // os valores da posição 3-4 são copiados para a posição 1-2
+console.log('copia_array.copyWithin(1, 3, 5)', copia_array);
 
-//* ********* methods find and findIndex
-console.log('methods find and findIndex');
-
-function multipleOf13(element) {
-  return element % 13 === 0;
+//método find e findIndex
+console.log('método find e findIndex');
+function multiplo_de_13(elemento) {
+  return elemento % 13 === 0;
 }
+console.log('numeros.find(multipleOf13)', numeros.find(multiplo_de_13));
+console.log('numeros.findIndex(multipleOf13)', numeros.findIndex(multiplo_de_13));
 
-console.log('numbers.find(multipleOf13)', numbers.find(multipleOf13));
-console.log('numbers.findIndex(multipleOf13)', numbers.findIndex(multipleOf13));
+//EcmaScript 2016 (ES7): usando o método includes
+console.log('EcmaScript 2016 (ES7): usando o método includes');
 
-//* ********* EcmaScript 2016 (ES7): using the method includes
-console.log('EcmaScript 2016 (ES7): using the method includes');
+console.log('numbers.includes(15)', numeros.includes(15));
+console.log('numbers.includes(20)', numeros.includes(20));
 
-console.log('numbers.includes(15)', numbers.includes(15));
-console.log('numbers.includes(20)', numbers.includes(20));
-
-const numbers5 = [7, 6, 5, 4, 3, 2, 1];
-console.log('numbers5.includes(4, 5)', numbers5.includes(4, 5));
-
-
+const numeros5 = [7, 6, 5, 4, 3, 2, 1];
+console.log('numeros5.includes(4, 5)', numeros5.includes(4, 5));
 
 //sort
 
+//reset numeros
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+console.log('numeros', numeros);
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-console.log('numbers', numbers);
+numeros = numeros.reverse();
+console.log('numeros.reverse()', numeros);
 
-
-numbers = numbers.reverse();
-console.log('numbers.reverse()', numbers);
-
-console.log('numbers.sort()', numbers.sort());
+numeros = numeros.sort();
+console.log('numeros.sort()', numeros);
 
 /* console.log(
   numbers.sort(function(a, b) {
@@ -348,8 +270,7 @@ console.log('numbers.sort()', numbers.sort());
   })
 ); */ // ES5 syntax
 
-/*
-console.log('numbers.sort((a, b) => a - b)', numbers.sort((a, b) => a - b));
+console.log('numbers.sort((a, b) => a - b)', numeros.sort((a, b) => a - b));
 
 function compare(a, b) {
   if (a < b) {
@@ -361,9 +282,10 @@ function compare(a, b) {
   // a must be equal to b
   return 0;
 }
+console.log('numbers.sort(compare)', numeros.sort(compare));
 
-console.log('numbers.sort(compare)', numbers.sort(compare));
 
+/*
 // Sorting objects
 const friends = [
   { name: 'John', age: 30 },
@@ -383,6 +305,7 @@ function comparePerson(a, b) {
 
 console.log('friends.sort(comparePerson)', friends.sort(comparePerson));
 
+
 let names = ['Ana', 'ana', 'john', 'John'];
 console.log('names', names);
 console.log('names.sort()', names.sort());
@@ -397,12 +320,14 @@ console.log('names.sort(compareFunction)', names.sort((a, b) => {
   }
   return 0;
 }));
+
 names = ['Ana', 'ana', 'john', 'John']; // reset to array original state
 console.log('names.sort((a, b) => a.localeCompare(b))', names.sort((a, b) => a.localeCompare(b)));
 
 const names2 = ['Maève', 'Maeve'];
 console.log('names2', names);
 console.log('names2.sort((a, b) => a.localeCompare(b))', names2.sort((a, b) => a.localeCompare(b)));
+
 
 
 //searching
