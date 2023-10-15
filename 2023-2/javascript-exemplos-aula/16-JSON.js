@@ -27,7 +27,7 @@ null
 
 let json = '{"nome":"Pessoa 01", "idade":39, "tipo_sanguineo":null, "altura": 1.83}';
 console.log("\nJSON: ", json);
-objeto = JSON.parse(json); //converte JSON em Objeto Java Script
+objeto = JSON.parse(json); //converte JSON em Objeto JavaScript
 console.log("Objeto: ", objeto);
 
 obj = {
@@ -38,7 +38,7 @@ obj = {
       };
 
 console.log("\nObjeto: ", obj);
-let json02 = JSON.stringify(obj) //converte Objeto Java Script em JSON
+let json02 = JSON.stringify(obj) //converte Objeto JavaScript em JSON
 console.log("JSON: ", json02);
 
 
