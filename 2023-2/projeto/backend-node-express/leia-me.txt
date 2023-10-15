@@ -1,0 +1,2 @@
+Para testar as rotas use reqbin.com ele indica a
+necessidade de instalar a extensão do software no Chrome. 
