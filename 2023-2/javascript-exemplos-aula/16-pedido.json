@@ -1,0 +1,58 @@
+[
+    {
+        "data": "2023-10-15",
+        "numero": 1,
+        "total": 13.00,
+        "cliente": {
+            "nome": "Cliente 1",
+            "email": "cliente1@gmail.com",
+            "celular": "45 99970-5050"
+        },
+        "itens": [
+            {
+                "item": {
+                    "codigo": 1,
+                    "descricao": "Produto 1",
+                    "quantidade": 2.00,
+                    "valor": 3.00
+                }
+            },
+            {
+                "item": {
+                    "codigo": 2,
+                    "descricao": "Produto 2",
+                    "quantidade": 2.00,
+                    "valor": "10.00"
+                }
+            }
+        ]
+    },
+    {
+        "data": "2023-10-13",
+        "numero": 2,
+        "total": 50.00,
+        "cliente": {
+            "nome": "Cliente 2",
+            "email": "cliente2@hotmail.com",
+            "celular": "45 99940-7141"
+        },
+        "itens": [
+            {
+                "item": {
+                    "codigo": 3,
+                    "descricao": "Produto 3",
+                    "quantidade": 2.00,
+                    "valor": 30.00
+                }
+            },
+            {
+                "item": {
+                    "codigo": 4,
+                    "descricao": "Produto 4",
+                    "quantidade": 10.00,
+                    "valor": "20.00"
+                }
+            }
+        ]
+    }
+]
