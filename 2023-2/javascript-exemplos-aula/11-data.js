@@ -13,7 +13,7 @@ console.log(fim)
 var decorrido = fim - inicio; // tempo decorrido em milisegundos
 console.log(decorrido)
 
-console.log("\n===\n")
+console.log("\n=========\n")
 
 var inicio01 = new Date(2023, 06, 24); //aqui começa no 0 o mês
 console.log(inicio01)

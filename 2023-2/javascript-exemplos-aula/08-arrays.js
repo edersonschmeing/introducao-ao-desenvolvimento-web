@@ -1,3 +1,20 @@
+/*
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_collections
+Um array é um conjunto de valores ordenados que você o 
+referencia com um nome e um índice.  
+
+https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Arrays
+Arrays são geralmente descritas como "lista de objetos";
+elas são basicamente objetos que contem múltiplos valores armazenados em uma lista. 
+Um objeto array pode ser armazenado em variáveis e ser tratado de forma muito similar 
+a qualquer outro tipo de valor, a diferença está em podermos acessar cada valor dentro 
+da lista individualmente, e fazer super úteis e eficientes coisas com a lista,
+como laço através da lista e fazer a mesma coisa para cada valor. 
+Talvez nós pegamos uma série de produtos e seus preços armazenados em uma array,
+e nós queremos fazer um laço através de todos eles e mostrar em um recibo,
+enquanto somamos todos os preços e mostramos o preço total ao final. */
+
+
 //criação de arrays
 
 // criar dessa forma de preferência
