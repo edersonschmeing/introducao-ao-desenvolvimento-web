@@ -3,6 +3,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_collection
 Um array é um conjunto de valores ordenados que você o 
 referencia com um nome e um índice.  
 
+
 https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Arrays
 Arrays são geralmente descritas como "lista de objetos";
 elas são basicamente objetos que contem múltiplos valores armazenados em uma lista. 
@@ -18,8 +19,9 @@ enquanto somamos todos os preços e mostramos o preço total ao final. */
 //criação de arrays
 
 // criar dessa forma de preferência
-dias_da_semana = [];
-//dias_da_semana.length = 7 pode definir o tamanho
+ dias_da_semana = [];
+//dias_da_semana.length = 7 //pode definir o tamanho
+
 dias_da_semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; // pode inicializar
 
 console.log('dias_da_semana.length', dias_da_semana.length);
@@ -40,12 +42,14 @@ console.log('Array original', numeros);
 
 //ITERAÇÃO
 
-//iteração em array
+//iteração em array com for
+console.log("\niteração em array com for")
 for (let i = 0; i < numeros.length; i++) {
   console.log(numeros[i]);
 }
 
 //iteração em array com método forEach
+console.log("\niteração em array com método forEach")
 numeros.forEach(function (numero) {
   console.log(numero);
 });
@@ -65,7 +69,9 @@ console.log('Adicionado 12 e 13 no final com método push', numeros);
 
 //adiciona um novo elemento no início do array de forma manual
 for (let i = numeros.length; i >= 0; i--) {
+  //console.log(" ", i,  "   ",    numeros[i - 1]) 
   numeros[i] = numeros[i - 1];
+
 }
 numeros[0] = -1;
 console.log('Adicionado -1 de forma manual', numeros);
@@ -112,10 +118,10 @@ console.log('Array reinicializado', numeros);
 //Removendo e adicionando elementos do meio ou uma posicição específica
 //médodo splice - parâmetros (index, quantas posições devem ser removidas, item1...itemN)
 numeros.splice(5, 3);
-console.log('Removendo 3 elementos (3, 4, 5) começando no index 5', numeros);
+console.log('Removendo 3 elementos (1, 2, 3) começando no index 5', numeros);
 
-numeros.splice(5, 0, 2, 3, 4);
-console.log('Adicionando 3 elementos (2, 3, 4) começando no index 5', numeros);
+numeros.splice(5, 0, 20, 25, 30);
+console.log('Adicionando 3 elementos (20, 25, 30) começando no index 5', numeros);
 
 numeros.splice(5, 3, 2, 3, 4);
 console.log('Removendo 3 elementos começando do index 5 e adicionando (2, 3, 4)', numeros);

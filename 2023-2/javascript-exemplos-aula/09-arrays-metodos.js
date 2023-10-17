@@ -14,6 +14,7 @@ console.log('dias_da_semana.length', dias_da_semana.length);
 
 console.table(dias_da_semana);
 
+
 //iteração em array
 for (let i = 0; i < dias_da_semana.length; i++) { 
   console.log(`dias_da_semana[${i}]`, dias_da_semana[i]);
