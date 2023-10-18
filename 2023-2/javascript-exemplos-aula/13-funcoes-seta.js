@@ -52,8 +52,7 @@ console.log(soma3_seta(6))
 //Quando a função tem mais de um parâmetro
 const saudacoes_seta4 = () => console.log("Hello World!");
 
-const saudacoes_seta5 = (nome, idade) => 
-    console.log(`O ${nome} tem ${idade} anos`);
+const saudacoes_seta5 = (nome, idade) => console.log(`O ${nome} tem ${idade} anos`);
 
 //A função de seta não possui ligação de argumentos
 //pode acessar os argumentos que passa para a função 

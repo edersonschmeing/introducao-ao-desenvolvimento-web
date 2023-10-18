@@ -6,10 +6,12 @@ let autor_livro = "Edécio Fernando Iepsen";
 
 
 //usando arrays
-let livro_array = ["Lógica de Programação com JavaScript", "Edécio Fernando Iepsen"];
+let livro_array = ["Lógica de Programação com JavaScript", 
+                   "Edécio Fernando Iepsen"];
 
 //usando objetos com propriedade se funções
-//Um objeto é declarado usando chaves {}, e cada item entre chaves é escrito no formato chave:valor.
+//Um objeto é declarado usando chaves {}, 
+//e cada item entre chaves é escrito no formato chave:valor.
 
 /*
 let livro_objeto = {}
