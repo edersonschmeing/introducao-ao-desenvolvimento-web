@@ -35,6 +35,8 @@ SILVA, Mauricio Samy. Bootstrap: Um guia completo para construir aplicativos res
 
 Maurício Samy Silva. Maujor o Dinossauro da CSS. https://www.maujor.com/
 
+https://developer.mozilla.org/pt-BR/
+
 w3schools. https://www.w3schools.com>
 
 Bootstrap. https://getbootstrap.com/>
