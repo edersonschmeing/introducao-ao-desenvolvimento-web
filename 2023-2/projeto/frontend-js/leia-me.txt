@@ -1,0 +1,7 @@
+HTTP Sever do nodejs
+
+npm install http-server -g
+
+http://192.168.1.2:8080/view/lista_livros.html
+
+http://192.168.1.2:8080/view/cadastra_livro.html

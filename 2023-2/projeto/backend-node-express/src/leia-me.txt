@@ -1,3 +1,10 @@
 https://github.com/geshan/expressjs-structure/tree/master
 https://blog.logrocket.com/organizing-express-js-project-structure-better-productivity/
 https://www.linkedin.com/pulse/best-practices-organizing-expressjs-nodejs-project-sourav-ahmed/
+
+
+
+
+node app
+
+nodemon app

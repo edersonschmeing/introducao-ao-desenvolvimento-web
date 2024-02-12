@@ -9,6 +9,7 @@ const app = express();
 const port = 3001;
 
 app.get('/', (req, res) => {
+    console.log(req.method);
     res.send('Olá... Bem-vindo!');
 });
 
@@ -39,10 +40,9 @@ app.post('/filmes', (req, res) => {
 
 });
 
-
 // Exemplo de Middleware
 const log = (req, res, next) => {
-    console.log(`....................... Acessado em ${new Date()}`);
+    console.log(`${req.method}.... Acessado em ${new Date()}`);
     next();
 }
 
@@ -51,7 +51,7 @@ app.get('/transfere', log, (req, res) => {
 });
 
 
-// ------------------------------ Arquivo com rotas para o cadastro de livros
+// ---Arquivo com rotas para o cadastro de livros
 const livros = require('./livros');
 
 app.use('/livros', livros); // identificação da rota e da const (require) associada
